@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maurice Rogers">
+    <meta name="description" content="My freeCodeCamp project technical documentation page">
+    <title>Technical Documentation Page</title>
+    <link href="../mo-portfolio/tech-doc.css" rel="stylesheet">
+</head>
+<body>
+    <div class="alpha-bg">
+        <nav id=navbar>
+          <header>
+            <h1 class="navbar-header">JavaScript</h1>
+          </header>
+          <ul class="nav-list">
+          <li><a href="#What_is_Java_Script?" class="nav-link">What is JavaScript?</a></li>
+            <li><a href="#How_to_learn_JS" class="nav-link">How to learn JS</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+        
+            <li><a href="#Conditionals" class="nav-link">Conditionals</a></li>
+         
+            <li><a href="#DOM_Manipulation" class="nav-link">DOM Manipulation</a></li>
+          </ul>
+        </nav>
+        <main id="main-doc">
+          <section class="main-section" id="What_is_Java_Script?">
+            <header>
+              <h2>What is JavaScript?</h2>
+            </header>
+            <code>let sumNum = num => num + num;</code>
+            <p>JavaScript is the most popular programming language of web development.</p>
+            <p>JS(JavaScript) is an interpreted language, which basically means that it is meant to be easier for humans to read.</p>
+            <ul>
+              <li>JavaScript has undergone many important changes, while still allowing older JS code to function.</li>
+            </ul>
+          </section>
+            <section class="main-section" id="How_to_learn_JS">
+            <header>
+              <h2>How to learn JS</h2>
+            </header>
+            <code>var learnJS = 'Using var when first starting out may help you understand the code';</code>
+            <p>freeCodeCamp.org is a great way to get started.</p>
+            <p>Youtube tutorials can be a tedious way to learn, I recommend using Scrimba, a website with interactive coding tutorials.</p>
+            <ul>
+              <li>One helpful technique for learning JS is constantly writing your own functional code.</li>
+            </ul>
+          </section>
+            <section class="main-section" id="Variables">
+            <header>
+              <h2>Variables</h2>
+            </header>
+            <code>var variable = 'A variable declared with the old "var"';</code>
+              <br>
+              <code>let variable2 = 'A variable declared with the mutable "let"';</code>
+              <br>
+              <code>const VARIABLE_3 = 'A variable declared with const(short for constant)';</code>
+            <p>In 2015 two important new JavaScript keywords were introduced: let and const.</p>
+            <p>Let your go-to be "const"(as it will help you not make bugs), use "let" if you need to(as it can be mutated), and use var only if you need to access and/or modify your variable from anywhere(no matter whether it's in a function or not).</p>
+              <p>Const and let variables can be accessed globally like var if they are created on a line alone without being in a function. But, if they are created within a function, they won't exist outside. This means that you can declare two const variables with the same name just as long as they are in separate scopes.</p>
+            <ul>
+              <li>Variables help make things faster and easier by allowing you to store functions, arrays, objects, calculations, values, and more.</li>
+              
+            </ul>
+          </section>
+            <section class="main-section" id="Conditionals">
+            <header>
+              <h2>Conditionals</h2>
+            </header>
+            <code>if (age >= 21) {
+              <br>
+              console.log('You are old enough');
+              <br>
+              }</code>
+              <p>
+                "Conditionals", short for "conditional statements" are used to solve problems that require conditions. A Conditional's result may vary just like how people's opinions of something may vary. For example, an apple will be liked by someone if they like the apple's color, and someone else might like that same apple because of it's taste, but then if someone else dislikes the apple completely then you have different results for who likes or dislikes the apple because of different reasons for each person. Here's some pseudo code to demonstrate this logic.
+                <br>
+                <br>
+         
+                <code>
+                  function appleOpinion(person){
+                  if(person likes apples){
+                  return why;
+                  } else {
+                  return person dislikes apples; 
+                  }
+                  };
+                </code>
+              </p>
+            <p>The following are examples of JS conditionals: if, else if, else, switch statements.</p>
+            <p>These can be used to solve problems based on possible factors.</p>
+            <ul>
+              <li>The if statement is the most common type of conditional.</li>
+            </ul>
+          </section>
+            <section class="main-section" id="DOM_Manipulation">
+            <header>
+              <h2>DOM Manipulation</h2>
+            </header>
+              <code class="code">const HEADER = document<span class="toggle-block">.getElementsByTagName('h1')[0]</span></code>
+            <p>When creating or getting elements to use in your JS, always remember to type the keyword "document" first.</p>
+              <p>To adjust the style of an element, code like this:<code> HEADER.style.fontSize = '1.2rem'</code></p>
+            <ul>
+              <li>All style properties in JS are the same as CSS but they are camel cased instead of using dashes.</li>
+              <li>All style values in JS are declared inside quotes.</li>
+            </ul>
+          </section>
+          <footer>
+            <nav>
+              <a class="ftr-nav-link" href="../mo-portfolio/index.html">Back to portfolio</a>
+              </nav>
+              <h4 class="copy-right">&copy; 2021 Maurice Rogers</h4>
+        </footer>
+        </main>
+        </div>
+        
+</body>
+</html>

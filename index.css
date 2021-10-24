@@ -1,0 +1,207 @@
+/* fix .accent-text */
+*{
+  box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+  }
+body{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: .2rem;
+  background-image: url("images/pxfuel.com.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*NAVBAR CSS STARTS HERE*/
+.topnav{
+  font-size: 3.4rem;
+}
+.nav-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -3rem;
+}
+.nav-link{
+  text-decoration: none;
+  color: white;
+  background-color: rgba(96, 255, 5, 0.541);
+  padding: .8rem 3rem;
+  border-radius: 18px;
+}
+.nav-link:visited{
+  color: #252525;
+}
+.nav-list li{
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+/*NAVBAR CSS ENDS HERE*/
+#welcome-section{
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.welcome-text{
+  font-size: 2.5rem;
+  letter-spacing: .05em;
+  color: rgb(252, 220, 39);
+  background: none;
+  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.90), 0px -5px 20px rgba(0, 0, 0, 0.90), 5px 0px 20px rgba(0, 0, 0, 0.90);
+  padding: .01em .5em;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -4rem;
+}
+
+p{
+  font-size: 2.4rem;
+}
+h2{
+  font-size: 2.1rem;
+  text-align: center;
+}
+h3{
+  text-align: center;
+  font-size: 3rem;
+}
+h3 a{
+  text-decoration: none;
+  background-color: rgba(255, 196, 0, 0.603);
+  padding: 1rem;
+}
+h4{
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5em;
+}
+.education{
+  display: block;
+}
+.projects{
+  display: grid;
+  gap: 2rem 2rem;
+  grid-template-columns: 290px;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 1em;
+  padding-bottom: 2em;
+}
+.project-link{
+  text-decoration: none;
+}
+
+.project-title{
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+}
+.project-image{
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+}
+.languages{
+  font-weight: 300;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: -1rem;
+  margin-top: 0;
+}
+.dice-game{
+  width: 200px;
+}
+#contact-section{
+  
+  padding-top: 5rem;
+}
+.accent-text{
+  font-size: 1em;
+  font-weight: 900;
+  display: block;
+}
+.profile-link{
+  text-decoration: none;
+  border-bottom: 3px solid blue;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: blue;
+  margin-bottom: 1rem;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+.ftr-nav-link{
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(9, 255, 0, 0.5);
+  color: rgb(0, 68, 255);
+  font-size: 2.5rem;
+  padding: .5em .7em;
+  border-radius: 2em;
+}
+
+.copy-right{
+  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.9), 0px -5px 20px rgba(0, 0, 0, 0.9), 5px 0px 20px rgba(0, 0, 0, 0.9);
+  color: pink;
+  margin-top: 2rem;
+  font-size: 2.8rem;
+}
+
+
+@media (min-width: 700px){
+  /*NAVBAR CSS STARTS HERE*/
+.nav-list{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link{
+  padding: .8rem 2.7rem;
+  margin-right: .5em; 
+}
+.nav-link:focus,
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+  }
+  
+/*NAVBAR CSS ENDS HERE*/
+  .welcome-text{
+  text-align: center;
+} 
+  .proj-info{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .projects{
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 2rem;
+    justify-content: center;
+}
+}

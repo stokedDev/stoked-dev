@@ -1,0 +1,141 @@
+html{
+    font-size: 10px;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-image: url(images/wood-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(255, 196, 0);
+    font-family: helvetica, sans-serif;
+  }
+  
+  /*NAVBAR CSS STARTS HERE*/
+   .navbar-header {
+    text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
+     color: rgb(255, 111, 0);
+    margin-top: .2rem;
+    border-bottom: 5px solid rgb(255, 111, 0);
+     width: 17rem;
+     margin-left: auto;
+     margin-right: auto;
+     padding-bottom: .2rem;
+  }
+  #navbar a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: .5rem;
+    border-radius: 10px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  .nav-list li {
+    margin-bottom: 3rem;
+  }
+  /*NAVBAR CSS ENDS HERE*/
+  
+  
+  #main-doc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 2rem;
+    padding: 0 1rem;
+  }
+  #DOM_Manipulation{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2{
+    text-align: center;
+  }
+  code {
+    background-color: rgba(255, 255, 255, .15);
+    color:lime;
+  }
+  .code{
+    font-size: 1.5rem;
+  }
+  footer{
+    margin-top: 2rem;
+  }
+  .ftr-nav-link{
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(63, 210, 58);
+    color: rgb(255, 255, 255);
+    font-size: 2.8rem;
+    padding: .5em .7em;
+    border-radius: 2em;
+  }
+  .copy-right{
+    font-weight: 200;
+  }
+  @media (min-width: 1108px){
+    body{
+      display: block;
+    }
+  /*NAVBAR CSS STARTS HERE*/
+  #navbar a:focus,
+  #navbar a:hover {
+    background-color: rgba(0,0,255,.5);
+  }
+  #navbar{
+    position: fixed;
+  }
+  /*NAVBAR CSS ENDS HERE*/
+    #main-doc{
+      float: right;
+      width: 70%;
+    }
+    code{
+      margin-left: 1rem;
+      display: inline-block;
+    }
+  }
+
+
+  @media(min-width: 200px) and (max-width: 640px){
+    .nav-list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: -10%;
+    }
+    .toggle-block{
+      display: block;
+    }
+  }
+  @media(min-width: 640px) and (max-width: 861px){
+    .nav-list{
+      margin-left: 30%;
+    }
+  }
+  @media(min-width: 861px) and (max-width: 1108px){
+    .nav-list{
+      margin-left: 35%;
+    }
+  }
+  @media (min-width: 640px){
+    .code{
+      font-size: 2rem;
+    }
+  }
+  

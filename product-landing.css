@@ -1,0 +1,295 @@
+body{
+    background-color: rgba(0,0,0,.6);
+    font-family: helvetica; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*HEADER CSS STARTS HERE*/
+  #header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1{
+    color: rgb(0, 217, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .pools{
+    color: red;
+  }
+  .space1,
+  .space2{
+    color: rgba(0,0,0,0);
+  }
+  .usa{
+    color: white;
+  }
+  .header-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    margin-top: -4.8rem;
+  }
+  #header-img{
+    width: 100px;
+  }
+  /*HEADER CSS ENDS HERE*/
+  
+  /* NAVBAR CSS STARTS HERE */
+  .nav-bar{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center; 
+  }
+  .nav-list li{
+    list-style: none;
+    margin-bottom: 3rem;
+  }
+  
+  .nav-link{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(48, 196, 3);
+    padding: .5em 2em;
+    border-radius: 20px;
+  }
+  
+  /* NAVBAR CSS ENDS HERE */
+  
+  
+  /* BACKGROUND IMAGE CSS STARTS HERE*/
+  .background-img {
+      display: block;
+  }
+  .background-img:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: url(../mo-portfolio/images/bsr-surfpool.png);
+      opacity: 0.6;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: fixed;
+      z-index: -1;
+  }
+  /* BACKGROUND IMAGE CSS ENDS HERE*/
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3rem;
+  }
+  form h2{
+    color: #00ffff;
+    text-align: center;  
+  }
+  #email{
+    display:block;
+    margin:auto;
+    width:180px;
+    padding:8px;
+    border-radius:50px;
+    border:none;
+    font-size: 1.5rem;
+    transition: width .5s ease;
+    outline: none;
+    background-color: rgba(0, 153, 255, 0.555);
+    color:tomato;
+  }
+  ::placeholder{
+      color: yellow;
+      opacity: .7;
+  }
+  
+  #email:hover{
+    width: 200px;
+  } 
+  
+  #submit{
+    display:block;
+    padding:.3em 1em;
+    border: none;
+    border-radius:50px;
+    background-color: #00ff00;
+    margin-top: 20px;
+    color: black;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  #about-us-section,
+  #locations-section{
+    width: 97%;
+    display: flex;
+    color: rgb(255,255,0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    text-indent: 1.5rem;
+    line-height: 1.6rem;
+    letter-spacing: .08rem;
+  }
+  #about-us-section p,
+  #locations-section p{
+    font-size: 20px;
+    margin-top: -1rem;
+    margin-left: .35rem;
+  }
+  
+  #locations-section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  h2{
+    color: rgb(255,255,0);
+  }
+  iframe{
+    width: 560px;
+    height: 315px;
+  }
+  
+  #pricing-section{
+    width: 95%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0);
+  }
+  
+  .products{
+    
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+  
+  .product{
+    border: 1px white solid;
+    padding: 1em;
+    background-color: rgba(0,0,0,.5);
+  }
+  
+  .product-title{
+    padding:10px;
+    background-color:#115599;
+    color: white;
+    text-align: center;
+  }
+   .product-description{
+    color:white;
+    text-align: center;
+  }
+   .product-description p {
+    font-size:1.2rem;
+  }
+  .product-submit{
+    background-color:#008f13;
+    border:none;
+    width: 100%;
+    color:white;
+    text-decoration:none;
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 3%;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 310px) and (max-width: 500px){
+    iframe{
+    width: 300px;
+    }
+  }
+  @media (min-width: 500px) and (max-width: 577px){
+    iframe{
+      width: 490px;
+    }
+  }
+  @media (min-width: 940px){
+    .header-img{
+    display: flex;
+    justify-content: center;
+    margin-top: -4.8rem;
+    padding-top: 1.3%;
+    }
+  /* NAVBAR CSS STARTS HERE */
+    .nav-list{
+      margin-bottom: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  .nav-list li{
+    display: inline;
+  }
+  
+  .nav-link{
+    font-size: 1.6rem;
+    margin-right: 1rem;
+  }
+    .nav-link:focus,
+    .nav-link:hover{
+      background-color: rgba(0,0,0,.6);
+    }
+  /* NAVBAR CSS ENDS HERE */
+    #about-us-section,
+    #locations-section{
+      width: 55%;
+    }
+  }
+  /* footer below */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+}
+.ftr-nav-link{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(9, 255, 0, 0.5);
+  color: rgb(0, 68, 255);
+  font-size: 1.5rem;
+  padding: .5em .7em;
+  border-radius: 2em;
+}
+.ftr-nav-link:first-child{
+  margin-bottom: 1.5rem;
+}
+.copy-right{
+  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
+  font-size: 1.5rem;
+  color: white;
+}
+/*footer above*/
+  @media (min-width: 1440px){
+    .products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+  }
+  }

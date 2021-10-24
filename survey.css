@@ -1,0 +1,159 @@
+html{
+    font-size: 10px;
+  }
+  body {
+    font-size: 2.5rem;
+    color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: helvetica;
+  }
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+  h1{
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .description{
+    border-bottom: 5px rgba(0,0,0,.5) solid;
+    padding: 1rem;
+    width: 285px;
+    margin-bottom: 1rem;
+  }
+  
+  /*BACKGROUND IMAGE CSS STARTS HERE*/
+  .background-image {
+      display: block;
+  }
+  .background-image:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: url(https://cdn.pixabay.com/photo/2017/12/25/16/16/creativity-3038628_1280.jpg);
+      opacity: 0.3;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: fixed;
+      z-index: -1;
+  }
+  /*BACKGROUND IMAGE CSS ENDS HERE*/
+  
+  #number,
+  #name,
+  #email{
+    width: 90%;
+    font-size: 2rem;
+    border-radius: 15px;
+    border: 0;
+    padding: .5rem;
+  }
+  
+  #dropdown {
+    font-size: 2.5rem;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .improvement{
+    margin-bottom: .1rem;
+  }
+  .device{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .device input{
+    margin-bottom: 3rem;
+  }
+  .device input:last-child{
+    margin-bottom: 0;
+  }
+  #comment {
+    font-size: 2rem;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  .comment-label{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #submit {
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+  }
+  .basic-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #name-label{
+    margin-bottom: 2rem;
+  }
+  #email-label{
+    margin-bottom: 2rem;
+  }
+  #number-label{
+    margin-bottom: 2rem;
+  }
+  input,
+  .input,
+  select{
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* footer below */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+.ftr-nav-link{
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(9, 255, 0, 0.5);
+  color: rgb(0, 68, 255);
+  font-size: 2.5rem;
+  padding: .5em .7em;
+  border-radius: 2em;
+}
+.copy-right{
+  color: white;
+  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.7), 0px -5px 20px rgba(0, 0, 0, 0.7), 5px 0px 20px rgba(0, 0, 0, 0.7);
+}
+/*footer above*/
+.center-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.label{
+  margin-left: auto;
+  margin-right: auto;
+  color: pink;
+  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.7), 0px -5px 20px rgba(0, 0, 0, 0.7), 5px 0px 20px rgba(0, 0, 0, 0.7);
+}
+  @media (min-width: 700px){
+  #number,
+  #name,
+  #email{
+    width: 45%;
+    font-size: 3rem;
+  }
+  }
+  
