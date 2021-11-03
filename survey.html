@@ -34,34 +34,36 @@
       <input id="number" type="number" placeholder="Enter your age" min="12" max="50" required>
         </div>
   
-      <p class="label center-text">What do you think about my survey?</p>
+      <label for="dropdown" class="label center-text">What do you think about my survey?</label>
       <select id="dropdown">
         <option value="default">It's interesting.</option>
         <option value="default">It's boring.</option>
         <option value="default">It's fun.</option>
         <option value="default">It's amazing.</option>   
       </select>
-      <p class="label center-text">How can I improve my survey?</p>
+      <label for="improvement" class="label center-text">How can I improve my survey?</label>
+      <div id="improvement">
+        <div class="improvement">
+          <input type="checkbox" name="improvement" value="1">
+          Ask questions that don't have to do with your survey itself.
+          </input>
+      </div>
+      <br>
       <div class="improvement">
-        <input type="checkbox" name="improvement" value="1">
-        Ask questions that don't have to do with your survey itself.
+        <input type="checkbox" name="improvement" value="2">
+        Make it about something you enjoy.
         </input>
-    </div>
-    <br>
-    <div class="improvement">
-      <input type="checkbox" name="improvement" value="2">
-      Make it about something you enjoy.
-      </input>
-    </div>
-    <br>
-    <div class="improvement">
-      <input type="checkbox" name="improvement" value="3">
-      Make it more exciting.
-      </input>
-    </div>
-    <p class="label center-text">What device are you using to take my survey?</p>
+      </div>
+      <br>
+      <div class="improvement">
+        <input type="checkbox" name="improvement" value="3">
+        Make it more exciting.
+        </input>
+      </div>
+      </div>
+    <label for="device" class="label center-text">What device are you using to take my survey?</label>
     <div class="device">
-      <div>
+      <div id="device">
     <input type="radio" name="device" value="1">laptop</input>
     <br>
     <input type="radio" name="device" value="2">desktop</input>
@@ -72,7 +74,7 @@
     </div>
     </div>
     <br>
-    <p class="comment-label label">Any additional comments?</p>
+    <label for="comment" class="comment-label label">Any additional comments?</label>
     <textarea id="comment" placeholder="Add additional comments here." rows=4 cols=40></textarea>
     <br>
     <input id="submit" type="submit" value="Submit">
