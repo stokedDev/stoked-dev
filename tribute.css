@@ -20,7 +20,7 @@ body{
   }
   
   img{
-    max-width: 90%;
+    width: 290px;
     display: block;
     margin: auto;   
   }
