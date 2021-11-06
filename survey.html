@@ -7,6 +7,7 @@
     <meta name="description" content="My freeCodeCamp survey project">
     <meta name="author" content="Maurice Rogers">
     <title>Survey Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../mo-portfolio/survey.css">
 </head>
 <body>
@@ -41,50 +42,67 @@
         <option value="default">It's fun.</option>
         <option value="default">It's amazing.</option>   
       </select>
-      <label for="improvement" class="label center-text">How can I improve my survey?</label>
-      <div id="improvement">
-        <div class="improvement">
-          <input type="checkbox" name="improvement" value="1">
-          Ask questions that don't have to do with your survey itself.
-          </input>
+      <div class="improve">
+      <label for="improvement" class="label center-text">How can you improve?</label>
+        <div>
+          <label>
+            <input type="checkbox" name="improvement" value="healthier">
+            Become healthier
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="improvement" value="wiser">
+            Become wiser
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="improvement" value="happier">
+            Become happier
+          </label>
+          <br>
+          <label>
+        <input type="checkbox" name="improvement" value="fun">
+        Have more fun
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="improvement" value="wealthier">
+          Become wealthier
+          </label>
       </div>
-      <br>
-      <div class="improvement">
-        <input type="checkbox" name="improvement" value="2">
-        Make it about something you enjoy.
-        </input>
-      </div>
-      <br>
-      <div class="improvement">
-        <input type="checkbox" name="improvement" value="3">
-        Make it more exciting.
-        </input>
-      </div>
-      </div>
-    <label for="device" class="label center-text">What device are you using to take my survey?</label>
+    </div>
+      <div class="form-control">
+    <label class="label center-text">What device are you using to take my survey?</label>
     <div class="device">
-      <div id="device">
-    <input type="radio" name="device" value="1">laptop</input>
+    <label for="laptop">
+      <input id="laptop" type="radio" name="device" value="laptop">laptop</input>
+    </label>
     <br>
-    <input type="radio" name="device" value="2">desktop</input>
+      <label for="desktop">
+        <input id="desktop" type="radio" name="device" value="desktop">desktop</input>
+      </label>
+      <br>
+<label for="tablet">
+  <input id="tablet" type="radio" name="device" value="tablet">tablet</input>
+</label>
+<br>
+<label for="phone">
+  <input id="phone" type="radio" name="device" value="phone">phone</input>
+</label>    
+</div>
+</div>
     <br>
-    <input type="radio" name="device" value="2">tablet</input>
-    <br>
-    <input type="radio" name="device" value="2">phone</input>
-    </div>
-    </div>
-    <br>
-    <label for="comment" class="comment-label label">Any additional comments?</label>
-    <textarea id="comment" placeholder="Add additional comments here." rows=4 cols=40></textarea>
+    <label for="comment" class="comment-label label">Have a comment to share?</label>
+    <textarea id="comment" placeholder="Feel free to add a comment here." rows=4 cols=40></textarea>
     <br>
     <input id="submit" type="submit" value="Submit">
     </form>
     </div>
     <footer>
       <nav>
-        <a class="ftr-nav-link" href="../mo-portfolio/index.html">Back to portfolio</a>
+        <a class="ftr-nav-link" href="../mo-portfolio/index.html">See my portfolio</a>
         </nav>
-        <h4 class="copy-right">&copy; 2021 Maurice Rogers</h4>
+        <p class="copy-right">&copy; 2021 Maurice Rogers</p>
   </footer>
 </body>
 </html>

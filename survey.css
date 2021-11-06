@@ -8,7 +8,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: helvetica;
+    font-family: 'Comfortaa', cursive;
   }
   form {
     margin-left: auto;
@@ -17,6 +17,7 @@ html{
   }
   h1{
     margin-bottom: 0;
+    text-shadow: -5px 5px 20px rgba(255, 255, 255, 0.7), 0px -5px 20px rgba(255, 255, 255, 0.7), 5px 0px 20px rgba(255, 255, 255, 0.7);
     text-align: center;
   }
   .description{
@@ -64,20 +65,12 @@ html{
     flex-direction: column;
     align-items: center;
   }
-  .improvement{
-    margin-bottom: .1rem;
-  }
-  .device{
+  .improve{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .device input{
-    margin-bottom: 3rem;
-  }
-  .device input:last-child{
-    margin-bottom: 0;
-  }
+
   #comment {
     font-size: 2rem;
     width: 90%;
@@ -101,20 +94,24 @@ html{
     display: flex;
     flex-direction: column;
   }
-  #name-label{
-    margin-bottom: 2rem;
-  }
-  #email-label{
-    margin-bottom: 2rem;
-  }
-  #number-label{
-    margin-bottom: 2rem;
-  }
+  
   input,
   .input,
   select{
     margin-left: auto;
     margin-right: auto;
+  }
+  .form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #tablet,
+  #phone,
+  #desktop,
+  #laptop{
+    width: auto;
   }
 /* footer below */
 footer{
@@ -147,8 +144,8 @@ footer{
 .label{
   margin-left: auto;
   margin-right: auto;
-  color: pink;
-  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.7), 0px -5px 20px rgba(0, 0, 0, 0.7), 5px 0px 20px rgba(0, 0, 0, 0.7);
+  color: white;
+  text-shadow: -5px 5px 20px rgba(0, 0, 0, 1), 0px -5px 20px rgba(0, 0, 0, 1), 5px 0px 20px rgba(0, 0, 0, 1);
 }
 label{
   padding-top: 3rem;
