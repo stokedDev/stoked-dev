@@ -1,3 +1,4 @@
+<!-- Make this about a specific programming feature -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,15 +14,13 @@
     <div class="alpha-bg">
         <nav id=navbar>
           <header>
-            <h1 class="navbar-header">JavaScript</h1>
+            <h1 class="navbar-header">aLittleAboutJS</h1>
           </header>
           <ul class="nav-list">
           <li><a href="#What_is_Java_Script?" class="nav-link">What is JavaScript?</a></li>
             <li><a href="#How_to_learn_JS" class="nav-link">How to learn JS</a></li>
-            <li><a href="#Variables" class="nav-link">Variables</a></li>
-        
-            <li><a href="#Conditionals" class="nav-link">Conditionals</a></li>
-         
+            <li><a href="#Variables" class="nav-link">Variables</a></li>       
+            <li><a href="#Conditionals" class="nav-link">Conditionals</a></li>         
             <li><a href="#DOM_Manipulation" class="nav-link">DOM Manipulation</a></li>
           </ul>
         </nav>
@@ -30,25 +29,28 @@
             <header>
               <h2>What is JavaScript?</h2>
             </header>
-            <code>let sumNum = num => num + num;</code>
-            <p>JavaScript is the most popular programming language of web development.</p>
-            <p>JS(JavaScript) is an interpreted language, which basically means that it is meant to be easier for humans to read.</p>
+            <code>let addition = num => num + num;</code>
+            <p>JavaScript is one of the main programming languages used for frontend web development.</p>
+            <p>JavaScript is also one of the main programming languages used for backend web development.</p>
             <ul>
-              <li>JavaScript has undergone many important changes, while still allowing older JS code to function.</li>
+              <li>
+                JS can be used on the frontend to dynamically change a client-facing web page based on user input.
+              </li>
+              <li>
+                JS can be used on the backend but as of November 2021, it isn't always the most useful backend language.
+              </li>
             </ul>
           </section>
             <section class="main-section" id="How_to_learn_JS">
             <header>
               <h2>How to learn JS</h2>
             </header>
-            <code>var learnJS = 'Using var when first starting out may help you understand the code';</code>
+            <p>There are many ways to learn JS but here are a few ways.</p>
             <p>freeCodeCamp.org is a great way to get started.</p>
+            <p>Mozilla Developer Network will be very helpful while learning.</p>
             <p>Youtube tutorials can be a tedious way to learn, I recommend using Scrimba, a website with interactive coding tutorials.</p>
-            <ul>
-              <li>One helpful technique for learning JS is constantly writing your own functional code.</li>
-            </ul>
           </section>
-            <section class="main-section" id="Variables">
+            <section class="main-section" id="Variables" class="variables">
             <header>
               <h2>Variables</h2>
             </header>
@@ -69,31 +71,19 @@
             <header>
               <h2>Conditionals</h2>
             </header>
-            <code>if (age >= 21) {
+            <code>if (height >= 4) {
               <br>
-              console.log('You are old enough');
+              console.log('You are tall enough to ride this roller coaster.');
               <br>
-              }</code>
+              }
+            </code>
               <p>
-                "Conditionals", short for "conditional statements" are used to solve problems that require conditions. A Conditional's result may vary just like how people's opinions of something may vary. For example, an apple will be liked by someone if they like the apple's color, and someone else might like that same apple because of it's taste, but then if someone else dislikes the apple completely then you have different results for who likes or dislikes the apple because of different reasons for each person. Here's some pseudo code to demonstrate this logic.
+                A conditional is how javascript or any other programming language can use boolean logic to get an answer based on that boolean logic. Boolean logic refers to what determines a value to be true or false.
                 <br>
                 <br>
-         
-                <code>
-                  function appleOpinion(person){
-                  if(person likes apples){
-                  return why;
-                  } else {
-                  return person dislikes apples; 
-                  }
-                  };
-                </code>
               </p>
-            <p>The following are examples of JS conditionals: if, else if, else, switch statements.</p>
-            <p>These can be used to solve problems based on possible factors.</p>
-            <ul>
-              <li>The if statement is the most common type of conditional.</li>
-            </ul>
+            <p>The following are examples of JS conditionals: if, else if, else, switch statements, ternaries.</p>
+            <p>These can be used to dynamically solve problems based on possible factors.</p>
           </section>
             <section class="main-section" id="DOM_Manipulation">
             <header>

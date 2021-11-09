@@ -20,12 +20,8 @@ html{
   /*NAVBAR CSS STARTS HERE*/
    .navbar-header {
     text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
-     color: rgb(255, 111, 0);
     margin-top: .2rem;
-    border-bottom: 5px solid rgb(255, 111, 0);
-     width: 17rem;
-     margin-left: auto;
-     margin-right: auto;
+     margin-left: 3rem;
      padding-bottom: .2rem;
   }
   #navbar a {
@@ -54,7 +50,7 @@ html{
     margin-top: 0;
     background-color: rgba(0,0,0,.5);
     border-radius: 2rem;
-    padding: 0 1rem;
+    padding: 0 3rem;
   }
   #DOM_Manipulation{
     width: 90%;
@@ -68,6 +64,9 @@ html{
   code {
     background-color: rgba(255, 255, 255, .15);
     color:lime;
+  }
+  #Variables code{
+    margin-bottom: 2rem;
   }
   .code{
     font-size: 1.5rem;
