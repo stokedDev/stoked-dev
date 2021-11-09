@@ -41,8 +41,9 @@ html{
     margin-bottom: 3rem;
   }
   /*NAVBAR CSS ENDS HERE*/
-  
-  
+  li{
+    margin-bottom: 2rem;
+  }
   #main-doc{
     display: flex;
     flex-direction: column;
