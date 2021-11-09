@@ -134,8 +134,8 @@ h4{
   width: 200px;
 }
 #contact-section{
-  
   padding-top: 5rem;
+  display: flex;
 }
 .accent-text{
   font-size: 1em;
@@ -143,12 +143,14 @@ h4{
   display: block;
 }
 .profile-link{
-  text-decoration: none;
-  border-bottom: 3px solid blue;
-  font-weight: 300;
-  font-size: 2.5rem;
-  color: blue;
-  margin-bottom: 1rem;
+  width: 150px;
+}
+.linkedin{
+  margin-bottom: 0;
+}
+.github{
+  margin-top: -3rem;
+  margin-bottom: 4rem;
 }
 footer{
   display: flex;
