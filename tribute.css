@@ -48,8 +48,12 @@ body{
 table,
 th,
 tr{
+  border-collapse: collapse;
   padding: 5px;
   border: 1px solid #ffff00;
+}
+.first-song{
+  font-size: .95rem;
 }
 .wiki-link{
   margin-top: 3rem;
@@ -74,6 +78,11 @@ footer{
 .copy-right{
   text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
   font-size: 1.7rem;
+}
+@media(min-width: 360px){
+  .first-song{
+    font-size: 1.1rem;
+  }
 }
   @media (min-width: 890px){
     section{
