@@ -133,24 +133,22 @@ h4{
 .dice-game{
   width: 200px;
 }
-#contact-section{
-  padding-top: 5rem;
-  display: flex;
-}
 .accent-text{
   font-size: 1em;
   font-weight: 900;
   display: block;
 }
+.contact-section{
+  margin-top: 2rem;
+  display: grid;
+  gap: .5rem .5rem;
+  grid-template-columns: 150px 150px;
+}
 .profile-link{
   width: 150px;
 }
-.linkedin{
-  margin-bottom: 0;
-}
-.github{
-  margin-top: -3rem;
-  margin-bottom: 4rem;
+.instagram-logo{
+  width: 100px;
 }
 footer{
   display: flex;
@@ -207,5 +205,10 @@ footer{
     grid-template-columns: repeat(2, 300px);
     grid-gap: 2rem;
     justify-content: center;
+}
+.contact-section{
+  margin-top: 10rem;
+  gap: .5rem .5rem;
+  grid-template-columns: 150px 150px 150px;
 }
 }
