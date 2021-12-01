@@ -147,9 +147,6 @@ h4{
 .profile-link{
   width: 150px;
 }
-.instagram-logo{
-  width: 100px;
-}
 footer{
   display: flex;
   flex-direction: column;
@@ -206,9 +203,7 @@ footer{
     grid-gap: 2rem;
     justify-content: center;
 }
-.contact-section{
+ .contact-section{
   margin-top: 10rem;
-  gap: .5rem .5rem;
-  grid-template-columns: 150px 150px 150px;
 }
 }
