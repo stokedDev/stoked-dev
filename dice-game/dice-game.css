@@ -71,6 +71,7 @@ footer{
     text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.97), 0px -5px 20px rgba(0, 0, 0, 0.97), 5px 0px 20px rgba(0, 0, 0, 0.97);
     color: rgb(255, 205, 164);
     font-size: 1.5rem;
+    margin-top: 2em;
   }
   /*footer above*/
 @keyframes growShrink{
