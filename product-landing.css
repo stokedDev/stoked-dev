@@ -109,7 +109,7 @@ body{
     transition: width .5s ease;
     outline: none;
     background-color: rgba(0, 153, 255, 0.555);
-    color:tomato;
+    color:yellow;
   }
   ::placeholder{
       color: yellow;
