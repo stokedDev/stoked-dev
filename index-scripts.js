@@ -10,4 +10,7 @@ const projectsBtn = document.querySelector(".projects");
 const contactBtn = document.querySelector(".contact");
 /* nav div classes end here*/
 
-function 
+function pageChanged(isTrue){
+    
+}
+/*  */
