@@ -9,6 +9,8 @@
     <title>Stoked Dev Portfolio</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../mo-portfolio/carousel/carousel-styles.css">
+    <script defer src="../mo-portfolio/carousel/carousel.js"></script>
     <link rel="stylesheet" href="../mo-portfolio/index.css">
 </head>
 <body>
@@ -16,15 +18,14 @@
         <div class="topnav">
           <nav id="navbar">
             <ul class="nav-list">
-              <li class="about"><a class="nav-link" href="#welcome-section">About</a></li>
-              <li class="projects"><a class="nav-link" href="#projects">Projects</a></li>
-              <li class="contact"><a class="nav-link" href="#contact-section">Contact</a></li>
+              <li class="aboutBtn nav-link">About</li>
+              <li class="projectsBtn nav-link">Projects</li>
+              <li class="contactBtn nav-link">Contact</li>
             </ul>
           </nav>
         </div>
         
-        <section id="welcome-section">
-          <div class="welcome-text">
+        <section id="welcome-section" class="carousel-item carousel-item-visible">
             <h4><span class="accent-text">Hello,</span>I'm 
               Maurice</h4>
             <h4><span class="accent-text">The Self Driven</span> 
@@ -32,12 +33,10 @@
               <span class="education">Scrimba,</span>
               <span class="education">and self-taught</span>
               <span class="accent-text">Front End Web Developer</span></h4>
-            <h4 class="last-welcome-h4">Below are links to some of my projects<span class="accent-text last-accent-text">
+            <h4 class="last-welcome-h4"> Check out some of my projects<span class="accent-text last-accent-text">
               that I built from scratch!</span></h4>
-            
-          </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="carousel-item">
           
           <div class="projects">
             
@@ -103,11 +102,31 @@
                   </a>
           </div>
         </section>
-        <section id="contact-section">
-        <div class="contact-section">
-            <a href="https://www.linkedin.com/in/stokeddev" rel="noopener" target="_blank"><img src="images/linkedin-logo.png" alt="Linkedin logo" class="profile-link linkedin"></a>
-            <a href="https://github.com/stokedDev" rel="noopener" target="_blank"><img src="images/GitHub-logo.png" alt="Github logo" class="profile-link github"></a>
-        </div>
+        <section id="contact-section" class="carousel-item">
+          <div class="contact-container">
+            <p class="contact-description">
+              Feel free to contact me through whichever social platform (listed below) works best for you.
+            </p>
+              <div class="profile-links">
+                <a href="https://www.linkedin.com/in/stokeddev" rel="noopener" target="_blank"><img src="images/linkedin-logo.png" alt="Linkedin logo" class="profile-link linkedin"></a>
+                <a href="https://github.com/stokedDev" rel="noopener" target="_blank"><img src="images/GitHub-logo.png" alt="Github logo" class="profile-link github"></a>
+                <a href="https://www.instagram.com/stokeddev/" rel="noopener" target="_blank"><img src="images/instagram-logo.png" alt="Instagram logo" class="profile-link instagram"></a>
+            </div>
+            <p class="contact-description">
+              I'm interested in the following:
+            </p>
+            <ul class="contact-list">
+              <li>Providing advice</li>
+              <li>Coding your web designs</li>
+              <li>Networking with developers</li>
+              <li>Networking with businesses</li>
+              <li>Getting good reviews</li>
+              <li>Making people happy</li>
+              <li>Getting feedback</li>
+              <li>Networking with everyone</li>
+            </ul>
+          </div>
+        
         </section>
         <footer>
           <nav>
