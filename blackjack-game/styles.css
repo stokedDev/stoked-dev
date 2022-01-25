@@ -15,6 +15,7 @@ h1{
 }
 #message{
     font-style: italic;
+    max-width: 292px;
 }
 button{
     font-size: 1.5rem;

@@ -33,10 +33,14 @@ function renderGame(){
     if(sum < 21){
         message = "Do you want to pick a new card?";
     } else if(sum === 21){
-        message = "You got Blackjack.";
+        message = `🎉 Congrats! You got Blackjack.💰 
+
+        Start game again?`;
         hasBlackjack = true;
     } else {
-        message = "You're out of the game.";
+        message = `You're out of the game.
+
+        Start game again?`;
         isAlive = false;
     }
     messageDisplay.textContent = message;
