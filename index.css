@@ -70,6 +70,12 @@ h2{
   font-size: 2.1rem;
   text-align: center;
 }
+.projects-title{
+  font-size: 3rem;
+  letter-spacing: .6rem;
+  color: rgb(252, 220, 39);
+  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.90), 0px -5px 20px rgba(0, 0, 0, 0.90), 5px 0px 20px rgba(0, 0, 0, 0.90);
+}
 h3{
   text-align: center;
   font-size: 3rem;
