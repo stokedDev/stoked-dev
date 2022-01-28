@@ -151,6 +151,9 @@ label{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+#submit{
+  cursor: pointer;
+}
   @media (min-width: 700px){
   #number,
   #name,
