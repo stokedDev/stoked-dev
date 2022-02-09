@@ -8,7 +8,7 @@ function hideAllSlides(){
 
 /* nav div classes buttons */
 const aboutBtn = document.querySelector(".aboutBtn");
-const projectsBtn = document.querySelector(".projectsBtn");
+const projectsBtn = document.querySelectorAll(".projectsBtn");
 const contactBtn = document.querySelector(".contactBtn");
 /* nav div classes buttons end here*/
 
@@ -17,10 +17,13 @@ aboutBtn.addEventListener('click', function(){
     slidePosition = 0;
     slides[slidePosition].classList.add('carousel-item-visible');
 })
-projectsBtn.addEventListener('click', function(){
+projectsBtn.forEach(el => {
+    el.addEventListener('click', function(){
     hideAllSlides();
         slidePosition = 1;
     slides[slidePosition].classList.add('carousel-item-visible');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    })
 })
 contactBtn.addEventListener('click', function(){
     hideAllSlides();
