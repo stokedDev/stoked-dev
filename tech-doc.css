@@ -73,6 +73,13 @@ html{
     margin-left: auto;
     margin-right: auto;
     line-height: 1.13em;
+    text-shadow: none;
+    background: rgba(0,0,0,.4);
+    border-radius: .9em;
+    padding: .3em;
+  }
+  .disclaimer a{
+    color: rgb(0, 208, 255);
   }
  
   code {

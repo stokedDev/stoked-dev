@@ -149,7 +149,9 @@ h4{
   gap: .5rem .5rem;
   grid-template-columns: 150px 150px;
 }
-
+.invisible{
+  display: none;
+}
 .contact-container{
   letter-spacing: .05em;
   color: rgb(252, 220, 39);

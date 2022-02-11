@@ -14,34 +14,37 @@
     const domBtn = document.querySelectorAll(".domBtn");
     /* nav classes buttons end here*/
     
-    whatBtn.addEventListener('click', function(){
+
+    whatBtn.forEach(el =>
+        el.addEventListener('click', function(){
         hideAllSlides();
         slidePosition = 0;
         slides[slidePosition].classList.add('carousel-item-visible');
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    })
-    howBtn.addEventListener('click', function(){
+    }))
+    howBtn.forEach(el => 
+        el.addEventListener('click', function(){
         hideAllSlides();
         slidePosition = 1;
         slides[slidePosition].classList.add('carousel-item-visible');
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    })
-    varBtn.addEventListener('click', function(){
+    }))
+    varBtn.forEach(el => el.addEventListener('click', function(){
         hideAllSlides();
             slidePosition = 2;
         slides[slidePosition].classList.add('carousel-item-visible');
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    })
-    condBtn.addEventListener('click', function(){
+    }))
+    condBtn.forEach(el => el.addEventListener('click', function(){
         hideAllSlides();
         slidePosition = 3;
         slides[slidePosition].classList.add('carousel-item-visible');
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    })
-    domBtn.addEventListener('click', function(){
+    }))
+    domBtn.forEach(el => el.addEventListener('click', function(){
         hideAllSlides();
         slidePosition = 4;
         slides[slidePosition].classList.add('carousel-item-visible');
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    })
+    }))
     
