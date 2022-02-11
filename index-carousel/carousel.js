@@ -20,14 +20,14 @@ aboutBtn.addEventListener('click', function(){
 projectsBtn.forEach(el => {
     el.addEventListener('click', function(){
     hideAllSlides();
-        slidePosition = 1;
+    slidePosition = 1;
     slides[slidePosition].classList.add('carousel-item-visible');
     window.scrollTo({ top: 0, behavior: 'smooth' });
     })
 })
 contactBtn.addEventListener('click', function(){
     hideAllSlides();
-        slidePosition = 2;
+    slidePosition = 2;
     slides[slidePosition].classList.add('carousel-item-visible');
 })
 

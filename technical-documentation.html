@@ -1,4 +1,3 @@
-<!-- Make this about a specific programming feature -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,7 @@
     <title>Technical Documentation Page</title>
     <link href="tech-doc.css" rel="stylesheet">
     <link href="./tech-doc-carousel/carousel-styles.css" rel="stylesheet" />
+    <script defer src="./tech-doc-carousel/carousel.js"></script>
 </head>
 <body class="alpha-bg">
   <div class="container">
@@ -25,7 +25,7 @@
         </ul>
       </nav>
       <h3 class="disclaimer">
-        This webpage is just meant to be a sample of my frontend development ability. I actually know a lot more about JS but I'm not trying to reinvent the wheel when MDN has JS documentation covered. Thank you for reading.❤️
+        This webpage is just meant to be a sample of my frontend development ability. I actually know a lot more than this about JS but I'm not trying to reinvent the wheel when MDN has JS documentation covered. Thank you for reading.❤️
       </h3>
       </header>
         
@@ -149,6 +149,15 @@
           </div>
           <footer>
             <nav>
+              <ul class="nav-list ftr-nav-visible">
+                <li class="nav-link whatBtn">What is JavaScript?</li>
+                <li class="nav-link howBtn">How to learn JS</li>
+                <li class="nav-link varBtn">Variables</li>       
+                <li class="nav-link condBtn">Conditionals</li>         
+                <li class="nav-link domBtn">DOM Manipulation</li>
+              </ul>
+            </nav>
+            <nav>
               <a class="ftr-nav-link" href="index.html">
                 See my portfolio
               </a>
@@ -157,6 +166,5 @@
                 &copy; 2021 Maurice Rogers
               </p>
         </footer>
-        <script src="./tech-doc-carousel/carousel.js"></script>
 </body>
 </html>

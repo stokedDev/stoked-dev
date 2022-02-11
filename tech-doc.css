@@ -31,7 +31,8 @@ html{
     background-color: blue;
     color: white;
     font-size: 1.9rem;
-    padding: 1rem 2rem;
+    width: 255px;
+    padding: .5em 1em;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -41,12 +42,12 @@ html{
   .nav-link:focus{
     background-color: rgba(0,0,255,.5);
   }
-  .nav-list {
+  .nav-list,
+  .ftr-nav-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
   }
   /*NAVBAR CSS ENDS HERE*/
   section li{
@@ -62,7 +63,7 @@ html{
     margin-top: 0;
     background-color: rgba(0,0,0,.5);
     border-radius: 2rem;
-    padding: 2em;
+    padding: 1em;
   }
   h2{
     text-align: center;
@@ -73,11 +74,7 @@ html{
     margin-right: auto;
     line-height: 1.13em;
   }
-  @media (max-width: 1023px){
-    .disclaimer{
-      display: none;
-    }
-  }
+ 
   code {
     background-color: rgba(255, 255, 255, .15);
     color:lime;
@@ -94,22 +91,37 @@ html{
   footer{
     margin-top: 2rem;
   }
+  
   .ftr-nav-link{
     text-decoration: none;
     text-align: center;
     background-color: rgb(63, 210, 58);
     color: rgb(255, 255, 255);
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     padding: .5em .7em;
     border-radius: 2em;
+    margin-left: .8em;
   }
+
+  .nav-list{
+    margin-left: -2em;
+  }
+
   .copy-right{
     font-weight: 200;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    text-align: center;
     text-shadow: -5px 5px 20px rgba(0, 0, 0,1), 0px -5px 20px rgba(0, 0, 0, 1), 5px 0px 20px rgba(0, 0, 0, 1);
   }
-  footer{
-    margin-top: 4rem;
+  @media (min-width: 1024px){
+    .ftr-nav-visible{
+      display: none;
+    }
+  }
+  @media (max-width: 1023px){
+    .disclaimer{
+      display: none;
+    }
   }
   @media (min-width: 1024px){
   /*NAVBAR CSS STARTS HERE*/
@@ -137,8 +149,6 @@ html{
     }
     
   }
-
-  
   @media (min-width: 640px){
     .code{
       font-size: 2rem;

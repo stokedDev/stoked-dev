@@ -7,11 +7,11 @@
         }
     
     /* nav classes buttons */
-    const whatBtn = document.querySelector(".whatBtn");
-    const howBtn = document.querySelector(".howBtn");
-    const varBtn = document.querySelector(".varBtn");
-    const condBtn = document.querySelector(".condBtn");
-    const domBtn = document.querySelector(".domBtn");
+    const whatBtn = document.querySelectorAll(".whatBtn");
+    const howBtn = document.querySelectorAll(".howBtn");
+    const varBtn = document.querySelectorAll(".varBtn");
+    const condBtn = document.querySelectorAll(".condBtn");
+    const domBtn = document.querySelectorAll(".domBtn");
     /* nav classes buttons end here*/
     
     whatBtn.addEventListener('click', function(){
