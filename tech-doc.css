@@ -14,69 +14,81 @@ html{
     background-attachment: fixed;
     background-size: cover;
     color: rgb(255, 196, 0);
-    font-family: helvetica, sans-serif;
+    font-family: monospace, sans-serif;
   }
-  
+  h1{
+    font-size: 2.8rem;
+    text-align: center;
+  }
   /*NAVBAR CSS STARTS HERE*/
-   .navbar-header {
-    text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
-    margin-top: .2rem;
-     margin-left: 3rem;
-     padding-bottom: .2rem;
-  }
-  #navbar a {
-    background-color: blue;
-    color: white;
-    text-decoration: none;
-    font-size: 2.5rem;
-    padding: .5rem;
-    border-radius: 10px;
-  }
-  
-  .nav-list {
-    list-style: none;
-    margin-bottom: 0;
-  }
-  .nav-list li {
-    margin-bottom: 3rem;
-  }
-  /*NAVBAR CSS ENDS HERE*/
-  li{
-    margin-bottom: 2rem;
-  }
-  #main-doc{
+  .nav-info-header{
+    text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8), 0px -5px 20px rgba(0, 0, 0, 0.8), 5px 0px 20px rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .nav-link {
+    background-color: blue;
+    color: white;
+    font-size: 1.9rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    text-shadow: none;
+  }
+  .nav-link:focus{
+    background-color: rgba(0,0,255,.5);
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  /*NAVBAR CSS ENDS HERE*/
+  section li{
+    margin-bottom: 2rem;
+  }
+  section a{
+    text-decoration: none;
+    border-bottom: solid rgb(0, 238, 255) 3px;
+    color: rgb(0, 238, 255);
+    display: inline;
+  }
+  .main-doc{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
     margin-top: 0;
     background-color: rgba(0,0,0,.5);
     border-radius: 2rem;
     padding: 0 3rem;
   }
-  #DOM_Manipulation{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   h2{
     text-align: center;
   }
-  h3{
-    width: 290px;
+  .disclaimer{
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
+    line-height: 1.13em;
+  }
+  @media (max-width: 1023px){
+    .disclaimer{
+      display: none;
+    }
   }
   code {
     background-color: rgba(255, 255, 255, .15);
     color:lime;
-  }
-  #Variables code{
     margin-bottom: 2rem;
   }
-  #Variables{
-    line-height: 2em;
+  
+  .main-section{
+    line-height: 1.3em;
     max-width: 1000px;
   }
   .code{
@@ -96,53 +108,40 @@ html{
   }
   .copy-right{
     font-weight: 200;
+    font-size: 2.5rem;
+    text-shadow: -5px 5px 20px rgba(0, 0, 0,1), 0px -5px 20px rgba(0, 0, 0, 1), 5px 0px 20px rgba(0, 0, 0, 1);
   }
-  @media (min-width: 1108px){
-    body{
-      display: block;
-    }
+  footer{
+    margin-top: 4rem;
+  }
+  @media (min-width: 1024px){
   /*NAVBAR CSS STARTS HERE*/
-  #navbar a:focus,
-  #navbar a:hover {
+  .nav-link:focus,
+  .nav-link:hover {
     background-color: rgba(0,0,255,.5);
   }
   .nav-info-header{
     position: fixed;
+    right: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list{
+    align-items: flex-end;
+  }
+  .main-doc{
+    margin-left: 30%;
   }
   /*NAVBAR CSS ENDS HERE*/
-    #main-doc{
-      float: right;
-      width: 70%;
-    }
     code{
       margin-left: 1rem;
       display: inline-block;
     }
+    
   }
 
-
-  @media(min-width: 200px) and (max-width: 640px){
-    .nav-list{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-left: -10%;
-    }
-    .toggle-block{
-      display: block;
-    }
-  }
-  @media(min-width: 640px) and (max-width: 861px){
-    .nav-list{
-      margin-left: 30%;
-    }
-  }
-  @media(min-width: 861px) and (max-width: 1108px){
-    .nav-list{
-      margin-left: 35%;
-    }
-  }
+  
   @media (min-width: 640px){
     .code{
       font-size: 2rem;

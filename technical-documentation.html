@@ -9,27 +9,28 @@
     <meta name="description" content="My freeCodeCamp project technical documentation page">
     <title>Technical Documentation Page</title>
     <link href="tech-doc.css" rel="stylesheet">
+    <link href="./tech-doc-carousel/carousel-styles.css" rel="stylesheet" />
 </head>
-<body>
-    <div class="alpha-bg">
+<body class="alpha-bg">
+  <div class="container">
       <header class="nav-info-header">
-        <nav id=navbar>
-          <h1 class="navbar-header">aLittleAboutJS</h1>
+        <h1>aLittleAboutJS</h1>
+        <nav>
         <ul class="nav-list">
-        <li><a href="#What_is_Java_Script?" class="nav-link">What is JavaScript?</a></li>
-          <li><a href="#How_to_learn_JS" class="nav-link">How to learn JS</a></li>
-          <li><a href="#Variables" class="nav-link">Variables</a></li>       
-          <li><a href="#Conditionals" class="nav-link">Conditionals</a></li>         
-          <li><a href="#DOM_Manipulation" class="nav-link">DOM Manipulation</a></li>
+          <li class="nav-link whatBtn">What is JavaScript?</li>
+          <li class="nav-link howBtn">How to learn JS</li>
+          <li class="nav-link varBtn">Variables</li>       
+          <li class="nav-link condBtn">Conditionals</li>         
+          <li class="nav-link domBtn">DOM Manipulation</li>
         </ul>
       </nav>
-      <h3>
-        This webpage is just meant to be an example of my coding ability. I actually know a lot more about JS but I'm not trying to reinvent the wheel when MDN has JS documentation covered. I hope you understand. Thank you for reading.❤️
+      <h3 class="disclaimer">
+        This webpage is just meant to be a sample of my frontend development ability. I actually know a lot more about JS but I'm not trying to reinvent the wheel when MDN has JS documentation covered. Thank you for reading.❤️
       </h3>
       </header>
         
-        <main id="main-doc">
-          <section class="main-section" id="What_is_Java_Script?">
+        <main class="main-doc">
+          <section class="main-section carousel-item carousel-item-visible">
             <header>
               <h2>What is JavaScript?</h2>
             </header>
@@ -45,21 +46,50 @@
               </li>
             </ul>
           </section>
-            <section class="main-section" id="How_to_learn_JS">
+            <section class="main-section carousel-item">
             <header>
               <h2>How to learn JS</h2>
             </header>
             <p>There are many ways to learn JS but here are some of my recommendations.</p>
             <ul>
-              <li>Search on google to find the JavaScript information you need.</li>
-              <li>freeCodeCamp.org is a great way to get started.</li>
-              <li>Mozilla Developer Network will be very helpful while learning.</li>
-              <li>One of my favorite ways to learn JS is from the Net Ninja on YouTube.</li>
-              <li>Scrimba, a website with interactive coding tutorials, makes hands-on learning very convenient.</li>
-              <li>Learning online is only helpful if you are constantly putting into practice what you learn.</li>
+              <li>
+                Search on a good search engine (
+                  <a href="https://www.google.com" rel="noopener" target="_blank">
+                    google, for example
+                  </a>
+                  ) to find the JavaScript information you need.
+              </li>
+              <li>
+                <a href="https://www.freecodecamp.org/" rel="noopener" target="_blank">freeCodeCamp.org</a>
+                 will guide you through a curriculum for free.
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/en-US/" rel="noopener" target="_blank">
+                  Mozilla Developer Network
+                </a> 
+                will be very helpful while learning.
+              </li>
+              <li>
+                One of my favorite ways to learn JS is from the 
+                <a href="https://www.youtube.com/c/TheNetNinja/videos" rel="noopener" target="_blank">
+                  Net Ninja on YouTube
+                </a>.
+              </li>
+              <li>
+                <a href="https://scrimba.com/" rel="noopener" target="_blank">
+                  Scrimba
+                </a>, a website with interactive coding tutorials, makes hands-on learning very convenient.
+              </li>
+              <li><a href="https://exercism.org/" rel="noopener" target="_blank">
+                Exercism
+              </a>offers completely free mentoring and challenges
+            </li>
+              <li>
+                Learning online is only helpful if you are constantly putting into practice what you learn.
+              </li>
             </ul>
           </section>
-            <section class="main-section" id="Variables" class="variables">
+            <section class="main-section carousel-item" class="variables">
             <header>
               <h2>Variables</h2>
             </header>
@@ -81,7 +111,7 @@
               </li>
             </ul>
           </section>
-            <section class="main-section" id="Conditionals">
+            <section class="main-section carousel-item">
             <header>
               <h2>Conditionals</h2>
             </header>
@@ -100,11 +130,11 @@
             <p>The following are examples of JS conditionals: if, else if, else, switch statements, ternaries.</p>
             <p>JS conditionals can be used to dynamically solve problems by using boolean logic to return a result.</p>
           </section>
-            <section class="main-section" id="DOM_Manipulation">
+            <section class="main-section carousel-item">
             <header>
               <h2>DOM Manipulation</h2>
             </header>
-              <code class="code">const HEADER = document<span class="toggle-block">.getElementsByTagName('h1')[0]</span></code>
+              <code class="code">const HEADER = document<br>.getElementsByTagName('h1')[0]</span></code>
               <p>
                 The DOM (Document Object Model), allows a JS file to interact with any HTML file that links to the JS file path.
               </p>
@@ -115,14 +145,18 @@
               <li>All style values in JS are declared inside quotes.</li>
             </ul>
           </section>
+          </main>
+          </div>
           <footer>
             <nav>
-              <a class="ftr-nav-link" href="index.html">See my portfolio</a>
+              <a class="ftr-nav-link" href="index.html">
+                See my portfolio
+              </a>
               </nav>
-              <p class="copy-right">&copy; 2021 Maurice Rogers</p>
+              <p class="copy-right">
+                &copy; 2021 Maurice Rogers
+              </p>
         </footer>
-        </main>
-        </div>
-        
+        <script src="./tech-doc-carousel/carousel.js"></script>
 </body>
 </html>
