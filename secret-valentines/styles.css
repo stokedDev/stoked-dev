@@ -1,12 +1,11 @@
 *{
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
   }
   .outer-container{
     background: url("../images/bethany-hamilton-animation-by-laura-feller.gif");
     width: 500px;
     background-repeat: no-repeat;
-    margin-top: 70px;
+    margin-top: 0;
   }
   body,
   .container,
@@ -15,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     letter-spacing: .15em;
+    font-family: 'Nunito', sans-serif;
   }
   .container{
     background: rgba(0,100,255,.6);
@@ -52,4 +52,8 @@
   .my-copyright{
     color: #0074D9;
   }
-  
+  @media (min-width: 1024px){
+      .outer-container{
+        margin-top: 70px;
+      }
+  }
