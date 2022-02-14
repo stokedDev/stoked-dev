@@ -17,6 +17,9 @@ h1{
     text-align: center;
     margin: 0;
 }
+.description{
+    text-align: center;
+}
 .block-text{
     display: block;
 }
