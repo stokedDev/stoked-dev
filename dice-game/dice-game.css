@@ -10,6 +10,7 @@ h1{
 .container{
     background-color: rgb(255, 255, 255);
     padding:10px;
+    border-radius: 2rem;
     width: 90%;
     text-align: center;
     margin: 50px auto 0;
