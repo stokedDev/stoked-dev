@@ -4,7 +4,7 @@
 }
 .carousel-item-visible{
     display: block;
-    animation: fadeVisibility 0s;
+    animation: fadeVisibility .5s;
 }
 
 @keyframes fadeVisibility{

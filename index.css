@@ -170,6 +170,10 @@ h4{
 .profile-link{
   width: 150px;
 }
+.twitter{
+  border-radius: 2rem;
+  width: 120px;
+}
 footer{
   text-align: center;
   font-size: 2.5rem;
