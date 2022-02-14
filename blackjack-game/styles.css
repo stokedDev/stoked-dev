@@ -24,6 +24,7 @@ button{
     border: none;
     border-radius: 1em;
     color: green;
+    cursor: pointer;
 }
 button:first-of-type{
     margin-bottom: .8rem;
