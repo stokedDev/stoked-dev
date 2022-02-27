@@ -164,6 +164,9 @@ h4{
   text-align: center;
   max-width: 450px;
 }
+.contact-description-inner{
+  padding: 1em;
+}
 .contact-list{
   font-size: 2rem;
 }
