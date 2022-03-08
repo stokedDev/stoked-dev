@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My freeCodeCamp survey project">
+    <meta name="author" content="Maurice Rogers">
+    <title>Survey Project</title>
+    <link rel="stylesheet" href="survey.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <p class="message toggle-visible">Thanks for sharing!</p>
+    <!-- swap checkboxes for radio buttons and vice versa -->
+    <form id="survey-form">
+      <h1>Maurice's Survey Project</h1>
+      <div class="basic-info">
+      <label id="name-label" class="label" for="name">
+      What is your name?
+      </label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="basic-info">
+      <label id="email-label" class="label" for="email">
+      What is your email?
+      </label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="basic-info">
+      <label id="number-label" class="label" for="number">
+      What is your age?
+      </label>
+      <input id="number" type="number" placeholder="Enter your age" min="12" max="50" required>
+        </div>
+  
+      <label for="dropdown" class="label center-text">thoughts on survey</label>
+      <select id="dropdown">
+        <option value="default">It's interesting.</option>
+        <option value="default">It's boring.</option>
+        <option value="default">It's fun.</option>
+        <option value="default">It's amazing.</option>   
+      </select>
+      <br>
+        <fieldset>
+      <legend>How can you improve?</legend>
+      <div>
+        <div>
+          <input type="checkbox" name="healthier" id="healthier" value="healthier">
+          <label for="healthier">
+            Become healthier
+          </label>
+          </div>
+          
+          <div>
+              <input type="checkbox" name="wiser" id="wiser" value="wiser">
+              <label for="wiser">
+              Become wiser
+            </label>
+          </div>
+          
+          <div>
+              <input type="checkbox" name="happier" id="happier" value="happier">
+              <label for="happier">
+              Become happier
+            </label>
+          </div>
+          <div>
+              <input type="checkbox" name="more-fun" id="more-fun" value="more-fun">
+              <label for="more-fun">
+              Have more fun
+              </label>
+          </div>
+          
+          
+        
+        <div>
+            <input type="checkbox" name="wealthier" id="wealthier" value="wealthier">
+            <label for="wealthier">
+            Become wealthier
+            </label>
+        </div>
+      </div>
+          </fieldset>
+    <fieldset>
+    <legend>your device</legend>
+    <div>
+      <div>
+        <input id="laptop" type="radio" name="device" value="laptop">
+        <label for="laptop">laptop</label>
+      </div> 
+    <br>
+    <div>
+      <input id="desktop" type="radio" name="device" value="desktop">
+      <label for="desktop">desktop</label>
+    </div>
+      <br>
+      <div>
+          <input id="tablet" type="radio" name="device" value="tablet">
+          <label for="tablet">tablet</label>
+      </div>
+<br>
+<div>
+  <input id="phone" type="radio" name="device" value="phone">
+  <label for="phone">phone</label>
+  </div>
+</div>    
+</fieldset>
+    <br>
+    <fieldset>
+      <label for="comment" class="comment-label label">Have a comment to share?</label>
+      <textarea id="comment" placeholder="Feel free to add a comment here." rows=4 cols=40></textarea>
+    </fieldset>
+    <br>
+    <input id="submit" type="submit" value="Submit">
+  </div>
+    </form>
+    
+    <footer>
+      <nav>
+        <a class="ftr-nav-link" href="../index.html">See my portfolio</a>
+        </nav>
+        <p class="copy-right">&copy; 2021 Maurice Rogers</p>
+  </footer>
+</body>
+</html>
+    
