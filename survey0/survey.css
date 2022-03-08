@@ -11,7 +11,7 @@ html{
     align-items: center;
     font-family: Helvetica, sans-serif;
   }
-  .toggle-visible{
+  .message{
       display: none;
   }
   form {
@@ -160,8 +160,9 @@ label{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-#submit{
+.submit{
   cursor: pointer;
+  font-size: 4rem;
 }
   @media (min-width: 700px){
   #number,
