@@ -2,6 +2,7 @@ html{
     font-size: 10px;
   }
   body {
+    font-family: 'Nunito', sans-serif;
     background: linear-gradient(90deg, rgba(166,207,112,0.9154849439775911) 0%, rgba(246,222,122,0.8818714985994398) 53%, rgba(255,22,0,0.6157650560224089) 100%);
     font-size: 2.5rem;
     color: black;
@@ -9,7 +10,6 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Helvetica, sans-serif;
   }
   .message{
       display: none;
