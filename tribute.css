@@ -22,7 +22,8 @@ body{
   img{
     width: 290px;
     display: block;
-    margin: auto;   
+    margin: auto; 
+    border-radius: 1rem;  
   }
   #img-caption {
     text-align: center;
