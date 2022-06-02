@@ -28,7 +28,7 @@ html{
     align-items: center;
   }
   .nav-link {
-    background-color: blue;
+    background-color: rgba(96, 255, 5, 0.541);
     color: white;
     font-size: 1.9rem;
     width: 255px;
