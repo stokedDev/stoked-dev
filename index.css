@@ -136,6 +136,19 @@ h4{
   margin-bottom: -1rem;
   margin-top: 0;
 }
+.lang-intro{
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: -8.6rem;
+  margin-top: 0;
+}
+.lang-hr{
+  border-bottom: white solid 2px;
+  margin-bottom: -.2rem;
+}
 .dice-game{
   width: 200px;
 }
@@ -254,5 +267,10 @@ footer{
   }
   .last-welcome-h4:hover{
     background-color: rgba(0, 0, 0, .5);
+  }
+}
+@media (max-width: 1020px){
+  .surf-game{
+    display: none;
   }
 }
