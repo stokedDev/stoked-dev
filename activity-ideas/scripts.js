@@ -1,8 +1,7 @@
-const crypto = document.querySelector('.crypto')
 const idea = document.querySelector('.idea')
 const btn = document.querySelector('#btn')
 btn.addEventListener('click', function(){
-    fetch('https://www.boredapi.com/api/activity/')
+    fetch('http://www.boredapi.com/api/activity/')
 .then(response => response.json())
 .then(data => {
     idea.textContent = data.activity;
