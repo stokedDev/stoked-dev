@@ -120,6 +120,7 @@ h4{
   text-align: center;
   text-decoration: none;
   font-weight: 300;
+  margin: .2rem auto;
 }
 .project-image{
   width: 250px;
@@ -132,8 +133,8 @@ h4{
   color: white;
   text-align: center;
   text-decoration: none;
-  margin-bottom: -1rem;
-  margin-top: 0;
+  margin-bottom: -2rem;
+  margin-top: .2rem;
 }
 .lang-intro{
   font-size: 2rem;
@@ -141,12 +142,10 @@ h4{
   color: white;
   text-align: center;
   text-decoration: none;
-  margin-bottom: -8.6rem;
-  margin-top: 0;
-}
-.lang-hr{
-  border-bottom: white solid 2px;
+  padding: 0 5px;
+  border-bottom: 2px white solid;
   margin-bottom: -.2rem;
+  margin-top: 0;
 }
 .dice-game{
   width: 200px;
@@ -206,9 +205,7 @@ h4{
 .github-img{
   padding-top: 1rem;
 }
-.bored-api{
-  display: none;
-}
+
 footer{
   text-align: center;
   font-size: 2.5rem;
