@@ -18,6 +18,7 @@ function getRandomCard(){
 }
 function startGame(){
     isAlive = true;
+    hasBlackjack = false;
     let firstCard = getRandomCard();
     let secondCard = getRandomCard();
     sum = firstCard + secondCard;
