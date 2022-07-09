@@ -1,4 +1,30 @@
 {
     "title": "Zero Uno",
-    "author": "Maurice Scott Rogers"
+    "author": "Maurice Scott Rogers",
+    "storage": "local-storage",
+    "levels": [
+        "zeroEnv": {
+            "mood": ["dark", "irritating", "sad"],
+            "obstacles": {
+                "height": "smallest",
+                "restriction": ""
+            }
+        }
+    ],
+    "chars":[
+        {
+            "isProChar": true,
+            "name": "Zeruno",
+            "problems":
+                {
+                    "nothing": [
+                        {
+                        "reason": "There's so much nothing that's it's hard to find or even have something meaningful.",
+
+                    }
+                ],
+                    "brokenness": "Trauma has caused "
+                }
+        }
+    ]
 }
