@@ -5,11 +5,10 @@ My website https://www.stokeddev.com , which this repository belongs to is of th
 
 Here are projects that took me less than a month total to build including the entire stokeddev website.
 
-It is my goal to make stokeddev.com as beautiful as it can be but as of now it is only a little sample of what I'm actually capable of.
-
 I built a snake game that I just thought of adding. Since in my opinion no snake game plays well on touch screen devices (from my experience playing snake) because the users fingers obstruct the screen. I'll just add a media query to toggle whether the project CSS3 grid item(my snake game thumbnail) is visible or not depending on screen width or I could target actual devices but screen width does the job well enough.
 
-I can explain the true meaning and purpose of all my code but as of now I don't have HTML5 forms structure memorized completely but all I need to do is search on google or bing to get the necessary information to be just as good at making HTML5 forms as anyone else. Building my portfolio has grown my coding knowledge and muscle-memory. I'm always working on learning and improving my skills.
+Note on July 7 @ 4:29pm ( I just started working on my new project, my async js app. )
 
-I have great ideas for the potential of this website. Currently I'm looking into spreading the idea of empathetic voluntary monetary systems and adding functionality relative to this idea to my website. 
+Note on July 9 @ 3:45am ( I got distracted by learning about things related to my async js app instead of making the progress I originally intended which was to start the json file for it right away and push that to github. )
 
+Note on July 9 @ 3:53am ( I'm going to get back to coding. )
