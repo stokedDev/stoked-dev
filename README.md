@@ -12,3 +12,5 @@ Note on July 7 @ 4:29pm ( I just started working on my new project, my async js 
 Note on July 9 @ 3:45am ( I got distracted by learning about things related to my async js app instead of making the progress I originally intended which was to start the json file for it right away and push that to github. )
 
 Note on July 9 @ 3:53am ( I'm going to get back to coding. )
+
+Note on July 9 @ 4:25am ( I just realized that I can use local storage to make a CRUD app, now I'm heading in that direction. )
