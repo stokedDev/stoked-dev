@@ -2,29 +2,69 @@
     "title": "Zero Uno",
     "author": "Maurice Scott Rogers",
     "storage": "local-storage",
+    "purposeOfJSON": [
+        "initialize game data",
+        "give context"
+    ],
     "levels": [
-        "zeroEnv": {
-            "mood": ["dark", "irritating", "sad"],
-            "obstacles": {
-                "height": "smallest",
-                "restriction": ""
+        {
+            "zeroEnv": {
+                "mood": [
+                    "dark",
+                    "irritating",
+                    "sad"
+                ],
+                "obstacles": [
+                    {
+                        "name": "money",
+                        "height": "smallest",
+                        "restriction": [
+                            "templates",
+                            "time",
+                            "creativity"
+                        ]
+                    },
+                    {
+                        "name": "insput",
+                        "height": "smallest",
+                        "restriction": [
+                            "confusion",
+                            "weird"
+                        ]
+                    },
+                    [
+                        {
+                            "name": "sway",
+                            "height": "smallest",
+                            "restriction": [
+                                "go this way",
+                                "go that way",
+                                "strength",
+                                "desire",
+                                "performance",
+                                "common mental illness",
+                                "time",
+                                "passion for up",
+                                "passion for down"
+                            ]
+                        }
+                    ]
+                ]
             }
         }
     ],
-    "chars":[
+    "chars": [
         {
             "isProChar": true,
-            "name": "Zeruno",
-            "problems":
-                {
-                    "nothing": [
-                        {
-                        "reason": "There's so much nothing that's it's hard to find or even have something meaningful.",
-
+            "name": "Zerun",
+            "problems": {
+                "nothing": [
+                    {
+                        "reason": "There's so much nothing that's it's hard to find or even have something meaningful."
                     }
                 ],
-                    "brokenness": "Trauma has caused "
-                }
+                "brokenness": "Trauma has caused "
+            }
         }
     ]
 }
