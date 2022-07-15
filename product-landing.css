@@ -99,14 +99,10 @@ body{
     background-color: rgba(0, 153, 255, 0.555);
     color:yellow;
   }
-  ::placeholder{
+  #email::placeholder{
       color: yellow;
       opacity: .7;
   }
-  
-  #email:hover{
-    width: 200px;
-  } 
   
   #submit{
     display:block;
