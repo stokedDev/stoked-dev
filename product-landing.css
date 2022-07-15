@@ -16,13 +16,14 @@ body{
     align-items: center;
   }
   header h1{
-    color: yellow;
-    text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
-    margin: 0;
+    color: rgb(255, 173, 118);
+    /* text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575); */
+    -webkit-text-stroke: .5px black;
     z-index: 1;
   }  
   .header-img{
     width: 100px;
+    margin-top: -4rem;
   }
   /*HEADER CSS ENDS HERE*/
   
@@ -216,12 +217,6 @@ body{
     }
   }
   @media (min-width: 940px){
-    .header-img{
-    display: flex;
-    justify-content: center;
-    margin-top: -4.8rem;
-    padding-top: 1.3%;
-    }
   /* NAVBAR CSS STARTS HERE */
     .nav-list{
       margin-bottom: 3rem;
