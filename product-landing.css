@@ -117,37 +117,30 @@ body{
     cursor: pointer;
   }
   
-  #about-us-section,
-  #locations-section{
-    width: 97%;
+  .about-us-section,
+  .locations-section{
     display: flex;
     color: rgb(255,255,0);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-bottom: 1%;
     text-indent: 1.5rem;
     line-height: 1.6rem;
     letter-spacing: .08rem;
+    padding: 0 .8rem;
   }
-  #about-us-section p,
-  #locations-section p{
+  .about-us-section p,
+  .locations-section p{
     font-size: 20px;
-    margin-top: -1rem;
-    margin-left: .35rem;
   }
   
-  #locations-section {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%;
+  .section-title{
+    color: yellow;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
   }
-  h2{
-    color: rgb(255,255,0);
-  }
+
   iframe{
     width: 560px;
     height: 315px;
