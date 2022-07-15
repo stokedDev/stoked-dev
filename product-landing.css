@@ -17,7 +17,6 @@ body{
   }
   header h1{
     color: rgb(255, 173, 118);
-    /* text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575); */
     -webkit-text-stroke: .5px black;
     z-index: 1;
   }  
@@ -29,15 +28,18 @@ body{
   
   /* NAVBAR CSS STARTS HERE */
   .nav-bar{
-    overflow: hidden;
-    width: 100%;
     margin-top: 0;
+    margin-left: -2rem;
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
   }
   .nav-list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     list-style: none;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   
   .nav-link{
@@ -218,6 +220,9 @@ body{
   }
   @media (min-width: 940px){
   /* NAVBAR CSS STARTS HERE */
+  .nav-bar{
+    margin-top: 1.7rem;
+  }
     .nav-list{
       margin-bottom: 3rem;
       margin-left: auto;
