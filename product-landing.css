@@ -94,13 +94,13 @@ body{
     text-align: center;  
   }
   #email{
+    width: 255px;
     display:block;
     margin:auto;
     padding:8px;
     border-radius:50px;
     border:none;
     font-size: 1.5rem;
-    transition: width .5s ease;
     outline: none;
     background-color: rgba(0, 153, 255, 0.555);
     color:yellow;
