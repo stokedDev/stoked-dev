@@ -131,30 +131,25 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-indent: 1.5rem;
-    line-height: 1.6rem;
     letter-spacing: .08rem;
     padding: 0 .8rem;
+    margin: auto;
   }
   .about-us-section p,
   .locations-section p{
+    margin: 0 auto;
+    padding: 0 0;
     font-size: 20px;
+    text-indent: 1.5rem;
+    line-height: 1.6rem;
   }
   
   .section-title{
     color: yellow;
     font-size: 2rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-
-  iframe{
-    width: 560px;
-    height: 315px;
   }
   
-  #pricing-section{
-    width: 95%;
+  .pricing-section{
     display: flex;
     background-color: white;
     flex-direction: column;
@@ -206,44 +201,7 @@ body{
     cursor: pointer;
   }
   
-  @media (min-width: 310px) and (max-width: 500px){
-    iframe{
-    width: 300px;
-    }
-  }
-  @media (min-width: 500px) and (max-width: 577px){
-    iframe{
-      width: 490px;
-    }
-  }
-  @media (min-width: 940px){
-  /* NAVBAR CSS STARTS HERE */
-  .nav-bar{
-    margin-top: 1.7rem;
-  }
-    .nav-list{
-      margin-bottom: 3rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  .nav-list li{
-    display: inline;
-  }
-  
-  .nav-link{
-    font-size: 1.6rem;
-    margin-right: 1rem;
-  }
-    .nav-link:focus,
-    .nav-link:hover{
-      background-color: rgba(0,0,0,.6);
-    }
-  /* NAVBAR CSS ENDS HERE */
-    .about-us-section,
-    .locations-section{
-      width: 55%;
-    }
-  }
+
   /* footer below */
 footer{
   display: flex;
@@ -270,8 +228,36 @@ footer{
   font-size: 1.5rem;
   color: white;
 }
-/*footer above*/
-  @media (min-width: 1440px){
+/* footer above */
+@media (min-width: 940px){
+/* NAVBAR CSS STARTS HERE */
+.nav-bar{
+  margin-top: 1.7rem;
+}
+  .nav-list{
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.nav-list li{
+  display: inline;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+  .nav-link:focus,
+  .nav-link:hover{
+    background-color: rgba(0,0,0,.6);
+  }
+/* NAVBAR CSS ENDS HERE */
+  .about-us-section,
+  .locations-section{
+    width: 700px;
+  }
+}
+  @media (min-width: 1024px){
     .products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
