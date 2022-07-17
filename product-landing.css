@@ -135,20 +135,24 @@ body{
     padding: 0 .8rem;
     margin: auto;
   }
-  .about-us-section p,
-  .locations-section p{
+  .about-us-section p{
     margin: 0 auto;
     padding: 0 0;
-    font-size: 20px;
-    text-indent: 1.5rem;
-    line-height: 1.6rem;
+    font-size: 1.6rem;
+    text-indent: 1.5em;
+    line-height: 1.1em;
   }
   
   .section-title{
     color: yellow;
     font-size: 2rem;
   }
-  
+  .locations-list{
+    font-size: 1.6rem;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 2rem;
+  }
   .pricing-section{
     display: flex;
     background-color: white;
@@ -163,7 +167,6 @@ body{
     align-items: flex-start;
   }
   .products{
-    
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr;
@@ -258,9 +261,15 @@ footer{
   }
 }
   @media (min-width: 1024px){
+    .about-us-section p{
+      font-size: 1.75rem;
+    }
     .products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
+  }
+  .pricing-section{
+    margin-bottom: 25rem;
   }
   }
