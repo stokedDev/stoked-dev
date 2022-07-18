@@ -21,3 +21,4 @@ btn.addEventListener("click", () => goToSection(header));
 activateBtn(aboutBtn, aboutH);
 activateBtn(locationsBtn, locationsH);
 activateBtn(pricingBtn, pricingH);
+

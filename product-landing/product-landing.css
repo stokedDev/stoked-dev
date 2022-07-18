@@ -27,6 +27,34 @@ body{
   /*HEADER CSS ENDS HERE*/
   
   /* NAVBAR CSS STARTS HERE */
+  .hamburger-icon,
+  .hide-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background-color:rgba(0, 0, 0, 0.441);
+    border-radius: 5px;
+  }
+  .hamburger-icon div{
+    margin: 2.5px auto 2.5px auto;
+    padding: 0;
+    background-color: rgba(255,255,255,.441);
+    height: 10px;
+    width: 30px;
+    border-radius: 5px;
+  }
+  .hamburger-icon div:nth-child(1){
+    margin-top: 5px;
+  }
+  .hamburger-icon div:nth-child(3){
+    margin-bottom: 5px;
+  }
+
   .nav-bar{
     margin-top: 0;
     display: flex;
@@ -259,6 +287,10 @@ footer{
   }
 }
   @media (min-width: 1024px){
+    .hamburger-icon,
+  .hide-nav{
+    display:none;
+  }
     .about-us-section p{
       font-size: 1.75rem;
     }
