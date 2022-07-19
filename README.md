@@ -14,3 +14,9 @@ Note on July 9 @ 3:45am ( I got distracted by learning about things related to m
 Note on July 9 @ 3:53am ( I'm going to get back to coding. )
 
 Note on July 9 @ 4:25am ( I just realized that I can use local storage to make a CRUD app, now I'm heading in that direction. )
+
+Note on July 18 @ 6:15pm ( 
+    product-landing portfolio project: to do
+    1. If top navbar isn't in view, display hamburger icon.
+    2. If top navbar is completely visible again, turn hamburger icon display off
+ )
