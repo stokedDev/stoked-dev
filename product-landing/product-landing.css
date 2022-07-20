@@ -10,6 +10,11 @@ body{
     align-items: center;
   }
   /*HEADER CSS STARTS HERE*/
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .name-and-logo{
     display: flex;
     flex-direction: column;
@@ -55,6 +60,15 @@ body{
     margin-bottom: 5px;
   }
 /* mobile menu css ends here */
+  .header-div-popup{
+    width: 100vw;
+    height: 100vh;
+  }
+  .header-popup{
+    z-index: 1;
+    position: fixed;
+    background-color: black;
+  }
   .nav-bar{
     margin-top: 0;
     display: flex;
