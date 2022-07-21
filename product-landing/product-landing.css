@@ -211,6 +211,33 @@ body{
       z-index: -1;
   }
   /* BACKGROUND IMAGE CSS ENDS HERE*/
+  .close-email-form{
+    cursor: pointer;
+    position: relative;
+    right: -122px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,.35);
+    border-radius: 50%;
+  }
+  .close-email-form div{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -17px;
+    left: 3.5px;
+  }
+  .close-email-form div:first-child{
+    transform: rotate(130deg) translate(0px, -80%);
+  }
+  .close-email-form div:last-child{
+    transform: rotate(-130deg) translate(0px, 80%);
+  }
   form{
     display: flex;
     flex-direction: column;

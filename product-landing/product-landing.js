@@ -22,9 +22,23 @@ const [aboutS, locationsS, pricingS] =
 const mobileMenu = document.querySelector('.mobile-menu');
 const navList = document.querySelector('.nav-list'); /* default nav */
 const header = document.querySelector('header');
-const form = document.querySelector('.email-form');
+const emailForm = document.querySelector('.email-form');
 const headerDiv = document.querySelector('.header');
-const mobileMenuInvisible = document.querySelector('.mobile-menu-invisible')
+const emailInput = document.querySelector('#email');
+const emailSubmit = document.querySelector('#submit');
+const emailFormMessage = document.querySelector('.email-form-message');
+const closeEmailFormBtn = document.querySelector('.close-email-form');
+closeEmailFormBtn.addEventListener('click', function(){
+    emailForm.style.display = 'none';
+})
+emailSubmit.addEventListener("click", function(){
+            if(emailInput.value.includes('@')){
+            emailInput.style.display = 'none';
+            emailSubmit.style.display = 'none';
+            emailFormMessage.textContent = 'Thanks for signing up!';
+            event.preventDefault();
+            }
+});
 
 const [topBun,inBuns,bottomBun] = 
 [
