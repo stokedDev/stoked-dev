@@ -24,26 +24,51 @@ const navList = document.querySelector('.nav-list'); /* default nav */
 const header = document.querySelector('header');
 const form = document.querySelector('.email-form');
 const headerDiv = document.querySelector('.header');
+const mobileMenuInvisible = document.querySelector('.mobile-menu-invisible')
+
+const [topBun,inBuns,bottomBun] = 
+[
+    document.querySelector('.top-bun'),
+    document.querySelector('.in-buns'),
+    document.querySelector('.bottom-bun')
+]
 
 function removeHeaderPopupClasses(){
     header.classList.remove('header-popup');
-    headerDiv.classList.remove('header-div-popup');
+    headerDiv.classList.remove('header-div-popup'); 
+}
+function hamburgerBack(){
+    topBun.classList.remove('topBunToX');
+    inBuns.classList.remove('inBunsToX');
+    bottomBun.classList.remove('bottomBunToX');
+    mobileMenu.style.marginLeft = "";
+    topBun.classList.add('topBunBack');
+    inBuns.classList.add('inBunsBack');
+    bottomBun.classList.add('bottomBunBack');
+    setTimeout(() => {
+    topBun.classList.remove('topBunBack');
+    inBuns.classList.remove('inBunsBack');
+    bottomBun.classList.remove('bottomBunBack');
+    }, 501)
 }
 
 function goToSection(sectionHeader, section){
     switch (sectionHeader){
         case aboutH:
             removeHeaderPopupClasses()
+            hamburgerBack()
             locationsS.style.display = "none";
             pricingS.style.display = "none";
         break;
         case locationsH:
             removeHeaderPopupClasses()
+            hamburgerBack()
             aboutS.style.display = "none";
             pricingS.style.display = "none";
         break;
         case pricingH:
             removeHeaderPopupClasses()
+            hamburgerBack()
             aboutS.style.display = "none";
             locationsS.style.display = "none";
     }
@@ -58,14 +83,24 @@ btn.addEventListener("click", () => goToSection(header, section));
 }
 
 mobileMenu.addEventListener("click", function(){
-    if (header.style.position !== "fixed"){
+    if (!header.classList.contains('header-popup')){
+        topBun.classList.remove('topBunBack');
+        inBuns.classList.remove('inBunsBack');
+        bottomBun.classList.remove('bottomBunBack');
+        mobileMenu.style.marginLeft = "-18px";
+        topBun.classList.add('topBunToX');
+        inBuns.classList.add('inBunsToX');
+        bottomBun.classList.add('bottomBunToX');
         header.classList.add('header-popup');
-        headerDiv.classList.add('header-div-popup');       
+        headerDiv.classList.add('header-div-popup');
+        
     } else {
         header.classList.remove('header-popup');
         headerDiv.classList.remove('header-div-popup');
+        hamburgerBack()    
     }
-})
+
+});
 
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -78,9 +113,18 @@ function isInViewport(el) {
     );
 }
 
+function isNotInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.bottom <= 0
+    );
+}
+let lapTopScreen = window.matchMedia("(min-width: 1024px)");
+
 document.addEventListener('scroll', function () {
-    if(!isInViewport(pricingBtn)) mobileMenu.style.display = "flex";
-    if(isInViewport(pricingBtn) && !header.classList.contains('header-popup')) mobileMenu.style.display = "none";
+    if(isNotInViewport(pricingBtn) && !lapTopScreen.matches) mobileMenu.style.display = "flex";
+    if(isInViewport(pricingBtn) &&
+     !header.classList.contains('header-popup')) mobileMenu.style.display = "none";
 }, {
     passive: true
 });
