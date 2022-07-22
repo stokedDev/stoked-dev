@@ -8,14 +8,20 @@
     <meta name="description" content="My freeCodeCamp project technical documentation page">
     <title>Technical Documentation Page</title>
     <link href="tech-doc.css" rel="stylesheet">
-    <link href="./tech-doc-carousel/carousel-styles.css" rel="stylesheet" />
-    <script defer src="./tech-doc-carousel/carousel.js"></script>
+    <link href="tech-doc-carousel/carousel-styles.css" rel="stylesheet" />
+    <script defer src="tech-doc-carousel/tech-doc.js"></script>
 </head>
 <body class="alpha-bg">
   <div class="container">
       <header class="nav-info-header">
+        <div class="header">
         <h1>aLittleAboutJS</h1>
         <nav>
+          <div class="mobile-menu">
+            <div class="top-bun"></div>
+            <div class="in-buns"></div>
+            <div class="bottom-bun"></div>
+          </div>
         <ul class="nav-list">
           <li class="nav-link whatBtn">What is JavaScript?</li>
           <li class="nav-link howBtn">How to learn JS</li>
@@ -29,13 +35,13 @@
           This webpage is just meant to be a sample of my frontend development ability. I actually know a lot more than this about JS but I'm not trying to reinvent the wheel when <a href="https://developer.mozilla.org/en-US/" rel="noopener" target="_blank">MDN</a> has JS documentation covered. Thank you for reading.❤️
         </h3>
       </div>
-      
+      </div>
       </header>
         
         <main class="main-doc">
           <section class="main-section carousel-item carousel-item-visible">
             <header>
-              <h2>What is JavaScript?</h2>
+              <h2 class="section-header-1">What is JavaScript?</h2>
             </header>
             <code>let addition = num => num + num;</code>
             <p>JavaScript is one of the main programming languages used for frontend web development.</p>
@@ -51,7 +57,7 @@
           </section>
             <section class="main-section carousel-item">
             <header>
-              <h2>How to learn JS</h2>
+              <h2 class="section-header-2">How to learn JS</h2>
             </header>
             <p>There are many ways to learn JS but here are some of my recommendations.</p>
             <ul>
@@ -94,7 +100,7 @@
           </section>
             <section class="main-section carousel-item" class="variables">
             <header>
-              <h2>Variables</h2>
+              <h2 class="section-header-3">Variables</h2>
             </header>
             <code>var variable = 'A variable declared with the old "var"';</code>
               <br>
@@ -116,7 +122,7 @@
           </section>
             <section class="main-section carousel-item">
             <header>
-              <h2>Conditionals</h2>
+              <h2 class="section-header-4">Conditionals</h2>
             </header>
             <code>if (height >= 4) {
               <br>
@@ -135,7 +141,7 @@
           </section>
             <section class="main-section carousel-item">
             <header>
-              <h2>DOM Manipulation</h2>
+              <h2 class="section-header-5">DOM Manipulation</h2>
             </header>
               <code class="code">const HEADER = document<br>.getElementsByTagName('h1')[0]</span></code>
               <p>
@@ -151,7 +157,7 @@
           </main>
           </div>
           <footer>
-            <nav>
+            <!-- <nav>
               <ul class="nav-list ftr-nav-visible">
                 <li class="nav-link whatBtn">What is JavaScript?</li>
                 <li class="nav-link howBtn">How to learn JS</li>
@@ -160,8 +166,8 @@
                 <li class="nav-link domBtn">DOM Manipulation</li>
               </ul>
             </nav>
-            <nav>
-              <a class="ftr-nav-link" href="index.html">
+            <nav> -->
+              <a class="ftr-nav-link" href="../index.html">
                 See my portfolio
               </a>
               </nav>
