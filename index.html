@@ -15,15 +15,20 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="index-carousel/carousel-styles.css">
-  <script defer src="index-carousel/carousel.js"></script>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index-css-and-js/carousel-styles.css">
+  <script defer src="index-css-and-js/script.js"></script>
+  <link rel="stylesheet" href="index-css-and-js/index.css">
 </head>
 
 <body>
-
-  <div class="topnav">
+<header>
+  <div class="header topnav">
     <nav id="navbar">
+      <div class="mobile-menu">
+        <div class="top-bun"></div>
+        <div class="in-buns"></div>
+        <div class="bottom-bun"></div>
+      </div>
       <ul class="nav-list">
         <li class="aboutBtn nav-link">About</li>
         <li class="projectsBtn nav-link">Projects</li>
@@ -31,6 +36,8 @@
       </ul>
     </nav>
   </div>
+</header>
+  
 
   <section id="welcome-section" class="carousel-item carousel-item-visible">
     <h4><span class="accent-text">Hello, </span>I'm
@@ -39,7 +46,7 @@
       <span class="education">freeCodeCamp,</span>
       <span class="education">Scrimba,</span>
       <span class="education">and self-taught</span>
-      <span class="accent-text">FrontEnd Software Engineer</span>
+      <span class="accent-text feswe">FrontEnd Software Engineer</span>
     </h4>
     <h4 class="last-welcome-h4 projectsBtn">Check out some of my projects<span class="accent-text last-accent-text">
         that I built from scratch!</span></h4>

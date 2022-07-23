@@ -12,12 +12,144 @@ body{
   align-items: center;
   justify-content: center;
   margin: .2rem;
-  background-image: url("images/pxfuel.jpg");
+  background-image: url("../images/pxfuel.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 /* NAVBAR CSS STARTS HERE */
+/* mobile menu css*/
+.mobile-menu{
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  left: 2px;
+  top: 2px;
+  height: 40px;
+  width: 40px;
+  background-color:rgba(0, 0, 0, 0.441);
+  border-radius: 5px;
+}
+.mobile-menu div{
+  margin: 2.5px auto 2.5px auto;
+  padding: 0;
+  background-color: rgba(255,255,255,.441);
+  height: 10px;
+  width: 30px;
+  border-radius: 5px;
+}
+.mobile-menu div:nth-child(1){
+  margin-top: 5px;
+}
+.mobile-menu div:nth-child(3){
+  margin-bottom: 5px;
+}
+
+/* X to hambuger icon classes below */
+.topBunBack{
+  animation-name: topBunBack;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.inBunsBack{
+  animation-name: inBunsBack;
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+}
+
+.bottomBunBack{
+  animation-name: bottomBunBack;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+/* X to hambuger icon classes above */
+
+/* hambuger icon to X classes below */
+.topBunToX{
+  animation-name: topBunToX;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-fill-mode: both;
+}
+.inBunsToX{
+  animation-name: inBunsToX;
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+}
+.bottomBunToX{
+  animation-name: bottomBunToX;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+/* hambuger icon to X classes above */
+
+/* hambuger icon to X keyframes below */
+
+@keyframes topBunToX{
+  100%{
+    transform: rotate(130deg) translate(0px, -270%);
+    background-color: rgba(255,255,255,1); 
+  }
+}
+@keyframes inBunsToX{
+  100%{
+    background-color: rgba(255,255,255,0);
+  }
+}
+@keyframes bottomBunToX{
+  100%{
+    transform: rotate(-130deg) translate(0px, 270%);
+    background-color: rgba(255,255,255,1);
+  }
+}
+/* hambuger icon to X keyframes above */
+
+/* X to hambuger icon keyframes below */
+@keyframes bottomBunBack{
+  0%{
+    transform: rotate(-130deg) translate(0px, 270%);
+    background-color: rgba(255,255,255,1);
+  }
+  100%{
+    transform: rotate(0deg) translate(0px, 0%);
+    background-color: rgba(255,255,255,.441);
+  }
+}
+@keyframes inBunsBack{
+  0%{
+    background-color: rgba(255,255,255,0);
+  }
+  100%{
+    background-color: rgba(255,255,255,.441);
+  }
+}
+@keyframes topBunBack{
+  0%{
+    transform: rotate(130deg) translate(0px, -270%);
+    background-color: rgba(255,255,255,1);
+  }
+  100%{
+    transform: rotate(0deg) translate(0px, 0%);
+    background-color: rgba(255,255,255,.441);
+  }
+}
+
+/* X to hambuger icon keyframes above */
+.header-div-popup{
+  width: 100vw;
+  height: 100vh;
+}
+.header-popup{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+/* mobile menu css ends here */
 .topnav{
   font-size: 3.4rem;
 }
@@ -154,6 +286,9 @@ h4{
   font-size: 1em;
   font-weight: 900;
   display: block;
+}
+.feswe{
+  letter-spacing: .1em;
 }
 .profile-links{
   display: grid;
