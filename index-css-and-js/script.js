@@ -25,12 +25,13 @@ const [topBun,inBuns,bottomBun] =
     document.querySelector('.bottom-bun')
 ];
 const mobileMenu = document.querySelector('.mobile-menu');
+const navLinks = document.querySelectorAll('.nav-link');
 
 function hamburgerBack(){
     topBun.classList.remove('topBunToX');
     inBuns.classList.remove('inBunsToX');
     bottomBun.classList.remove('bottomBunToX');
-    mobileMenu.style.marginLeft = "";
+    mobileMenu.style.backgroundColor = "rgba(0, 0, 0, 0.441)";
     topBun.classList.add('topBunBack');
     inBuns.classList.add('inBunsBack');
     bottomBun.classList.add('bottomBunBack');
@@ -73,17 +74,17 @@ function activateBtn(btn, sectionIntro, slidePosition){
             topBun.classList.remove('topBunBack');
             inBuns.classList.remove('inBunsBack');
             bottomBun.classList.remove('bottomBunBack');
-            mobileMenu.style.marginLeft = "-18px";
+            mobileMenu.style.backgroundColor = "rgba(0,0,0,0)";
             topBun.classList.add('topBunToX');
             inBuns.classList.add('inBunsToX');
             bottomBun.classList.add('bottomBunToX');
             header.classList.add('header-popup');
             headerDiv.classList.add('header-div-popup');
-            
+        
         } else {
             header.classList.remove('header-popup');
             headerDiv.classList.remove('header-div-popup');
-            hamburgerBack()    
+            hamburgerBack()   
         }
     
     });
