@@ -8,6 +8,8 @@ Documentation Page, Product Landing Page, My Survey Form, My Tribute Page, "Fun 
 ### 1. My First Surf Game
 https://stokeddev.com/SurfGame/index.html
 
+On my stokeddev website in my projects grid, this project only appears on screens 1024px wide or wider.
+This is because it's controls currently require the user to have a keyboard. To move the character, the keyboard directional keys must be used.
 I took some concepts I learned from building my HTML5 snake game and adapted them to make this project.
 Creating a surfing game was one of my motivations to learn to code so I'm happy to have finally done it.
 I built this using HTML, CSS, and JS.
