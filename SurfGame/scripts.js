@@ -127,12 +127,12 @@ document.addEventListener('keydown', control)
 let k = environment.indexOf(5)
 
 function whiteWash(){
-    let wW1 = setInterval(function(){
+    setInterval(function(){
         squares[476].classList.add('white-wash')
         squares[505].classList.add('white-wash')
         squares[534].classList.add('white-wash')   
     }, 200)
-    let wW2 = setInterval(function(){
+    setInterval(function(){
         squares[476].classList.remove('white-wash')
         squares[505].classList.remove('white-wash')
         squares[534].classList.remove('white-wash')   
@@ -141,14 +141,12 @@ function whiteWash(){
 whiteWash()
     
 function getTubePoints(){
-    let message = ''
-    let tubePoints = setInterval(function(){
+    setInterval(function(){
         if(squares[surferCurrentIndex].classList.contains('barrel') || squares[surferCurrentIndex].classList.contains('white-wash')){
         score += 1;
         scoreDisplay.textContent = score;
         }
-    }, 200)
-    
+    }, 200)    
 }
 getTubePoints()
 
