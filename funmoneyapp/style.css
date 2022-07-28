@@ -78,29 +78,32 @@ p{
     font-family: 'Nunito', sans-serif;
     width: 90%;
 }
+/* footer below */
 footer{
-  margin-top: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   font-size: 2.5rem;
+  margin-top: 2em;
 }
 .ftr-nav-link{
   text-decoration: none;
   text-align: center;
+  font-size: 2.7rem;
   background-color: rgba(9, 255, 0, 0.5);
   color: rgb(0, 68, 255);
-  font-size: 2.5rem;
   padding: .5em .7em;
   border-radius: 2em;
+  box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.63);
 }
 .copy-right{
-  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
-  color: white;
-  display: flex;
-  background: none;
+  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.97), 0px -5px 20px rgba(0, 0, 0, 0.97), 5px 0px 20px rgba(0, 0, 0, 0.97);
+  color: rgb(255, 205, 164);
+  font-size: 2.5rem;
+  margin-top: 2em;
 }
+/*footer above*/
 input{
   font-family: 'Nunito', sans-serif;
 }
@@ -181,3 +184,4 @@ input{
     width: 89%;
   }
   }
+  
