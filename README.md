@@ -1,6 +1,6 @@
 # stokeddev.com
 ## Introduction
-My website https://www.stokeddev.com , which this repository belongs to, is a result of my 1300+ hours studying and practicing front end engineering from the beginning of my developer journey in September of 2020. I wrote every line of frontend code that makes up this website with HTML, CSS, and JS.
+My website https://www.stokeddev.com , which this repository belongs to, is a result of my 1300+ hours studying and practicing front end engineering from the beginning of my developer journey in September of 2020. I thoughtfully wrote every line of frontend code that makes up this website with HTML, CSS, and JS.
 
 ## Projects
 Documentation Page, Product Landing Page, My Survey Form, My Tribute Page, "Fun Money" calculator, My Blackjack Game, and My Dice Game were all designed by me to be fully responsive to all devices. All hamburger icon mobile menu popup toggle HTML, CSS, and JS that appears in some of my projects is my own original code that I came up with.
@@ -61,4 +61,10 @@ To start the game, click the "(re)start" button and if you don't win or lose rig
 https://stokeddev.com/dice-game/index.html
 
 I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
-I got good practice dynamically controlling HTML with JS. I programmed CSS animations to happen in response to things like clicks and when someone wins. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself.
+I got good practice dynamically controlling HTML with JS and CSS. I programmed CSS animations to happen in response to things like clicks and when someone wins. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself.
+
+### 10. My Snake Game
+https://stokeddev.com/snake-game/index.html
+
+I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
+I got good practice dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself.

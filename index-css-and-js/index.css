@@ -413,4 +413,7 @@ footer{
   .surf-game{
     display: none;
   }
+  .snake-game{
+    display: none;
+  }
 }
