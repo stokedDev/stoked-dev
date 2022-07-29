@@ -67,4 +67,4 @@ I got good practice dynamically controlling HTML with JS and CSS. I programmed C
 https://stokeddev.com/snake-game/index.html
 
 I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
-I got good practice dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself.
+I got good practice dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself. This game is only visible in the projects section for viewport width of 1020px.
