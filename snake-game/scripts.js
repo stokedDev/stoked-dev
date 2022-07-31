@@ -1,7 +1,16 @@
 const msg = document.querySelector('.message');
 const scoreDisplay = document.querySelector('#score');
-const startBtn = document.querySelector('#start');
+const scoreMsg = document.querySelector('.score');
+const startBtn = document.querySelector('.start');
 const grid = document.querySelector('.grid');
+const [up, right, down, left, controller, controllerToggle] = [
+    document.querySelector('.triangle-up'),
+    document.querySelector('.triangle-right'),
+    document.querySelector('.triangle-down'),
+    document.querySelector('.triangle-left'),
+    document.querySelector('.mobile-controller'),
+    document.querySelector('.mobile-controller-visibility-toggle')
+]
 let isAlive;
 let currentSnake = [2,1,0];
 let tail = currentSnake.pop();
@@ -13,7 +22,7 @@ let score = 0;
 let intervalTime = 1000;
 let timerId;
 let speedIncrease = 0.9;
-
+scoreMsg.style.color = 'rgba(0,0,0,0)';
 
 function createGrid() {
     for (let i = 0; i < 100; i++){
@@ -29,15 +38,19 @@ function hitWall(){
     isAlive = false;
     clearInterval(timerId);
     msg.innerHTML = "Snake hit a wall.<br> Wanna play again?";
+    msg.classList.add('message-pound');
 }
 
 function hitSelf(){
     isAlive = false;
     clearInterval(timerId);
     msg.innerHTML = "Snake hit itself. <br> Wanna play again?";
+    msg.classList.add('message-pound');
 }
 
 function startGame(){
+    msg.classList.remove('message-pound');
+    scoreMsg.style.color = '';
     squares.forEach(el => {
         if(el.classList.contains('apple'))el.classList.remove('apple');
      });
@@ -58,9 +71,7 @@ function startGame(){
     intervalTime = 1000;
     timerId = setInterval(move, intervalTime)    
 }
-/* 
-remove snake class from all squares except for those of currentSnake 
-*/
+
 function move(){
     if(
     (currentSnake[0] % width === 0 && direction === -1) ||
@@ -87,6 +98,10 @@ function move(){
             score++;
             scoreDisplay.textContent = score;
             intervalTime *= speedIncrease;
+            scoreMsg.classList.add('score-pound');
+            setTimeout(()=>{
+                scoreMsg.classList.remove('score-pound')
+            },1002)
             generateApple();
     }
 }
@@ -129,5 +144,19 @@ function control(e){
         direction = +width;
     }
 }
+function mobileControl(evt){
+    if(evt.target === up) direction = -width;
+    if(evt.target === right) direction = 1;
+    if(evt.target === down) direction = +width;
+    if(evt.target === left) direction = -1;
+    if(evt.target === controllerToggle && !controller.classList.contains("mobile-controller-on")) {
+        controller.classList.add("mobile-controller-on");
+        controllerToggle.textContent = "turn off mobile controller";
+    } else if(evt.target === controllerToggle && controller.classList.contains("mobile-controller-on")){
+        controller.classList.remove("mobile-controller-on");
+        controllerToggle.textContent = "turn on mobile controller";
+    }
+}
+document.addEventListener('click', mobileControl)
 document.addEventListener('keydown', control);
 startBtn.addEventListener('click', startGame);

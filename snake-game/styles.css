@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap');
+
 body{
     background-color: rgba(22, 221, 105, 0.479);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 .container{
     margin-top: 40px;
@@ -16,7 +18,7 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
-    
+    border-radius: 10px;
 }
 h1{
     width: 180px;
@@ -25,9 +27,15 @@ h1{
     font-size: 25px;
     padding: 5px;
     margin: 0 0 .25em 0;
+    border-radius: 10px;
 }
 .score{
     margin: 0;
+}
+.score-pound{
+    animation-name: pound;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 .msg-container{
     display: flex;
@@ -35,17 +43,34 @@ h1{
     justify-content: center;
     margin: .25em 0 .75em 0;
     height: 45px;
-    width: 220px;  
+    width: 240px;  
 }
 .message{
     color:rgb(102, 180, 232);
     text-align: center;
     margin: 0;
 }
-
+.message-pound{
+    animation-name: pound;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.top-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5em;
+}
 button{
-    
+    cursor: pointer;
+    border: none;
+    padding: .25em .75em;
+    border-radius: 5px;
     font-size: 20px;
+    background:rgba(22, 221, 105, 0.479);
+}
+.mobile-controller-visibility-toggle{
+    background-color:rgba(255, 153, 0, 0.731);
 }
 .grid{
     display: flex;
@@ -54,14 +79,77 @@ button{
     height: 200px;
     border: solid 2px black;
 }
-
+.instructions{
+    font-size: 1.05rem;
+    text-align: center;
+}
 .square {
     width: 20px;
     height: 20px;
 }
 .snake{
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.337);
 }
 .apple{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.376);
+}
+.mobile-controller{
+    display: block;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 140px;
+    left: 25px;
+    margin-top: -70px;
+}
+
+.triangle{
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    border: solid transparent 10px;
+    border-top: 0;
+    border-bottom: 20px rgba(255, 132, 0, 0.544) solid;  
+}
+.triangle-up{
+    position: relative;
+    bottom: 3px;
+}
+.triangle-right{
+    transform: rotate(90deg);
+    position: relative;
+    left: 23px;
+
+}
+.triangle-down{
+    transform: rotate(180deg);
+    position: relative;
+    top: 3px;
+}
+.triangle-left{
+    transform: rotate(-90deg);
+    position: relative;
+    right: 23px;
+    bottom: 40px;
+}
+@media (min-width: 1024px){
+    .mobile-controller{
+        display: none;
+    }
+    .mobile-controller-on{
+        display: block;
+    }
+}
+@media (max-width: 1023px){
+    .mobile-controller-visibility-toggle{
+        display: none;
+    }
+}
+@keyframes pound{
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1)
+    }
 }
