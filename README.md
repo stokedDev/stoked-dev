@@ -5,18 +5,17 @@ My website https://www.stokeddev.com , which this repository belongs to, is a re
 ## Projects
 Documentation Page, Product Landing Page, My Survey Form, My Tribute Page, "Fun Money" calculator, My Blackjack Game, and My Dice Game were all designed by me to be fully responsive to all devices. All hamburger icon mobile menu popup toggle HTML, CSS, and JS that appears in some of my projects is my own original code that I came up with.
 
-### 1. My First Surf Game
-https://stokeddev.com/SurfGame/index.html
+### 1. My Snake Game
+https://stokeddev.com/snake-game/index.html
 
-On my stokeddev website in my projects grid, this project only appears on screens 1024px wide or wider.
-This is because it's controls currently require the user to have a keyboard. To move the character, the keyboard directional keys must be used.
-I took some concepts I learned from building my HTML5 snake game and adapted them to make this project.
-Creating a surfing game was one of my motivations to learn to code so I'm happy to have finally done it.
-I built this using HTML, CSS, and JS.
+I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
+I got good practice dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself. This game is now playable on mobile as I have created a mobile controller for it which is also toggleable on viewports wider than 1024px.
+
 
 ### 2. fCC JS Cert Repo
 https://github.com/stokedDev/freeCodeCampJSProjects
 
+The projects are Caesar's Cipher, Palindrome Checker, Cash Register, Roman Numeral Converter, and Telephone Number Validator.
 By remembering what I learned from the freeCodeCamp JavaScript Algorithms and Data Structures curriculum and using resources from across the web I completed these challenges which allowed me to earn my certification.
 
 ### 3. Documentation Page
@@ -63,8 +62,11 @@ https://stokeddev.com/dice-game/index.html
 I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
 I got good practice dynamically controlling HTML with JS and CSS. I programmed CSS animations to happen in response to things like clicks and when someone wins. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself.
 
-### 10. My Snake Game
-https://stokeddev.com/snake-game/index.html
+### 10. My First Surf Game
+https://stokeddev.com/SurfGame/index.html
 
-I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
-I got good practice dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself. This game is only visible in the projects section for viewport width of 1020px.
+On my stokeddev website in my projects grid, this project only appears on screens 1024px wide or wider.
+This is because it's controls currently require the user to have a keyboard. To move the character, the keyboard directional keys must be used.
+I took some concepts I learned from building my HTML5 snake game and adapted them to make this project.
+Creating a surfing game was one of my motivations to learn to code so I'm happy to have finally done it.
+I built this using HTML, CSS, and JS.
