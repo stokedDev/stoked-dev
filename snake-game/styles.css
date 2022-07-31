@@ -19,10 +19,9 @@ body{
     border-radius: 10px;
 }
 h1{
-    width: 180px;
-    border: 5px solid rgba(0,0,0,.35);
+    font-weight: 300;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5rem;
     padding: 5px;
     margin: 0 0 .25em 0;
     border-radius: 10px;
@@ -77,9 +76,16 @@ button{
     height: 200px;
     border: solid 2px black;
 }
+.instructions-header{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: .25em auto .05em auto;
+}
 .instructions{
     font-size: 1.05rem;
     text-align: center;
+    margin: 0 auto .25em auto;
 }
 .square {
     width: 20px;
