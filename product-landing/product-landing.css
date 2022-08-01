@@ -185,7 +185,7 @@ body{
     text-decoration: none;
     text-align: center;
     font-size: 1.5rem;
-    background-color: rgb(48, 196, 3);
+    background-color: #4de562;
     padding: .5em 2em;
     border-radius: 20px;
   }
@@ -337,14 +337,16 @@ body{
   }
   
   .product{
+    border-radius: 1em;
     border: 1px white solid;
     padding: 1em;
     background-color: rgba(0,0,0,.5);
   }
   
   .product-title{
+    border-radius: .5em;
     padding:10px;
-    background-color:#115599;
+    background-color:#61b9f8;
     color: white;
     text-align: center;
   }
@@ -356,7 +358,8 @@ body{
     font-size:1.2rem;
   }
   .product-submit{
-    background-color:#008f13;
+    border-radius: .5em;
+    background-color:#5af16e;
     border:none;
     width: 100%;
     color:white;
