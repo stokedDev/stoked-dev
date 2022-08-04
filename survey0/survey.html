@@ -16,35 +16,42 @@
   <div class="container">
     <form id="survey-form">
       <h1>Maurice's Survey Project</h1>
-      <div class="basic-info">
+      <fieldset class="basic-info">
+        <legend>
       <label id="name-label" class="label" for="name">
       What is your name?
       </label>
+    </legend>
         <input id="name" type="text" placeholder="Enter your name" required>
-      </div>
-      <div class="basic-info">
-      <label id="email-label" class="label" for="email">
-      What is your email?
-      </label>
+    </fieldset>
+      <fieldset class="basic-info">
+        <legend>
+          <label id="email-label" class="label" for="email">
+            What is your email?
+            </label>
+        </legend>
         <input id="email" type="email" placeholder="Enter your email" required>
-      </div>
-      <div class="basic-info">
-      <label id="number-label" class="label" for="number">
-      What is your age?
-      </label>
+    </fieldset>
+      <fieldset class="basic-info">
+        <legend>
+          <label id="number-label" class="label" for="number">
+            What is your age?
+          </label>
+        </legend>
       <input id="number" type="number" placeholder="Enter your age" min="12" max="50" required>
-        </div>
-  
-      <label for="dropdown" class="label center-text">thoughts on survey</label>
+    </fieldset>
+  <fieldset class="opinion-of-survey">
+    <legend><label for="dropdown" class="label center-text">thoughts on survey</label></legend>
       <select id="dropdown">
         <option value="default">It's interesting.</option>
         <option value="default">It's boring.</option>
         <option value="default">It's fun.</option>
         <option value="default">It's amazing.</option>   
       </select>
+  </fieldset>
       <br>
-        <fieldset>
-      <legend>How can you improve?</legend>
+        <fieldset class="upgrades">
+      <legend>Interested in any upgrades?</legend>
       <div>
         <div>
           <input type="checkbox" name="healthier" id="healthier" value="healthier">
@@ -83,24 +90,21 @@
         </div>
       </div>
           </fieldset>
-    <fieldset>
+    <fieldset class="device">
     <legend>your device</legend>
     <div>
       <div>
         <input id="laptop" type="radio" name="device" value="laptop">
         <label for="laptop">laptop</label>
       </div> 
-    <br>
     <div>
       <input id="desktop" type="radio" name="device" value="desktop">
       <label for="desktop">desktop</label>
     </div>
-      <br>
       <div>
           <input id="tablet" type="radio" name="device" value="tablet">
           <label for="tablet">tablet</label>
       </div>
-<br>
 <div>
   <input id="phone" type="radio" name="device" value="phone">
   <label for="phone">phone</label>
@@ -108,8 +112,8 @@
 </div>    
 </fieldset>
     <br>
-    <fieldset>
-      <label for="comment" class="comment-label label">Have a comment to share?</label>
+    <fieldset class="comment">
+      <legend><label for="comment" class="comment-label label">Have a comment to share?</label></legend>
       <textarea id="comment" placeholder="Feel free to add a comment here." rows=4 cols=40></textarea>
     </fieldset>
     <br>

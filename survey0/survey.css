@@ -21,7 +21,7 @@ html{
   }
   h1{
     margin-bottom: 0;
-    text-shadow: -5px 5px 20px rgba(255, 255, 255, 0.7), 0px -5px 20px rgba(255, 255, 255, 0.7), 5px 0px 20px rgba(255, 255, 255, 0.7);
+    letter-spacing: .1em;
     text-align: center;
   }
   .description{
@@ -31,36 +31,20 @@ html{
     margin-bottom: 1rem;
   }
   
-  /*BACKGROUND IMAGE CSS STARTS HERE*/
-  .background-image {
-      display: block;
-  }
-  .background-image:before {
-      background-image: url(../images/abstract-background-1.png);
-      content: "";
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      opacity: 0.3;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      position: fixed;
-      z-index: -1;
-  }
-  /*BACKGROUND IMAGE CSS ENDS HERE*/
+  
   
   #number,
   #name,
   #email{
-    width: 90%;
+    max-width: 90%;
     font-size: 2rem;
     border-radius: 15px;
-    border: 0;
     padding: .5rem;
+    border: none;
   }
-  
+  #number{
+    min-width: 135px;
+  }
   #dropdown {
     font-size: 2.5rem;
     border-radius: 15px;
@@ -73,6 +57,8 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 1em;
+    border:rgba(0, 0, 0, .5) solid 1px;
   }
 legend{
   text-align: center;
@@ -83,6 +69,9 @@ legend{
     padding: 1rem;
     border-radius: 2rem;
   }
+  .comment{
+    margin-top: -1rem;
+  }
   .comment-label{
     padding-bottom: 2rem;
     display: block;
@@ -91,18 +80,26 @@ legend{
     margin-right: auto;
   }
   #submit {
+    box-shadow: 0px 0px 29px 10px rgba(0,0,0,1);
     font-size: 2rem;
     border-radius: 20px;
     padding: .5rem 1rem;
   }
   .basic-info{
-    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: 550px;
   }
-  
-  #name, #email, #number{
-    border: 1px solid black;
+  .opinion-of-survey,
+  .upgrades,
+  .device{
+    margin: auto;
+    max-width: 520px;
+  }
+  .device{
+    margin-top: 1.8rem;
   }
   input,
   .input,
@@ -158,14 +155,28 @@ footer{
 .label{
   margin-left: auto;
   margin-right: auto;
-  color: white;
-  text-shadow: -5px 5px 20px rgba(0, 0, 0, 1), 0px -5px 20px rgba(0, 0, 0, 1), 5px 0px 20px rgba(0, 0, 0, 1);
 }
 label{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+textarea{
+  min-width: 200px;
+  max-width: 400px;
+  min-height: 150px;
+  max-height: 200px;
+}
 .submit{
+  padding: .5em .5em;
+  margin-top: .2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .2em;
+  border: none;
+  background-color: rgba(255,255,255,.5);
+  min-width: 290px;
+  max-width: 600px;
   cursor: pointer;
   font-size: 4rem;
 }
