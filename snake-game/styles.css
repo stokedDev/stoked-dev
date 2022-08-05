@@ -152,8 +152,8 @@ footer{
     font-size: 1.7rem;
     background-color: rgb(139, 248, 184);
     color: rgb(0, 0, 0);
-    padding: .5em .7em;
-    border-radius: 2em;
+    padding: .5em 1.5em;
+    border-radius: .5em;
     box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.63);
   }
   .copy-right{

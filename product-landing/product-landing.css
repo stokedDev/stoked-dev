@@ -383,11 +383,11 @@ footer{
   display: block;
   text-decoration: none;
   text-align: center;
-  background-color: rgba(9, 255, 0, 0.5);
-  color: rgb(0, 68, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  padding: .5em .7em;
-  border-radius: 2em;
+  padding: .7em 2.5em;
+  border-radius: .5em;
 }
 .ftr-nav-link:first-child{
   margin-bottom: 1.5rem;

@@ -52,13 +52,14 @@ footer{
   .ftr-nav-link{
     text-decoration: none;
     text-align: center;
-    background-color: rgb(240, 213, 144);
-    color: rgb(90, 129, 235);
-    font-size: 2rem;
-    padding: .5em .7em;
-    border-radius: 2em;
+    background-color: rgba(0, 0, 0, 0.57);
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    padding: .75em 2.5em;
+    border-radius: .5em;
   }
   .copy-right{
+      margin-top: 3rem;
     color: white;
     font-size: 1.4rem;
     text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.7), 0px -5px 20px rgba(0, 0, 0, 0.7), 5px 0px 20px rgba(0, 0, 0, 0.7);
