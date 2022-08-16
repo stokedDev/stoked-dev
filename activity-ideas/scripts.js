@@ -8,7 +8,7 @@ btn.addEventListener('click', function(){
     idea.style.animationName = 'growShrink';   
 })
 .catch(error => {
-    idea.textContent = `HTTP Error: ${error}`;
+    idea.textContent = `${error}, http fetch url not accessible directly by https frontend`;
     idea.style.animationName = 'growShrink'; 
 });
 });
