@@ -300,9 +300,10 @@ html{
     }
     footer{
       display: flex;
+      border-top: green solid 5px;
       flex-direction: column;
       justify-content: center;
-      background: black;
+      background: url(../images/wood-bg.jpg);
       width: 100%;
       position: fixed;
       bottom: 0;
