@@ -17,7 +17,6 @@ yearlyFunnyMoney = yearlyFunnyMoney.toLocaleString('en-US', { style: 'currency',
 monthlyFunnyMoney = monthlyFunnyMoney.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
     total.textContent = yearlyFunnyMoney
     totalM.textContent = monthlyFunnyMoney
-    console.log(monthlyFunnyMoney)
     p.style.display = 'block'
     
 }
