@@ -37,32 +37,41 @@ This is based on one of the freeCodeCamp projects that I built in order to get m
 I built it with HTML, CSS, and JS. It taught me the advanced HTML skill of building forms for user input with validation.
 I might turn this into something like a story generator by writing JS to turn the user input into a short story so that the user is rewarded for filling out the form. I feel confident I can do this but finding the time when I have other things to learn is going to be a challenge.
 
-### 6. My Tribute Page
+### 6. JS Count Speed Tester
+https://stokeddev.com/my-worker-example
+
+While working through a lesson part of the MDN Learn Web Dev course I built this web worker powered counting app.
+It shows how fast JavaScript can count on your device. 
+It uses a dedicated web worker thread to free up the main thread to remain responsive to the user.
+I included a textarea element to demonstrate that it along with the entire UI remains responsive regardless of what number the app counts to.
+
+
+### 7. My Tribute Page
 https://stokeddev.com/tribute.html
 
 This is based on one of the freeCodeCamp projects that I built in order to get my Responsive Web Design certification.
 I built it with HTML and CSS. It features an HTML table and a color transition background.
 
-### 7. "Fun Money" Calculator
+### 8. "Fun Money" Calculator
 https://stokeddev.com/funmoneyapp/index.html
 
 This is one of my first ever frontend projects which I originally set up hosting for with firebase and my domain at the time funmoney.app .
 After constantly and tediously using a regular calculator to see how I felt about how much I would have left over from different salaries, I decided to put my coding skills to work. So with this project I automated and simplified the calculation process for others and myself. This project is an example of me taking HTML form data and processing it with JS to return a result to the user which solves their problem. The freeCodeCamp community was really helpful for me as I reached out to them for guidance during this project. One way they helped was suggesting a way to convert the processed data to US dollar format. I built this with HTML, CSS, and JS. 
 
-### 8. My Blackjack Game
+### 9. My Blackjack Game
 https://stokeddev.com/blackjack-game/index.html
 
 I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
 I got good practice dynamically controlling HTML with JS.
 To start the game, click the "(re)start" button and if you don't win or lose right away keep grabbing new cards with the "new card" button until you win or lose. Then click "(re)start" to restart the game if you want.  I wrote all the HTML, CSS, and JS for this game thoughtfully line by line.
 
-### 9. My Dice Game
+### 10. My Dice Game
 https://stokeddev.com/dice-game/index.html
 
 I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
 I got good practice dynamically controlling HTML with JS and CSS. I programmed CSS animations to happen in response to things like clicks and when someone wins. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself.
 
-### 10. My First Surf Game
+### 11. My First Surf Game
 https://stokeddev.com/SurfGame/index.html
 
 On my stokeddev website in my projects grid, this project only appears on screens 1024px wide or wider.
