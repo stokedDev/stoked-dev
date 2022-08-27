@@ -45,6 +45,31 @@ button{
   max-height: 132px;
 }
 
+/* footer below */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+  .ftr-nav-link{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.45rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    padding: 1em 2.5em;
+    border-radius: .5em;
+  }
+  .copy-right{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin-top: 2em;
+  }
+  /*footer above*/
+
 @media (min-width: 768px){
     .container{
         margin-top: 100px;
