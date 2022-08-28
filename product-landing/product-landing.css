@@ -279,10 +279,10 @@ body{
     display:block;
     padding:.3em 1em;
     border: none;
-    border-radius:50px;
-    background-color: #00ff00;
+    border-radius: 12px;
+    background-color: #92e892;
     margin-top: 20px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     outline: none;
     cursor: pointer;
