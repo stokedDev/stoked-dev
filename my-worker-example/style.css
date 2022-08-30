@@ -30,6 +30,27 @@ button{
     margin: 1.3rem 0;
     cursor: pointer;
 }
+button:focus,
+button:active{
+    animation-name: bgClrChng;
+    animation-duration: 1s;
+}
+@keyframes bgClrChng{
+    50%{
+        background: rgb(59, 117, 97);
+        color: white;
+    }
+    100%{
+        background: aquamarine;
+        color: black;
+    }
+}
+@keyframes bgClrChngHvr{
+    100%{
+        background: rgb(45, 160, 255);
+        color: white;
+    }
+}
 .current-count{
     flex-direction: column;
     align-items: center;
@@ -73,5 +94,13 @@ footer{
 @media (min-width: 768px){
     .container{
         margin-top: 100px;
+    }
+}
+
+@media (min-width: 1024px){
+    button:hover{
+        animation-name: bgClrChngHvr;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
     }
 }
