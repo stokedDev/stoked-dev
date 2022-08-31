@@ -99,42 +99,61 @@ button{
 }
 .mobile-controller{
     display: block;
-    height: 140px;
-    width: 140px;
+    height: 200px;
+    width: 200px;
     position: relative;
     top: 185px;
-    left: 50px;
-    margin-top: -140px;
+    left: 68px;
+    margin-top: -200px;
 }
-
+.triangle-border{
+    border: rgba(0,0,0,.2) solid .5px;
+    position: relative;
+}
+.triangle-up-container,
+.triangle-right-container,
+.triangle-down-container,
+.triangle-left-container
+{
+    width: 64px;
+    height: 64px;
+}
+.triangle-up-container{
+    top: 16px; 
+}
+.triangle-right-container{
+    left: 68px;
+    top: 16px; 
+}
+.triangle-down-container{
+    top: 18px; 
+}
+.triangle-left-container{
+    right: 68px;
+    bottom: 116px; 
+}
 .triangle{
     cursor: pointer;
     height: 0;
     width: 0;
-    border: solid transparent 20px;
+    border: solid transparent 32px;
     border-top: 0;
-    border-bottom: 40px rgba(255, 132, 0, 0.544) solid;  
+    border-bottom: 64px rgba(255, 132, 0, 0.363) solid;  
 }
 .triangle-up{
     position: relative;
-    bottom: 3px;
 }
 .triangle-right{
     transform: rotate(90deg);
     position: relative;
-    left: 46px;
-
 }
 .triangle-down{
     transform: rotate(180deg);
     position: relative;
-    top: 3px;
 }
 .triangle-left{
     transform: rotate(-90deg);
     position: relative;
-    right: 46px;
-    bottom: 80px;
 }
 
 /* footer below */
