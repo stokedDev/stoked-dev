@@ -9,7 +9,7 @@ Documentation Page, Product Landing Page, My Survey Form, My Tribute Page, "Fun 
 https://stokeddev.com/snake-game/index.html
 
 I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
-I got good practice dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself. This game is now playable on mobile as I have created a mobile controller for it which is also toggleable on viewports wider than 1024px.
+I got good practice dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself. This game is now playable on mobile as I have created a mobile controller for it which is also toggleable on viewports wider than 1024px. I'm especially proud of how I coded a recursive function containing a setTimeout to animate the game with a dynamic interval while also using recursion to keep the apple off the snake. 
 
 
 ### 2. fCC JS Cert Repo
@@ -34,8 +34,7 @@ I built it with HTML, CSS, and JS. It is for a company I made up that manuafactu
 https://stokeddev.com/survey0/survey.html
 
 This is based on one of the freeCodeCamp projects that I built in order to get my Responsive Web Design certification.
-I built it with HTML, CSS, and JS. It taught me the advanced HTML skill of building forms for user input with validation.
-I might turn this into something like a story generator by writing JS to turn the user input into a short story so that the user is rewarded for filling out the form. I feel confident I can do this but finding the time when I have other things to learn is going to be a challenge.
+I built it with HTML, CSS, and JS. It taught me the advanced HTML5 skill of building forms for user input with validation.
 
 ### 6. JS Count Speed Tester
 https://stokeddev.com/my-worker-example
