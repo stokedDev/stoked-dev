@@ -17,11 +17,11 @@
     let squares = [];
     let direction = 1;
     const width = 10;
+    let timerId;
     let appleIndex;
     let score = 0;
-    let intervalTime = 1000;
-    let timerId;
-    let speedIncrease = 0.9;
+    let intervalTime;
+    let speedIncrease = 0.975;
     scoreMsg.style.color = 'rgba(0,0,0,0)';
 
     function createGrid() {
@@ -55,7 +55,7 @@
             if(el.classList.contains('apple'))el.classList.remove('apple');
         });
         msg.innerHTML = ''
-        clearInterval(timerId);
+        clearTimeout(timerId);
         currentSnake.forEach(el => {
             squares[el].classList.remove('snake');
         });
@@ -69,7 +69,13 @@
         scoreDisplay.textContent = score;
         generateApple();
         intervalTime = 1000;
-        timerId = setInterval(move, intervalTime)    
+        function timeout(){
+            timerId = setTimeout(() => {
+                const movePromise = new Promise(resolve => resolve(move()));
+                movePromise.then(() => timeout());
+            }, intervalTime)
+    }
+    timeout()
     }
 
     function move(){
@@ -98,17 +104,20 @@
                 score++;
                 scoreDisplay.textContent = score;
                 intervalTime *= speedIncrease;
-                scoreMsg.classList.add('score-pound');
-                setTimeout(()=>{
-                    scoreMsg.classList.remove('score-pound')
-                },1002)
+                scorePound()
                 generateApple();
         }
     }
     }
-
+    function scorePound(){
+        scoreMsg.classList.add('score-pound');
+                setTimeout(()=>{
+                    scoreMsg.classList.remove('score-pound')
+                },1001);
+    }
     function generateApple(){
         /* appleIndex cannot equal elem from currentSnake
+
         appleIndex can equal any other index of squares*/
         function generateAppleIndex(){
             appleIndex = Math.floor(Math.random() * squares.length);
