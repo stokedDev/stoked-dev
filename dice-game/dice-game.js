@@ -6,7 +6,8 @@ const resetBtn = document.getElementById('resetBtn')
 const player1Dice = document.getElementById('player1Dice')
 const player2Dice = document.getElementById('player2Dice')
 
-
+/* Make random initial player turn */
+/* Make user name input with initial default values */
 let player1Score = 0
 let player2Score = 0
 let player1Turn = true
@@ -44,6 +45,8 @@ rollBtn.addEventListener('click', function(){
     }
     player1Turn = !player1Turn
     rollBtn.style.animationName = 'growShrink'
+},{
+    passive: true
 })
 
 function reset(){
@@ -60,9 +63,13 @@ function reset(){
     resetBtn.style.display = 'none' 
     message.textContent = 'Player 1 Turn'
 }
-resetBtn.addEventListener('click', reset)
+resetBtn.addEventListener('click', reset, {
+    passive: true
+})
 
 rollBtn.addEventListener('animationend', function(){
     rollBtn.style.animationName = '';
     message.style.animationName = '';
+},{
+    passive: true
 });

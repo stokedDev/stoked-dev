@@ -30,6 +30,8 @@ const emailFormMessage = document.querySelector('.email-form-message');
 const closeEmailFormBtn = document.querySelector('.close-email-form');
 closeEmailFormBtn.addEventListener('click', function(){
     emailForm.style.display = 'none';
+},{
+    passive: true
 })
 emailSubmit.addEventListener("click", function(){
             if(emailInput.value.includes('@')){
@@ -38,6 +40,8 @@ emailSubmit.addEventListener("click", function(){
             emailFormMessage.textContent = 'Thanks for signing up!';
             event.preventDefault();
             }
+},{
+    passive: true
 });
 
 const [topBun,inBuns,bottomBun] = 
@@ -93,7 +97,9 @@ function goToSection(sectionHeader, section){
     sectionHeader.scrollIntoView();
 }
 function activateBtn(btn, header, section){
-btn.addEventListener("click", () => goToSection(header, section));
+btn.addEventListener("click", () => goToSection(header, section),{
+    passive: true
+});
 }
 
 mobileMenu.addEventListener("click", function(){
@@ -114,6 +120,9 @@ mobileMenu.addEventListener("click", function(){
         hamburgerBack()    
     }
 
+},
+{
+    passive: true
 });
 
 function isInViewport(el) {

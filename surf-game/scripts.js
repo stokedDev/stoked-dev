@@ -123,7 +123,9 @@ function control(e){
     }
     ridingMessage()    
 }
-document.addEventListener('keydown', control)
+document.addEventListener('keydown', control, {
+    passive: true
+})
 let k = environment.indexOf(5)
 
 function whiteWash(){

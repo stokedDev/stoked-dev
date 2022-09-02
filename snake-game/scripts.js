@@ -160,6 +160,8 @@
             controllerToggle.textContent = "turn on mobile controller";
         }
     }
-    document.addEventListener('click', mobileControl, {passive: false});
-    document.addEventListener('keydown', control);
-    startBtn.addEventListener('click', startGame, {passive: false});
+    document.addEventListener('click', mobileControl, {passive: true});
+    document.addEventListener('keydown', control,{
+        passive: true
+    });
+    startBtn.addEventListener('click', startGame, {passive: true});
