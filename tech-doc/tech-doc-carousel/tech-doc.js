@@ -79,7 +79,9 @@ function goToSection(sectionHeader, slidePosition){
     mainDoc.scrollIntoView();
 }
 function activateBtn(btn, sectionHeader, slidePosition){
-    btn.addEventListener("click", () => goToSection(sectionHeader, slidePosition));
+    btn.addEventListener("click", () => goToSection(sectionHeader, slidePosition),{
+        passive: true
+    });
     }
 
     mobileMenu.addEventListener("click", function(){
@@ -100,6 +102,8 @@ function activateBtn(btn, sectionHeader, slidePosition){
             hamburgerBack()    
         }
     
+    },{
+        passive: true
     });
 
     function isInViewport(el) {
@@ -128,8 +132,9 @@ function activateBtn(btn, sectionHeader, slidePosition){
         passive: true
     });
 
-    activateBtn(whatBtn, sH1, 0);
-    activateBtn(howBtn,sH2, 1);
-    activateBtn(varBtn, sH3, 2);
-    activateBtn(condBtn, sH4, 3);
-    activateBtn(domBtn, sH5, 4);
+    function activateBtns(btns, sHs, nums){
+        for(let b = 0; b < btns.length; b++){
+                    activateBtn(btns[b], sHs[b], nums[b]);
+        }
+    }
+    activateBtns([whatBtn,howBtn,varBtn,condBtn,domBtn], [sH1,sH2,sH3,sH4,sH5], [0,1,2,3,4]);
