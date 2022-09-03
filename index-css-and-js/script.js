@@ -120,3 +120,5 @@ function activateBtn(btn, sectionIntro, slidePosition){
     activateBtn(projectsBtn[0],sI2, 1);
     activateBtn(projectsBtn[1],sI2, 1);
     activateBtn(contactBtn, sI3, 2);
+
+    document.querySelector('.ftr-nav-link').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
