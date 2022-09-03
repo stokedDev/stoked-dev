@@ -156,3 +156,5 @@ document.addEventListener('scroll', function () {
 activateBtn(aboutBtn, aboutH, aboutS);
 activateBtn(locationsBtn, locationsH, locationsS);
 activateBtn(pricingBtn, pricingH, pricingS);
+
+document.querySelector('.back-to-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
