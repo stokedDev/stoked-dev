@@ -373,11 +373,10 @@ body{
   
 
   /* footer below */
-footer{
+.ftr-nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   font-size: 2.5rem;
 }
 .ftr-nav-link{
@@ -387,24 +386,37 @@ footer{
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  padding: .7em 2.5em;
-  border-radius: .5em;
+  border-radius: .2em;
 }
-.ftr-nav-link:first-child{
+.back-to-top{
   margin-bottom: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: .2em;
 }
+.back-to-top,
+.ftr-nav-link{
+  width: 298px;
+  padding: .7em 0;
+}
+
 .copy-right{
+  text-align: center;
   text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.575), 0px -5px 20px rgba(0, 0, 0, 0.575), 5px 0px 20px rgba(0, 0, 0, 0.575);
   font-size: 1.5rem;
   color: white;
 }
+/* footer above */
 @media (min-width: 768px){
   .about-us-section p{
     font-size: 1.4rem;
     line-height: 1.2em;
   }
 }
-/* footer above */
+
 @media (min-width: 940px){
 /* NAVBAR CSS STARTS HERE */
 .nav-bar{
