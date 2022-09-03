@@ -352,13 +352,14 @@ footer{
   margin-top: 10rem;
 }
 .ftr-nav-link{
-  text-decoration: none;
   text-align: center;
-  background-color: rgba(9, 255, 0, 0.5);
-  color: rgb(0, 68, 255);
+  background-color: rgba(0, 0, 0, 0.492);
+  color: rgb(255, 255, 255);
   font-size: 2.5rem;
-  padding: .5em .7em;
-  border-radius: 2em;
+  padding: .5em 1.1em;
+  cursor: pointer;
+  border: none;
+  border-radius: .5em;
 }
 
 .copy-right{
