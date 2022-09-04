@@ -3,15 +3,20 @@
     const scoreMsg = document.querySelector('.score');
     const startBtn = document.querySelector('.start');
     const grid = document.querySelector('.grid');
-    const [up, right, down, left, controller, controllerToggle] = [
+    const [up, right, play, pause, pBtn, down, left, controller, controllerToggle] = [
         document.querySelector('.triangle-up'),
         document.querySelector('.triangle-right'),
+        document.querySelector('.play-btn'),
+        document.querySelector('.pause-btn'),
+        document.querySelector('.p-btn'),
         document.querySelector('.triangle-down'),
         document.querySelector('.triangle-left'),
         document.querySelector('.mobile-controller'),
         document.querySelector('.mobile-controller-visibility-toggle')
     ]
+    
     let isAlive;
+    let isPlaying = false;
     let currentSnake = [2,1,0];
     let tail = currentSnake.pop();
     let squares = [];
@@ -22,7 +27,14 @@
     let score = 0;
     let intervalTime;
     let speedIncrease = 0.975;
+    let activateTimer = false;
     scoreMsg.style.color = 'rgba(0,0,0,0)';
+    function playGame(){
+            timerId = setTimeout(() => {
+                const movePromise = new Promise(resolve => resolve(move()));
+                movePromise.then(() => playGame());
+            }, intervalTime)
+        }
 
     function createGrid() {
         for (let i = 0; i < 100; i++){
@@ -35,15 +47,17 @@
     createGrid()
 
     function hitWall(){
+        isPlaying = false;
         isAlive = false;
-        clearInterval(timerId);
+        clearTimeout(timerId);
         msg.innerHTML = "Snake hit a wall.<br> Wanna play again?";
         msg.classList.add('message-pound');
     }
 
     function hitSelf(){
+        isPlaying = false;
         isAlive = false;
-        clearInterval(timerId);
+        clearTimeout(timerId);
         msg.innerHTML = "Snake hit itself. <br> Wanna play again?";
         msg.classList.add('message-pound');
     }
@@ -64,18 +78,13 @@
             squares[el].classList.add('snake');
         });
         isAlive = true;
+        isPlaying = true;
         direction = 1;
         score = 0;
         scoreDisplay.textContent = score;
         generateApple();
         intervalTime = 1000;
-        function timeout(){
-            timerId = setTimeout(() => {
-                const movePromise = new Promise(resolve => resolve(move()));
-                movePromise.then(() => timeout());
-            }, intervalTime)
-    }
-    timeout()
+    playGame()
     }
 
     function move(){
@@ -89,6 +98,8 @@
             hitSelf();
         }
         if(isAlive){
+            activateTimer = true;
+            isPlaying = true;
             currentSnake.forEach(index => {
                 squares[index].classList.remove('snake');
             })
@@ -134,10 +145,27 @@
     // 38 is for the up arrow
     // 37 is for the left arrow
     // 40 is for the down arrow
-
+    // 32 is for the spacebar
 
     function control(e){
-        if (e.keyCode === 39){
+        e.preventDefault()
+        if(e.keyCode === 32 && controllerToggle.style.display !== 'none' && play.style.display !== 'none' && !isPlaying){
+        play.style.display = 'none';
+        pause.style.display = 'inline';
+        }
+        if(e.keyCode === 32 && controllerToggle.style.display !== 'none' && play.style.display === 'none' && isPlaying){
+        play.style.display = 'inline';
+        pause.style.display = 'none';
+        }
+        if (e.keyCode === 32 && activateTimer){
+                clearTimeout(timerId);
+                activateTimer = false;
+                isPlaying = false;
+        } else if(e.keyCode === 32 && !activateTimer){
+                activateTimer = true;
+                playGame();
+                isPlaying = true;
+        } else if (e.keyCode === 39){
             direction = 1;
         } else if (e.keyCode === 38){
             direction = -width;
@@ -147,7 +175,44 @@
             direction = +width;
         }
     }
+    function timerResponse(){
+            if(controllerToggle.style.display !== 'none' && play.style.display !== 'none' && !isPlaying){
+                isPlaying = false;
+                play.style.display = 'inline';
+                pause.style.display = 'none';
+            }
+            if(controllerToggle.style.display !== 'none' && play.style.display === 'none' && isPlaying){
+                isPlaying = true;
+                play.style.display = 'none';
+                pause.style.display = 'inline';
+            }
+    }
+    // if game is playing and spacebar is pressed make pause btn invisible and play btn visible
+
+    // update mobile controller play/pause btn to match isPlaying boolean 
+
+    /* Keyboard events need to change visible play/pause btn
+        When toggleController is clicked configure play/pause btn visibility.
+
+        Problem: keyboard presses don't update play/pause btn state
+        Solution?: make keyboard presses update play/pause btn state
+        Question: Is play/pause btn state dependant on display property?
+    */
     function mobileControl(evt){
+            if(evt.target === play && !isPlaying){
+                playGame();
+                play.style.display = 'none';
+                pause.style.display = 'inline';
+                isPlaying = true;
+                activateTimer = true;
+            }
+            if(evt.target === pause  && isPlaying){
+                clearTimeout(timerId);
+                pause.style.display = 'none';
+                play.style.display = 'inline';
+                isPlaying = false;
+                activateTimer = false;
+            }
         if(evt.target === up) direction = -width;
         if(evt.target === right) direction = 1;
         if(evt.target === down) direction = +width;
@@ -161,7 +226,5 @@
         }
     }
     document.addEventListener('click', mobileControl, {passive: true});
-    document.addEventListener('keydown', control,{
-        passive: true
-    });
+    document.addEventListener('keydown', control);
     startBtn.addEventListener('click', startGame, {passive: true});
