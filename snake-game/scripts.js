@@ -175,18 +175,6 @@
             direction = +width;
         }
     }
-    function timerResponse(){
-            if(controllerToggle.style.display !== 'none' && play.style.display !== 'none' && !isPlaying){
-                isPlaying = false;
-                play.style.display = 'inline';
-                pause.style.display = 'none';
-            }
-            if(controllerToggle.style.display !== 'none' && play.style.display === 'none' && isPlaying){
-                isPlaying = true;
-                play.style.display = 'none';
-                pause.style.display = 'inline';
-            }
-    }
     // if game is playing and spacebar is pressed make pause btn invisible and play btn visible
 
     // update mobile controller play/pause btn to match isPlaying boolean 
