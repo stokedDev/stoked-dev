@@ -84,7 +84,11 @@
         scoreDisplay.textContent = score;
         generateApple();
         intervalTime = 1000;
-    playGame()
+        if(controller.classList.contains("mobile-controller-on")){
+            play.style.display = 'none';
+            pause.style.display = 'inline';
+        }
+        playGame()
     }
 
     function move(){
@@ -120,6 +124,8 @@
         }
     }
     }
+    
+
     function scorePound(){
         scoreMsg.classList.add('score-pound');
                 setTimeout(()=>{
@@ -147,15 +153,27 @@
     // 40 is for the down arrow
     // 32 is for the spacebar
 
+    function handleMobileBtnsToggleTurnedOn(){
+        controller.classList.add("mobile-controller-on");
+        controllerToggle.textContent = "turn off mobile controller";
+        if(isPlaying){
+            play.style.display = 'none';
+            pause.style.display = 'inline';  
+        } else if (!isPlaying){
+            play.style.display = 'inline';
+            pause.style.display = 'none';
+        }
+}
+
     function control(e){
         e.preventDefault()
-        if(e.keyCode === 32 && controllerToggle.style.display !== 'none' && play.style.display !== 'none' && !isPlaying){
-        play.style.display = 'none';
-        pause.style.display = 'inline';
+        if(e.keyCode === 32 && controller.classList.contains("mobile-controller-on") && play.style.display !== 'none' && !isPlaying){
+            play.style.display = 'none';
+            pause.style.display = 'inline';
         }
-        if(e.keyCode === 32 && controllerToggle.style.display !== 'none' && play.style.display === 'none' && isPlaying){
-        play.style.display = 'inline';
-        pause.style.display = 'none';
+        if(e.keyCode === 32 && controller.classList.contains("mobile-controller-on") && play.style.display === 'none' && isPlaying){
+            play.style.display = 'inline';
+            pause.style.display = 'none';
         }
         if (e.keyCode === 32 && activateTimer){
                 clearTimeout(timerId);
@@ -175,17 +193,7 @@
             direction = +width;
         }
     }
-    // if game is playing and spacebar is pressed make pause btn invisible and play btn visible
-
-    // update mobile controller play/pause btn to match isPlaying boolean 
-
-    /* Keyboard events need to change visible play/pause btn
-        When toggleController is clicked configure play/pause btn visibility.
-
-        Problem: keyboard presses don't update play/pause btn state
-        Solution?: make keyboard presses update play/pause btn state
-        Question: Is play/pause btn state dependant on display property?
-    */
+    
     function mobileControl(evt){
             if(evt.target === play && !isPlaying){
                 playGame();
@@ -206,8 +214,7 @@
         if(evt.target === down) direction = +width;
         if(evt.target === left) direction = -1;
         if(evt.target === controllerToggle && !controller.classList.contains("mobile-controller-on")) {
-            controller.classList.add("mobile-controller-on");
-            controllerToggle.textContent = "turn off mobile controller";
+            handleMobileBtnsToggleTurnedOn()
         } else if(evt.target === controllerToggle && controller.classList.contains("mobile-controller-on")){
             controller.classList.remove("mobile-controller-on");
             controllerToggle.textContent = "turn on mobile controller";
