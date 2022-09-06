@@ -1,6 +1,6 @@
 # stokeddev.com
 ## Introduction
-My website https://www.stokeddev.com , which this repository belongs to, is a result of my 1300+ hours studying and practicing front end engineering from the beginning of my developer journey in September of 2020. I thoughtfully wrote every line of frontend code that makes up this website with HTML, CSS, and JS.
+My website https://www.stokeddev.com , which this repository belongs to, is a result of my 2000+ hours studying and practicing front end engineering from the beginning of my developer journey in September of 2020. I thoughtfully wrote every line of frontend code that makes up this website with HTML, CSS, and JS.
 
 ## Projects
 Documentation Page, Product Landing Page, My Survey Form, My Tribute Page, "Fun Money" calculator, My Blackjack Game, and My Dice Game were all designed by me to be fully responsive to all devices. All hamburger icon mobile menu popup toggle HTML, CSS, and JS that appears in some of my projects is my own original code that I came up with.
@@ -9,7 +9,7 @@ Documentation Page, Product Landing Page, My Survey Form, My Tribute Page, "Fun 
 https://stokeddev.com/snake-game/index.html
 
 I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
-I got good practice dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself. This game is now playable on mobile as I have created a mobile controller for it which is also toggleable on viewports wider than 1024px. I'm especially proud of how I coded a recursive function containing a setTimeout to animate the game with a dynamic interval while also using recursion to keep the apple off the snake. 
+I got good practice problem solving while dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself. This game is now playable on mobile as I have created a mobile controller for it which is also toggleable on viewports wider than 1024px. I'm especially proud of how I coded a recursive function containing a setTimeout to animate the game with a dynamic interval while also using recursion to keep the apple off the snake. One of my biggest challenges that I overcame in developing this app was harmonizing the relationship between play/pause click/keydown event listeners.
 
 
 ### 2. fCC JS Cert Repo
