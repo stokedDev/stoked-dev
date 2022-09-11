@@ -66,8 +66,28 @@ function goToSection(sectionIntro, slidePosition){
     slides[slidePosition].classList.add('carousel-item-visible');
     sectionIntro.scrollIntoView();
 }
+function goToSectionWithoutUsingMobileMenu(sectionIntro, slidePosition){
+    switch (sectionIntro){
+        case sI1:
+            hideAllSlides();
+        break;
+        case sI2:
+            hideAllSlides();
+        break;
+        case sI3:
+            hideAllSlides();
+    }
+    slides[slidePosition].classList.add('carousel-item-visible');
+    sectionIntro.scrollIntoView();
+}
 function activateBtn(btn, sectionIntro, slidePosition){
-    btn.addEventListener("click", () => goToSection(sectionIntro, slidePosition));
+    btn.addEventListener("click", () => {
+        if(!header.classList.contains('header-popup')){
+            goToSectionWithoutUsingMobileMenu(sectionIntro, slidePosition)
+        } else {
+            goToSection(sectionIntro, slidePosition)
+        }
+    });
     }
     mobileMenu.addEventListener("click", function(){
         if (!header.classList.contains('header-popup')){
