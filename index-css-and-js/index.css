@@ -345,6 +345,18 @@ h4{
 .github-img{
   padding-top: 1rem;
 }
+.youtube-link{
+  box-shadow: 1px 3px 25px -5px #000000;
+  padding: .25rem;
+  border-radius: .5rem;
+}
+.youtube-img{
+  position: relative;
+  top: 35px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+}
 
 footer{
   text-align: center;
