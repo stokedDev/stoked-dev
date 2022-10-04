@@ -211,6 +211,9 @@ footer{
     .mobile-controller-visibility-toggle{
         display: none;
     }
+    .play-pause-info{
+        display: none;
+    }
 }
 @keyframes pound{
     50%{
