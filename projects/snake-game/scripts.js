@@ -45,7 +45,7 @@
         }
     }
     createGrid()
-
+    
     function hitWall(){
         isPlaying = false;
         isAlive = false;
@@ -89,6 +89,16 @@
             pause.style.display = 'inline';
         }
         playGame()
+        function showPlayOrPauseBtn(){
+            if(controller.style.display !== "none" && isPlaying){
+                play.style.display = 'none';
+                pause.style.display = 'inline';  
+            } else if (controller.style.display === "none" && !isPlaying){
+                play.style.display = 'none';
+                pause.style.display = 'none';
+            }
+        }
+        showPlayOrPauseBtn()
     }
 
     function move(){
@@ -223,3 +233,4 @@
     document.addEventListener('click', mobileControl, {passive: true});
     document.addEventListener('keydown', control);
     startBtn.addEventListener('click', startGame, {passive: true});
+    
