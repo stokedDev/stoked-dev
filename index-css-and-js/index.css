@@ -375,10 +375,9 @@ footer{
 }
 
 .copy-right{
-  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.9), 0px -5px 20px rgba(0, 0, 0, 0.9), 5px 0px 20px rgba(0, 0, 0, 0.9);
-  color: pink;
+  color: black;
   margin-top: 2rem;
-  font-size: 2.15rem;
+  font-size: 2.2rem;
 }
 
 
