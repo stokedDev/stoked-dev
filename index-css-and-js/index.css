@@ -314,8 +314,6 @@ h4{
   text-shadow: -5px 5px 11px rgba(0, 0, 0, 1), 0px -5px 11px rgba(0, 0, 0, 1), 5px 0px 11px rgba(0, 0, 0, 1);
   text-align: center;
   max-width: 450px;
-}
-.contact-description-inner{
   padding: 1em;
 }
 .contact-list{
