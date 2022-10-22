@@ -1,5 +1,30 @@
-.my-tubular-animator-sign-and-my-legs{
-    margin: auto;
-    height: 25%;
+body{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+.image{
+    display: inline-block;
+    width: 200px;
     border-radius: 1rem;
+}
+.call-to-action{
+    width: 203px;
+    
+}
+.cool-pics{
+    width: 202px;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+footer{
+    text-align: center;
 }
