@@ -236,7 +236,9 @@ h4{
   gap: 2rem 2rem;
   grid-template-columns: 290px;
 }
-
+.tubularanimator{
+  display: none;
+}
 .project{
   display: flex;
   flex-direction: column;
