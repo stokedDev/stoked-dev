@@ -41,7 +41,7 @@ emailSubmit.addEventListener("click", function(){
             event.preventDefault();
             }
 },{
-    passive: true
+    passive: false
 });
 
 const [topBun,inBuns,bottomBun] = 
