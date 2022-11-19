@@ -365,11 +365,6 @@ body{
     font-size:1.2rem;
   }
 
-  /* .product-submit-btn-container{
-    display: flex;
-    justify-content: flex-end;
-  } */
-
   .product-submit{
     border-radius: .5em;
     background-color:#5af16e;
