@@ -5,15 +5,25 @@ My website https://www.stokeddev.com , which this repository belongs to, is a re
 ## Projects
 Documentation Page, Product Landing Page, My Survey Form, My Tribute Page, "Fun Money" calculator, My Blackjack Game, and My Dice Game were all designed by me to be fully responsive to all devices. All hamburger icon mobile menu popup toggle HTML, CSS, and JS that appears in some of my projects is my own original code that I came up with.
 
-### Ob. HolyBibleGateWay
-https://stokeddev.com/projects/HolyBibleGateWay/index.html
 
-Holy Bible Header
-Go To Bible Gate Way Link
-Go To Holy Bible Link
-Look Up A Word Or Passage in the Bible
-Search Query Input For BibleGateWay
-BibleGateWay
+### Oa. LenzArts
+https://www.stokeddev.com/projects/LenzArts/index.html
+
+Begining of my LenzArts Project<br>
+image folder with webp file of AbgoodBug character drawn in Krita<br>
+index.html with html boiler plate, html elements, etc<br>
+script.js with JavaScript comment<br>
+styles.css with one selector property to value of width of 396px<br>
+
+### Ob. HolyBibleGateWay
+https://www.stokeddev.com/projects/HolyBibleGateWay/index.html
+
+Holy Bible Header<br>
+Go To Bible Gate Way Link<br>
+Go To Holy Bible Link<br>
+Look Up A Word Or Passage in the Bible<br>
+Search Query Input For BibleGateWay<br>
+BibleGateWay<br>
 Link To Include This Form On Your Page
 
 ### 1. My Snake Game
