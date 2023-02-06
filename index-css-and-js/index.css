@@ -264,6 +264,9 @@ h4{
   height: 160px;
   object-fit: cover;
 }
+.hbgw {
+  width: 300px;
+}
 .languages{
   font-weight: 300;
   font-size: 3rem;
