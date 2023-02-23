@@ -218,6 +218,7 @@ h4{
   margin-top: 1rem;
   font-size: 1.5em;
 }
+
 .last-welcome-h4{
   background: rgba(0,0,0,.2);
   border-radius: .5em;
@@ -235,9 +236,6 @@ h4{
   display: grid;
   gap: 2rem 2rem;
   grid-template-columns: 290px;
-}
-.tubularanimator{
-  display: none;
 }
 .project{
   display: flex;
@@ -263,9 +261,6 @@ h4{
   width: 250px;
   height: 160px;
   object-fit: cover;
-}
-.hbgw {
-  width: 300px;
 }
 .languages{
   font-weight: 300;
@@ -376,7 +371,10 @@ footer{
   border: none;
   border-radius: .5em;
 }
-
+.HolyBibleLink{
+  font-size: 2rem;
+  width: 298px;
+}
 .copy-right{
   color: black;
   margin-top: 2rem;
