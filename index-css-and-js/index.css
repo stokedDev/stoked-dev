@@ -339,12 +339,16 @@ h4{
 }
 .contact-description{
   letter-spacing: .05em;
-  font-size: 3rem;
+  font-size: 2.9rem;
   color: rgb(252, 220, 39);
   text-shadow: 0 0 3px black, 0 0 3px black;
   text-align: center;
   max-width: 450px;
   padding: 1em;
+}
+.email{
+  font-size: 3rem;
+  font-weight: 600;
 }
 .contact-list{
   font-size: 2rem;
