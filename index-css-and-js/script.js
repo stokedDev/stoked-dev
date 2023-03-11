@@ -13,7 +13,7 @@ const contactBtn = document.querySelector(".contactBtn");
 /* nav div classes buttons end here*/
 
 /* sI means section intro */
-const [ sI1, sI2, sI3 ] = [document.querySelector('h4'), document.querySelector('.projects-title'),
+const [ sI1, sI2, sI3 ] = [document.querySelector('h1'), document.querySelector('.projects-title'),
 document.querySelector('.contact-description')];
 
 const header = document.querySelector('header');
