@@ -183,14 +183,14 @@ body{
 }
 
 /* NAVBAR CSS ENDS HERE */
-#welcome-section{
+.welcome-section{
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: .05em;
   color: rgb(252, 220, 39);
   background: none;
-  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.90), 0px -5px 20px rgba(0, 0, 0, 0.90), 5px 0px 20px rgba(0, 0, 0, 0.90);
+  text-shadow: 0 0 3px rgba(0,0,0,1),0 0 3px rgba(0,0,0,1);
   padding: .01em .5em;
   border-radius: 20px;
   margin-left: auto;
@@ -201,24 +201,53 @@ body{
 p{
   font-size: 2.4rem;
 }
+h1{
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.intro{
+  position: relative;
+  bottom: 10px;
+}
+.intro-part{
+  font-weight: 600;
+  display: block;
+}
+.intro-part-1{
+  margin-top: 0;
+}
+.last-intro-part-0,
+.last-intro-part-1{
+  font-size: 2rem;
+}
 h2{
   font-size: 2.1rem;
   text-align: center;
 }
-.projects-title{
+.accent-text{
   font-size: 3rem;
-  letter-spacing: .6rem;
-  color: rgb(252, 220, 39);
-  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.90), 0px -5px 20px rgba(0, 0, 0, 0.90), 5px 0px 20px rgba(0, 0, 0, 0.90);
+  font-weight: 600;
 }
-
-h4{
-  font-weight: 300;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  font-size: 1.5em;
+.accent-text-lighter-block{
+  display: block;
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
 }
-
+.last-accent-text{
+  display: block;
+  font-weight: 900;
+}
+.pro-role{
+  margin: 7px 0;
+  font-size: 1.74rem;
+  display: block;
+  letter-spacing: .1em;
+  display: block;
+}
+.pro-role-conjunction{
+  font-weight: 600;
+}
 .last-welcome-h4{
   background: rgba(0,0,0,.2);
   border-radius: .5em;
@@ -229,9 +258,20 @@ h4{
 .last-welcome-h4:focus{
   background: rgba(0,0,0,.5);
 }
-.education{
-  display: block;
+.projects-title{
+  font-size: 3rem;
+  letter-spacing: .6rem;
+  color: rgb(252, 220, 39);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 2px rgba(0, 0, 0, 1);
 }
+
+h4{
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5em;
+}
+
 .projects{
   display: grid;
   gap: 2rem 2rem;
@@ -285,15 +325,11 @@ h4{
 .dice-game{
   width: 200px;
 }
-.accent-text{
-  font-size: 1em;
-  font-weight: 900;
-  display: block;
-}
-.feswe{
-  letter-spacing: .1em;
-}
+
 .profile-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: grid;
   gap: .5rem .5rem;
   grid-template-columns: 150px 150px;
@@ -301,17 +337,11 @@ h4{
 .invisible{
   display: none;
 }
-.contact-container{
-  letter-spacing: .05em;
-  color: rgb(252, 220, 39);
-  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.90), 0px -5px 20px rgba(0, 0, 0, 0.90), 5px 0px 20px rgba(0, 0, 0, 0.90);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .contact-description{
+  letter-spacing: .05em;
   font-size: 3rem;
-  text-shadow: -5px 5px 11px rgba(0, 0, 0, 1), 0px -5px 11px rgba(0, 0, 0, 1), 5px 0px 11px rgba(0, 0, 0, 1);
+  color: rgb(252, 220, 39);
+  text-shadow: 0 0 3px black, 0 0 3px black;
   text-align: center;
   max-width: 450px;
   padding: 1em;
@@ -321,39 +351,46 @@ h4{
 }
 .profile-link{
   width: 150px;
+  height: 150px;
+  box-shadow: 0px 0px 8px 0px #000000;
 }
+/*
 .twitter{
   border-radius: 2rem;
   width: 150px;
 }
+*/
 .edabit{
+  width: 150px;
+  height: 150px;
   border-radius: 1rem;
   height: 150px;
 }
 .linkedin{
-  box-shadow: 1px 3px 25px -5px #000000;
+  width: 150px;
+  height: 150px;
   padding: .25rem;
   border-radius: .5rem;
 }
 .github-link{
-  box-shadow: 1px 3px 25px -5px #000000;
   padding: .25rem;
   border-radius: .5rem;
 }
 .github-img{
+  width: 150px;
   padding-top: 1rem;
 }
 .youtube-link{
-  box-shadow: 1px 3px 25px -5px #000000;
   padding: .25rem;
   border-radius: .5rem;
 }
 .youtube-img{
+  width: 135px;
+  height: 120px;
   position: relative;
-  top: 35px;
-  width: 140px;
-  display: flex;
-  justify-content: center;
+  left: 7px;
+  display: block;
+  text-align: center;
 }
 
 footer{
@@ -371,17 +408,68 @@ footer{
   border: none;
   border-radius: .5em;
 }
-.HolyBibleLink{
-  font-size: 2rem;
-  width: 298px;
-}
 .copy-right{
   color: black;
   margin-top: 2rem;
   font-size: 2.2rem;
 }
 
-
+@media (min-width: 356px){
+  .pro-role{
+    font-size: 1.95rem;
+  }
+  .accent-text-lighter-block{
+    font-size: 2.6rem;
+  }
+  .intro-part-1,
+  .intro-part-2{
+    font-size: 2.3rem;
+  }
+  .last-intro-part-0,
+  .last-intro-part-1{
+  font-size: 2.2rem;
+}
+  .accent-text{
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 380px){
+  .pro-role{
+    font-size: 2.1rem;
+  }
+  .intro-part-1,
+  .intro-part-2{
+    font-size: 2.5rem;
+  }
+  .last-intro-part-0,
+  .last-intro-part-1{
+  font-size: 2.4rem;
+}
+  .accent-text{
+    font-size: 3rem;
+  }
+  .accent-text-lighter-block{
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 400px){
+  .intro-part-1{
+    font-size: 2.7rem;
+  }
+  .intro-part-2{
+    font-size: 2.7rem;
+  }
+  .last-intro-part-0,
+  .last-intro-part-1{
+  font-size: 2.6rem;
+}
+  .accent-text{
+    font-size: 3.2rem;
+  }
+  .pro-role{
+    font-size: 2.22rem;
+  }
+}
 @media (min-width: 700px){
   /*NAVBAR CSS STARTS HERE*/
 .nav-list{
@@ -413,6 +501,11 @@ footer{
     justify-content: center;
 }
 }
+@media (max-width: 1020px){
+  .surf-game{
+    display: none;
+  }
+}
 @media (min-width: 1024px){
   .nav-link:hover{
     background-color: rgba(0, 0, 0, 0.541);
@@ -420,10 +513,5 @@ footer{
   }
   .last-welcome-h4:hover{
     background-color: rgba(0, 0, 0, .5);
-  }
-}
-@media (max-width: 1020px){
-  .surf-game{
-    display: none;
   }
 }
