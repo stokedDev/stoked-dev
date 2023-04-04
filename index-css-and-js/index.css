@@ -367,7 +367,6 @@ h4{
 .edabit{
   width: 150px;
   height: 150px;
-  border-radius: 1rem;
   height: 150px;
 }
 .linkedin{
@@ -382,17 +381,22 @@ h4{
 }
 .github-img{
   width: 150px;
-  padding-top: 1rem;
+  padding-top: 3.4rem;
+  padding-right: .5rem;
+}
+.instagram{
+ padding-left: 4px;
 }
 .youtube-link{
   padding: .25rem;
   border-radius: .5rem;
 }
 .youtube-img{
-  width: 135px;
-  height: 120px;
+  width: 140px;
+  height: 60px;
+  left: 4px;
+  top: 31px;
   position: relative;
-  left: 7px;
   display: block;
   text-align: center;
 }
