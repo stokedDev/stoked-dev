@@ -209,8 +209,10 @@ h1{
   width: 224px;
   height: 112px;
   background: rgb(222, 93, 93);
+  color: white;
   font-size: 24px;
   border-radius: 24px;
+  cursor: pointer;
 }
 .intro{
   position: relative;
