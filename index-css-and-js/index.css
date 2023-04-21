@@ -373,6 +373,15 @@ h4{
   width: 150px;
 }
 */
+.facebook{
+  width: 135px;
+  height: 120px;
+}
+.facebook-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .edabit{
   width: 150px;
   height: 150px;
