@@ -205,7 +205,9 @@ h1{
   font-size: 4rem;
   margin-bottom: 0;
 }
-.connect-follow{
+.connect-follow,
+.connect-follow-btn,
+.connect-follow-button{
   width: 224px;
   height: 112px;
   background: rgb(222, 93, 93);
@@ -214,6 +216,7 @@ h1{
   border-radius: 24px;
   cursor: pointer;
 }
+
 .intro{
   position: relative;
   bottom: 10px;
