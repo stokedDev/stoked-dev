@@ -59,8 +59,9 @@ h2{
     margin: 0;
 }
 h1{
+    color: rgb(0, 0, 0);
     margin: 0;
-    font-size: 20px;
+    font-size: 27px;
     letter-spacing: 1px;
 }
 
@@ -107,8 +108,23 @@ h1{
     margin: -150px 0 0 0;
 }
 @media(min-width: 304px){
+    .instructions-title{
+        margin-top: 10px;
+    }
     .desktop-instructions{
         display: none;
+    }
+    .instructions{
+        display: block;
+        margin-bottom: 12px;
+    }
+    .instructions-container{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    footer{
+        position: absolute;
+        top: 475px;
     }
 }
 @media(min-width: 1024px){
@@ -117,7 +133,19 @@ h1{
     }
     .desktop-instructions{
         display: block;
+        margin-bottom: 12px;
     }
+    .instructions-container{
+        font-size: 20px;
+    }
+    footer{
+        position: absolute;
+        top: 475px;
+    }
+    .mobile-controller{
+        display: none;
+    }
+
 }
 h1{
     color: rgb(46, 134, 249);
