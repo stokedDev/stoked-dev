@@ -2,10 +2,10 @@
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.querySelector("#score");
 const messageDisplay = document.querySelector("#message");
-messageDisplay.textContent = "Enjoy the ride..."
+messageDisplay.textContent = "Enjoy the ride...";
 const width = 28;
 let score = 0;
-let squares = []
+let squares = [];
 /* sun = 0 // sun could be another element placed with negative margin
 sky = 1
 ocean = 2
@@ -42,8 +42,13 @@ let environment = [
     6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,
     6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,
     6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,
-]
-
+];
+const [MOBILE_CONTROLLER, UP, LEFT, RIGHT, DOWN] = 
+[document.getElementsByClassName(".mobile-controller"), 
+document.getElementsByClassName(".mobile-controller-up"), 
+document.getElementsByClassName(".mobile-controller-left"),
+document.getElementsByClassName(".mobile-controller-right"), 
+document.getElementsByClassName(".mobile-controller-down")];
 /* sun = 0 // sun could be another element placed with negative margin
 sky = 1
 ocean = 2
@@ -161,3 +166,4 @@ function ridingMessage(){
         messageDisplay.style.color = 'black'
 }
 }
+/* MOBILE_CONTROLLER */
