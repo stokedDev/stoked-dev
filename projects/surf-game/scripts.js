@@ -44,11 +44,11 @@ let environment = [
     6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,
 ];
 const [MOBILE_CONTROLLER, UP, LEFT, RIGHT, DOWN] = 
-[document.getElementsByClassName(".mobile-controller"), 
-document.getElementsByClassName(".mobile-controller-up"), 
-document.getElementsByClassName(".mobile-controller-left"),
-document.getElementsByClassName(".mobile-controller-right"), 
-document.getElementsByClassName(".mobile-controller-down")];
+[document.querySelector(".mobile-controller"), 
+document.querySelector(".mobile-controller-up"), 
+document.querySelector(".mobile-controller-left"),
+document.querySelector(".mobile-controller-right"), 
+document.querySelector(".mobile-controller-down")];
 /* sun = 0 // sun could be another element placed with negative margin
 sky = 1
 ocean = 2
@@ -130,7 +130,61 @@ function control(e){
 }
 document.addEventListener('keydown', control, {
     passive: true
-})
+});
+/* MOBILE_CONTROLLER JS Below */
+function mobileControl(e){
+    if(squares[surferCurrentIndex].classList.contains('barrel')){
+        squares[surferCurrentIndex].classList.remove('tubed-surfer')
+    }
+    squares[surferCurrentIndex].classList.remove('surfer')
+    switch(e.target){
+        case DOWN:
+            if( 
+                !squares[surferCurrentIndex + width].classList.contains('ocean') &&
+                surferCurrentIndex + width < width * width)
+                surferCurrentIndex += width;            
+        break;
+        case UP:
+            if(
+                !squares[surferCurrentIndex - width].classList.contains('ocean') &&
+                surferCurrentIndex - width >= 0)
+                 surferCurrentIndex -= width;
+                 
+                 
+            
+        break;
+        case LEFT:
+            if(
+                !squares[surferCurrentIndex - 1].classList.contains('ocean') &&
+                surferCurrentIndex % width !== 0) 
+                surferCurrentIndex -= 1;
+                
+                
+        break;
+        case RIGHT:
+            if(
+                !squares[surferCurrentIndex + 1].classList.contains('ocean') &&
+                surferCurrentIndex % width < width - 1)
+                surferCurrentIndex += 1;
+                
+        break;
+    }
+    squares[surferCurrentIndex].classList.add('surfer')
+    if(squares[surferCurrentIndex].classList.contains('barrel')){
+        squares[surferCurrentIndex].classList.remove('surfer')
+        squares[surferCurrentIndex].classList.add('tubed-surfer')
+    }
+    if(squares[surferCurrentIndex].classList.contains('white-wash')){
+        squares[surferCurrentIndex].classList.remove('surfer')
+        squares[surferCurrentIndex].classList.add('white-wash')
+    }
+    ridingMessage()    
+};
+
+document.addEventListener('mousedown' || 'touchstart', mobileControl, {
+    passive: true
+});
+/* MOBILE_CONTROLLER JS Above */
 let k = environment.indexOf(5)
 
 function whiteWash(){
@@ -166,4 +220,3 @@ function ridingMessage(){
         messageDisplay.style.color = 'black'
 }
 }
-/* MOBILE_CONTROLLER */
