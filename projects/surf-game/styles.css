@@ -9,20 +9,21 @@ body{
 }
 .grid{
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
-    width: 420px;
-    height: 420px;
+    width: 304px;
+    height: 304px;
 }
 .grid div{
-    width: 15px;
-    height: 15px;
+    width: 10.857142px;
+    height: 10.857142px;
 }
 .sun{
-    width: 30px;
-    height: 30px;
+    width: 21.714285px;
+    height: 21.714285px;
     border-radius: 15px;
-    top: -400px;
-    left: 150px;
+    top: -289.5238px;
+    left: 108.57142px;
     background: yellow;
     position: relative;
 
@@ -58,11 +59,93 @@ h2{
     margin: 0;
 }
 h1{
+    color: rgb(0, 0, 0);
     margin: 0;
+    font-size: 27px;
+    letter-spacing: 1px;
 }
-.instructions{
-    width: 450px;
-    margin: 0;
+
+/* mobile-controller CSS below */
+
+.mobile-controller{
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 245px;
+}
+/* mobile controller up, left, right, down */
+
+.mobile-controller-left{
+    position: relative;
+    right: 57.90476px;
+    top: 15px;
+}
+.mobile-controller-right{
+    position: relative;
+    left: 57.90476px;
+    bottom: 15px;
+}
+.mobile-controller-up,
+.mobile-controller-left,
+.mobile-controller-right,
+.mobile-controller-down{
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.486);
+    border: rgba(255, 255, 255, 0.486) 1px solid;
+    font-size: 16px;
+}
+/* mobile-controller CSS above */
+
+.instructions-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 304px;
+    z-index: 1;
+    margin: -150px 0 0 0;
+}
+@media(min-width: 304px){
+    .instructions-title{
+        margin-top: 10px;
+    }
+    .desktop-instructions{
+        display: none;
+    }
+    .instructions{
+        display: block;
+        margin-bottom: 12px;
+    }
+    .instructions-container{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    footer{
+        position: absolute;
+        top: 475px;
+    }
+}
+@media(min-width: 1024px){
+    .instructions{
+        display: none;
+    }
+    .desktop-instructions{
+        display: block;
+        margin-bottom: 12px;
+    }
+    .instructions-container{
+        font-size: 20px;
+    }
+    footer{
+        position: absolute;
+        top: 475px;
+    }
+    .mobile-controller{
+        display: none;
+    }
+
 }
 h1{
     color: rgb(46, 134, 249);
@@ -91,5 +174,9 @@ footer{
     color: rgb(255, 205, 164);
     font-size: 1.5rem;
     margin-top: 2em;
+  }
+  .HolyGodBreathBreathedScriptureBibleGateway{
+    font-size: 24px;
+    text-align: center;
   }
   /*footer above*/
