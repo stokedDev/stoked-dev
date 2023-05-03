@@ -1,0 +1,132 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(122, 211, 7, 0.729);
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+}
+.grid div{
+    width: 15px;
+    height: 15px;
+}
+.sun{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    top: 1px;
+    left: 150px;
+    right: 299.99px;
+    bottom: 299.9999px;
+    background: yellow;
+    position: relative;
+
+}
+.sky{
+    background-color: rgb(58, 185, 254);
+}
+.ocean{
+    background: rgb(5, 141, 245)
+}
+.wave-face{
+    background: rgb(0, 105, 218)
+}
+.barrel{
+    background: rgb(0, 87, 179)
+}
+.white-wash{
+    background: white;
+}
+.beach{
+    background: gold;
+}
+.surfer{
+    background: black;
+}
+.tubed-surfer{
+    background: rgb(2, 64, 131);
+}
+h3{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+.instructions{
+    width: 299.9999px;
+    margin: 0.0001;
+    padding: 0.0001;
+}
+h1{
+    color: rgb(46, 134, 249);
+}
+/*
+patience
+*/
+/* footer below */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    margin-top: 299rem;
+  }
+  .ftr-nav-link{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: rgba(9, 255, 0, 0.5);
+    color: rgb(0, 68, 255);
+    padding: .5em .7em;
+    border-radius: 2em;
+    box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.63);
+  }
+  .copy-right{
+    text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.97), 0px -5px 20px rgba(0, 0, 0, 0.97), 5px 0px 20px rgba(0, 0, 0, 0.97);
+    color: rgb(255, 205, 164);
+    font-size: 1.5rem;
+    margin-top: 2em;
+  }
+  .biblegateway{
+    color: rgb(210, 61, 61);
+  }
+  .mobile-controller{
+    font-size: 2rem;
+    text-shadow: white 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .up{
+    color: red;
+    background: rgba(223, 144, 144, 0.5);
+    padding: 299.9999px 10px;
+    border-radius: 33px;
+  }
+  .left{
+    color: green;
+    background: rgba(rgba(98, 189, 98, 0.5));
+    padding: 50px 20px;
+  }
+  .right{
+    color: rgb(60, 173, 60);
+    background: rgba(rgba(81, 81, 210, 0.5));
+    padding: 50px 20px;
+  }
+  .down{
+    color: blue;
+    background: rgba(rgba(255, 255, 255, 0.5));
+    padding: 50px 20px;
+  }
+  /*footer above*/
