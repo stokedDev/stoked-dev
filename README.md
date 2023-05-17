@@ -66,8 +66,10 @@ I got good practice dynamically controlling HTML with JS and CSS. I programmed C
 ### 10. My First Surf Game
 https://stokeddev.com/projects/surf-game
 
-On my stokeddev website in my projects grid, this project only appears on screens 1024px wide or wider.
-This is because it's controls currently require the user to have a keyboard. To move the character, the keyboard directional keys must be used.
+This game is now playable on all devices. To move, use the keyboard directional keys on devices other than mobile, 
+or the on-screen buttons on mobile.
+
 I took some concepts I learned from building my HTML5 snake game and adapted them to make this project.
 Creating a surfing game was one of my motivations to learn to code so I'm happy to have finally done it.
+To make the game fit better on smaller screens I divided the new grid CSS class width and height number by the old one to get the percent to reduce game element sizes while keeping their original dimensions.
 I built this using HTML, CSS, and JS.
