@@ -65,3 +65,8 @@ footer{
     text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.7), 0px -5px 20px rgba(0, 0, 0, 0.7), 5px 0px 20px rgba(0, 0, 0, 0.7);
   }
   /*footer above*/
+  @media(min-width: 375px){
+    html{
+        font-size: 17px;
+    }
+  }
