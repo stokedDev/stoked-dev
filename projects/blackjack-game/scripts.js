@@ -16,7 +16,7 @@ function getRandomCard(){
     if(randomNum > 10){
         return 10;
     } else if(randomNum === 1){
-        return 11;
+        return sum + 11 > 21? 1: 11;
     } else {
         return randomNum;
     }
@@ -40,7 +40,8 @@ function startGame(){
     cards = [firstCard, secondCard];
     card1Display.textContent = `${cards[0]}`;
     card1Display.classList.add('new-card-animation');
-    messageDisplay.textContent = 'Picking Cards...';
+    messageDisplay.style.fontStyle = 'normal';
+    messageDisplay.textContent = 'Getting Cards...';
     playBtn.textContent = 'RESTART';
             if(initial2cardsAnimated === false){
             card1Display.addEventListener('animationend', () => {
@@ -66,7 +67,7 @@ function renderGame(){
     sum = cards.reduce((acc, el) => acc + el,0);
     sumDisplay.textContent = `Sum: ${sum}`;
     if(sum < 21){
-        message = "Do you want to pick a new card?";
+        message = "Do you want a new card?";
     } else if(sum === 21){
         message = `🎉 Congrats! You got Blackjack.💰<br>
         Start game again?`;
@@ -78,12 +79,14 @@ function renderGame(){
         isAlive = false;
         newCardBtn.classList.add('disappear');
     }
+    messageDisplay.style.fontStyle = 'italic';
     messageDisplay.innerHTML = message;
 }
 
 function newCard(){
     newCardBtn.classList.add('disappear');
-    messageDisplay.textContent = 'Picking Card...';
+    messageDisplay.style.fontStyle = 'normal';
+    messageDisplay.textContent = 'Getting Card...';
     if(isAlive === true && hasBlackjack === false){
         let card = getRandomCard();
         cards.push(card);
