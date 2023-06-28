@@ -46,6 +46,9 @@ button{
 button:first-of-type{
     margin-bottom: .8rem;
 }
+.disappear{
+    display: none; /* toggle 'pick new card' btn visibility */
+}
 main{
     background: rgba(0,0,0,.25);
     padding: 2em;
@@ -55,6 +58,7 @@ main{
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    height: 344.48px;
 }
 /* footer below */
 footer{
@@ -75,7 +79,7 @@ footer{
     border-radius: .5em;
   }
   .copy-right{
-      margin-top: 3rem;
+    margin-top: 3rem;
     color: white;
     font-size: 1.4rem;
     text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.7), 0px -5px 20px rgba(0, 0, 0, 0.7), 5px 0px 20px rgba(0, 0, 0, 0.7);
