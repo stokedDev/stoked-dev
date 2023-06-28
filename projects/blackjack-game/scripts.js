@@ -4,6 +4,8 @@ const card1Display = document.querySelector(".card-1");
 const card2Display = document.querySelector(".card-2");
 const cardsDisplay = document.querySelector(".cards");
 const sumDisplay = document.querySelector('#sum');
+const playBtn = document.querySelector('.play-btn');
+const newCardBtn = document.querySelector('.new-card-btn');
 let sum = 0;
 let message = "";
 let isAlive = false;
@@ -20,6 +22,7 @@ function getRandomCard(){
     }
 }
 function startGame(){
+    newCardBtn.classList.add('disappear');
     messageDisplay.textContent = '';
     isAlive = false;
     let initial2cardsAnimated = false;
@@ -37,7 +40,8 @@ function startGame(){
     cards = [firstCard, secondCard];
     card1Display.textContent = `${cards[0]}`;
     card1Display.classList.add('new-card-animation');
-    messageDisplay.textContent = 'Picking cards...';
+    messageDisplay.textContent = 'Picking Cards...';
+    playBtn.textContent = 'RESTART';
             if(initial2cardsAnimated === false){
             card1Display.addEventListener('animationend', () => {
             card1Display.classList.remove('new-card-animation');
@@ -54,6 +58,7 @@ function startGame(){
             sum = cards.reduce((acc, el) => acc + el,0);
             sumDisplay.textContent = `Sum: ${sum}`;
             initial2cardsAnimated = true;
+            newCardBtn.classList.remove('disappear');
             renderGame();
        });};
 }
@@ -66,17 +71,19 @@ function renderGame(){
         message = `🎉 Congrats! You got Blackjack.💰<br>
         Start game again?`;
         hasBlackjack = true;
+        newCardBtn.classList.add('disappear');
     } else {
         message = `You're out of the game. <br>
         Start game again?`;
         isAlive = false;
+        newCardBtn.classList.add('disappear');
     }
     messageDisplay.innerHTML = message;
 }
 
 function newCard(){
-    messageDisplay.textContent = 'Picking card...';
-    let newCardAnimationDone = false;
+    newCardBtn.classList.add('disappear');
+    messageDisplay.textContent = 'Picking Card...';
     if(isAlive === true && hasBlackjack === false){
         let card = getRandomCard();
         cards.push(card);
@@ -85,8 +92,8 @@ function newCard(){
         newCardDisplay.addEventListener('animationend', () => {
             newCardDisplay.textContent = '';
             newCardDisplay.classList.remove('new-card-animation');
-            cardsDisplay.textContent = `${cards.join(' ')} `;
-            newCardAnimationDone = true; 
+            cardsDisplay.textContent = `${cards.join(' ')} `; 
+            newCardBtn.classList.remove('disappear');
             renderGame(); 
         });
     };
