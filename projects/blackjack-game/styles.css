@@ -36,11 +36,11 @@ h1{
 }
 button{
     font-size: 1.4rem;
-    background: goldenrod;
+    background: rgb(118, 106, 77);
     padding: .3em 1em;
     border: none;
     border-radius: 1em;
-    color: green;
+    color: white;
     cursor: pointer;
 }
 button:first-of-type{
@@ -73,7 +73,7 @@ footer{
     text-decoration: none;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.57);
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 1.45rem;
     padding: .75em 2.5em;
     border-radius: .5em;
