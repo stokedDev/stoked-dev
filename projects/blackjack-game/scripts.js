@@ -11,6 +11,7 @@ let message = "";
 let isAlive = false;
 let hasBlackjack = false;
 let cards = [];
+newCardBtn.classList.add('disappear');
 function getRandomCard(){
     let randomNum = Math.round(Math.random() * (13 - 1) + 1);
     if(randomNum > 10){
