@@ -1,5 +1,4 @@
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Nunito', sans-serif;
 }
 body{
@@ -30,21 +29,7 @@ button{
     margin: 1.3rem 0;
     cursor: pointer;
 }
-button:focus,
-button:active{
-    animation-name: bgClrChng;
-    animation-duration: 1s;
-}
-@keyframes bgClrChng{
-    50%{
-        background: rgb(59, 117, 97);
-        color: white;
-    }
-    100%{
-        background: aquamarine;
-        color: black;
-    }
-}
+
 @keyframes bgClrChngHvr{
     100%{
         background: rgb(45, 160, 255);
