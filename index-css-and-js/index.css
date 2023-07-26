@@ -359,12 +359,11 @@ h4{
   height: 150px;
   box-shadow: 0px 0px 8px 0px #000000;
 }
-/*
-.twitter{
-  border-radius: 2rem;
-  width: 150px;
+
+ .twitter{
+  margin-top: .5rem;
 }
-*/
+
 .facebook{
   width: 135px;
   height: 120px;
