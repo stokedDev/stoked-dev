@@ -70,7 +70,7 @@ function renderGame(){
     if(sum < 21){
         message = "Do you want a new card?";
     } else if(sum === 21){
-        message = `🎉 Congrats! You got Blackjack.💰<br>
+        message = `🎉 Congrats! 🎉<br>💰 You got Blackjack! 💰<br>
         Start game again?`;
         hasBlackjack = true;
         newCardBtn.classList.add('disappear');
