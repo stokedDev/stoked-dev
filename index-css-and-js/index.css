@@ -235,10 +235,6 @@ h2{
   font-size: 2.4rem;
   letter-spacing: 2px;
 }
-.last-accent-text{
-  display: block;
-  font-weight: 900;
-}
 .pro-role{
   margin: 7px 0;
   font-size: 1.74rem;
@@ -249,14 +245,18 @@ h2{
 .pro-role-conjunction{
   font-weight: 600;
 }
-.last-welcome-h4{
+.last-welcome-h3{
   background: rgba(0,0,0,.2);
   border-radius: .5em;
   padding: .2em;
   cursor: pointer;
   text-shadow: none;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5em;
 }
-.last-welcome-h4:focus{
+.last-welcome-h3:focus{
   background: rgba(0,0,0,.5);
 }
 .projects-title{
@@ -264,13 +264,6 @@ h2{
   letter-spacing: .6rem;
   color: rgb(252, 220, 39);
   text-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 2px rgba(0, 0, 0, 1);
-}
-
-h4{
-  font-weight: 300;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  font-size: 1.5em;
 }
 
 .projects{
@@ -411,7 +404,7 @@ footer{
   font-size: 2.5rem;
   margin-top: 10rem;
 }
-.ftr-nav-link{
+.back-to-top-btn{
   text-align: center;
   background-color: rgba(0, 0, 0, 0.492);
   color: rgb(255, 255, 255);
@@ -519,7 +512,7 @@ footer{
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
   }
-  .last-welcome-h4:hover{
+  .last-welcome-h3:hover{
     background-color: rgba(0, 0, 0, .5);
   }
 }
