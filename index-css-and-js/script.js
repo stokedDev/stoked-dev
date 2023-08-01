@@ -141,4 +141,4 @@ function activateBtn(btn, sectionIntro, slidePosition){
     activateBtn(projectsBtn[1],sI2, 1);
     activateBtn(contactBtn, sI3, 2);
 
-    document.querySelector('.ftr-nav-link').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    document.querySelector('.back-to-top-btn').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
