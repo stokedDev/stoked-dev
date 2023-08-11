@@ -168,12 +168,13 @@ body{
 }
 .nav-link{
   text-decoration: none;
-  color: white;
+  color: rgb(47, 255, 0);
   letter-spacing: .1em;
-  background-color: rgba(96, 255, 5, 0.541);
+  background-color: rgba(8, 0, 255, 0.464);
   padding: .8rem 3rem;
   border-radius: 18px;
   cursor: pointer;
+  font-weight: 900;
 }
 .nav-link:focus{
     background-color: rgba(0, 0, 0, 0.541);
@@ -186,7 +187,10 @@ body{
 
 /* NAVBAR CSS ENDS HERE */
 .welcome-section{
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -8.8rem 0 2rem 0;
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: .05em;
@@ -195,17 +199,14 @@ body{
   text-shadow: 0 0 3px rgba(0,0,0,1),0 0 3px rgba(0,0,0,1);
   padding: .01em .5em;
   border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -4rem;
 }
 
 p{
   font-size: 2.4rem;
 }
 h1{
-  font-size: 4rem;
-  margin-bottom: 0;
+  font-size: 4.6rem;
+  margin-bottom: -.6em;
 }
 
 .intro{
@@ -216,50 +217,78 @@ h1{
   font-weight: 600;
   display: block;
 }
+.intro-block{
+  display: block;
+}
 .intro-part-1{
   margin-top: 0;
+  font-size: 2.65rem;
+  font-weight: 900;
 }
-.last-intro-part-0,
-.last-intro-part-1{
-  font-size: 2rem;
+.intro-part-2{
+  font-size: 2.43rem;
+  font-weight: 900;
 }
+
 h2{
   font-size: 2.1rem;
   text-align: center;
 }
-.accent-text{
-  font-size: 3rem;
-  font-weight: 600;
-}
-.accent-text-lighter-block{
-  display: block;
-  font-weight: 600;
-  font-size: 2.4rem;
-  letter-spacing: 2px;
-}
 .pro-role{
   margin: 7px 0;
-  font-size: 1.74rem;
-  display: block;
+  font-size: 2.8rem;
   letter-spacing: .1em;
+  line-height: 5.7rem;
+  font-weight: 900;
   display: block;
 }
-.pro-role-conjunction{
-  font-weight: 600;
+.pro-role-1{
+  font-size: 5.25rem;
+  margin-top: -.5rem;
 }
-.last-welcome-h3{
-  background: rgba(0,0,0,.2);
+.pro-role-2{
+  margin-top: -1rem;
+  font-size: 5.7rem;
+}
+.pro-role-3{
+  margin-top: -1rem;
+  font-size: 3.2rem;
+}
+.intro-part-3{
+  font-size: 3.6rem;
+  font-weight: 900;
+}
+.intro-part-4{
+  margin-top: -.5rem;
+  font-size: 4rem;
+  font-weight: 900;
+}
+.intro-part-5{
+  font-size: 5.05rem;
+  font-weight: 900;
+}
+.intro-part-4,
+.intro-part-5{
+  line-height: 5rem;
+}
+.welcome-btn{
+  background: rgba(0,0,0,.5);
+  color: rgb(252, 220, 39);
   border-radius: .5em;
-  padding: .2em;
+  padding: .2em .2em;
   cursor: pointer;
   text-shadow: none;
   font-weight: 300;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  font-size: 1.5em;
+  margin: -2.5rem auto 1rem auto;
+  font-size: 1.61em;
+  font-family: 'Nunito', sans-serif;
+  border: none;
 }
-.last-welcome-h3:focus{
+.welcome-btn:focus{
   background: rgba(0,0,0,.5);
+}
+.projects-section{
+  margin-top: -5rem;
 }
 .projects-title{
   font-size: 3rem;
@@ -332,6 +361,9 @@ h2{
 }
 .invisible{
   display: none;
+}
+.contact-section{
+  margin-top: -7.8rem;
 }
 .contact-description{
   letter-spacing: .05em;
@@ -421,65 +453,10 @@ footer{
   margin-top: 2rem;
   font-size: 2.2rem;
 }
-@media (min-width: 356px){
-  .pro-role{
-    font-size: 1.95rem;
-  }
-  .accent-text-lighter-block{
-    font-size: 2.6rem;
-  }
-  .intro-part-1,
-  .intro-part-2{
-    font-size: 2.3rem;
-  }
-  .last-intro-part-0,
-  .last-intro-part-1{
-  font-size: 2.2rem;
-}
-  .accent-text{
-    font-size: 2.8rem;
-  }
-}
-@media (min-width: 380px){
-  .pro-role{
-    font-size: 2.1rem;
-  }
-  .intro-part-1,
-  .intro-part-2{
-    font-size: 2.5rem;
-  }
-  .last-intro-part-0,
-  .last-intro-part-1{
-  font-size: 2.4rem;
-}
-  .accent-text{
-    font-size: 3rem;
-  }
-  .accent-text-lighter-block{
-    font-size: 2.8rem;
-  }
-}
-@media (min-width: 400px){
-  .intro-part-1{
-    font-size: 2.7rem;
-  }
-  .intro-part-2{
-    font-size: 2.7rem;
-  }
-  .last-intro-part-0,
-  .last-intro-part-1{
-  font-size: 2.6rem;
-}
-  .accent-text{
-    font-size: 3.2rem;
-  }
-  .pro-role{
-    font-size: 2.22rem;
-  }
-}
+
 @media (min-width: 700px){
   /*NAVBAR CSS STARTS HERE*/
-.nav-list{
+ .nav-list{
   margin-top: 4rem;
   flex-direction: row;
   justify-content: center;
@@ -493,8 +470,9 @@ footer{
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
   }
-  
+
 /*NAVBAR CSS ENDS HERE*/
+
   .welcome-text{
   text-align: center;
 } 
@@ -509,12 +487,12 @@ footer{
 }
 }
 
-@media (min-width: 1024px){
+ @media (min-width: 1024px){
   .nav-link:hover{
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
   }
-  .last-welcome-h3:hover{
+  .welcome-btn:hover{
     background-color: rgba(0, 0, 0, .5);
   }
 }
