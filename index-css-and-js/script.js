@@ -1,9 +1,16 @@
 const slides = document.querySelectorAll('.carousel-item');
 let slidePosition = 0;
+/* sections ( about page, projects page, contact page) starts here */
+const [section1, section2, section3] = [
+    document.querySelector('.welcome-section'),
+    document.querySelector('.projects-section'),
+    document.querySelector('.contact-section')];
+/* sections ( about page, projects page, contact page) ends here */
 function hideAllSlides(){
     for(const slide of slides){
         slide.classList.remove('carousel-item-visible') && slide.classList.add('carousel-item-hidden');
     }
+    section1.style.display = "none";
 }
 
 /* nav div classes buttons */
@@ -52,6 +59,7 @@ function goToSection(sectionIntro, slidePosition){
             removeHeaderPopupClasses()
             hamburgerBack()
             hideAllSlides();
+            section1.style.display = "flex";
         break;
         case sI2:
             removeHeaderPopupClasses()
@@ -70,6 +78,7 @@ function goToSectionWithoutUsingMobileMenu(sectionIntro, slidePosition){
     switch (sectionIntro){
         case sI1:
             hideAllSlides();
+            section1.style.display = "flex";
         break;
         case sI2:
             hideAllSlides();
@@ -137,8 +146,8 @@ function activateBtn(btn, sectionIntro, slidePosition){
 
 
     activateBtn(aboutBtn, sI1, 0);
-    activateBtn(projectsBtn[0],sI2, 1);
-    activateBtn(projectsBtn[1],sI2, 1);
+    activateBtn(projectsBtn[0],sI2, 1); // nav bar go-to-projects button
+    activateBtn(projectsBtn[1],sI2, 1); /* welcome section button with projects destination */
     activateBtn(contactBtn, sI3, 2);
 
     document.querySelector('.back-to-top-btn').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
