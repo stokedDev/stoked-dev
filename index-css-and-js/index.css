@@ -285,7 +285,7 @@ h2{
   border: none;
 }
 .welcome-btn:focus{
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.6);
 }
 .projects-section{
   margin-top: -5rem;
@@ -476,8 +476,8 @@ footer{
   margin-right: .5em; 
 }
 .nav-link:focus{
-    background-color: rgba(0, 0, 0, 0.541);
-    color: white;
+  background-color: rgba(0, 0, 0, 0.541);
+  color: white;
   }
 
 /*NAVBAR CSS ENDS HERE*/
@@ -502,6 +502,6 @@ footer{
     color: white;
   }
   .welcome-btn:hover{
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .6);
   }
 }
