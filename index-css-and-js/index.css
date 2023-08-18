@@ -1,12 +1,11 @@
 *{
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 html{
     font-size: 10px;
   }
 body{
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Nunito', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,7 +181,8 @@ body{
   margin-bottom: 1.5rem;
 }
 .nav-link:focus{
-    background-color: rgba(8, 0, 255, 0.6);
+  color: rgb(8, 0, 255);
+  background-color: rgb(67, 255, 70);
 }
 
 /* NAVBAR CSS ENDS HERE */
@@ -281,7 +281,6 @@ h2{
   font-weight: 300;
   margin: -2.5rem auto 1rem auto;
   font-size: 1.61em;
-  font-family: 'Nunito', sans-serif;
   border: none;
 }
 .welcome-btn:focus{
@@ -479,7 +478,8 @@ footer{
     margin-right: 1rem;
   }
   .nav-link:hover{
-    background-color: rgba(8, 0, 255,.6);
+    color: rgb(8, 0, 255);
+    background-color: rgb(67, 255, 70);
   }
   .welcome-btn:hover{
     background-color: rgba(0, 0, 0, .6);
