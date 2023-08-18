@@ -21,7 +21,7 @@ const contactBtn = document.querySelector(".contactBtn");
 
 /* sI means section intro */
 const [ sI1, sI2, sI3 ] = [document.querySelector('h1'), document.querySelector('.projects-title'),
-document.querySelector('.contact-description')];
+document.querySelector('.connect-title')];
 
 const header = document.querySelector('header');
 const headerDiv = document.querySelector('.header');
