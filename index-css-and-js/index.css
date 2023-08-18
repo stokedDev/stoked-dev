@@ -30,6 +30,7 @@ body{
   width: 40px;
   background-color:rgba(0, 0, 0, 0.441);
   border-radius: 5px;
+  z-index: 5;
 }
 .mobile-menu div{
   margin: 2.5px auto 2.5px auto;
