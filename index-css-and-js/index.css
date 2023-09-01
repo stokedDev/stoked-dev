@@ -6,6 +6,7 @@ html{
     font-size: 10px;
   }
 body{
+  color: rgb(0, 251, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,6 +188,7 @@ body{
 
 /* NAVBAR CSS ENDS HERE */
 .welcome-section{
+  color: rgb(0, 251, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,7 +196,6 @@ body{
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: .05em;
-  color: rgb(252, 220, 39);
   background: none;
   text-shadow: 0 0 3px rgba(0,0,0,1),0 0 3px rgba(0,0,0,1);
   padding: .01em .5em;
@@ -272,8 +273,8 @@ h2{
   line-height: 5rem;
 }
 .welcome-btn{
+  color: rgb(0, 251, 255);
   background: rgba(0,0,0,.5);
-  color: rgb(252, 220, 39);
   border-radius: .5em;
   padding: .2em .2em;
   cursor: pointer;
@@ -287,13 +288,14 @@ h2{
   background: rgba(0,0,0,.6);
 }
 .projects-title{
+  color: rgb(0, 251, 255);
   font-size: 4rem;
   letter-spacing: .6rem;
-  color: rgb(252, 220, 39);
   text-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 2px rgba(0, 0, 0, 1);
 }
 
 .projects{
+  color: rgb(0, 251, 255);
   display: grid;
   gap: 2rem 2rem;
   grid-template-columns: 290px;
@@ -361,7 +363,7 @@ h2{
 .contact-description{
   letter-spacing: .02em;
   font-size: 2.5rem;
-  color: rgb(252, 220, 39);
+  color: rgb(0, 251, 255);
   text-shadow: 0 0 3px black, 0 0 3px black;
   text-align: center;
   max-width: 340px;
@@ -369,12 +371,13 @@ h2{
   font-weight: 900;
 }
 .email{
+  color: rgb(0, 251, 255);
   display: block;
   font-size: 3rem;
   font-weight: 600;
 }
 .connect-title{
-  color: rgb(252, 220, 39);
+  color: rgb(0, 251, 255);
   text-shadow: 0 0 3px rgba(0,0,0,1),0 0 3px rgba(0,0,0,1);
   font-size: 4rem;
   font-weight: 900;
@@ -436,6 +439,7 @@ h2{
 }
 
 footer{
+  color: black;
   text-align: center;
   font-size: 2.5rem;
   margin-top: 10rem;
