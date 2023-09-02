@@ -12,7 +12,7 @@ body{
   align-items: center;
   justify-content: center;
   margin: .2rem;
-  background-image: url("../images/reddish-orange-yellow-gradient-bg-for-small-screen-size.png");
+  background-image: url("../images/reddish-orange-yellow-gradient-bg-for-small-screen-size.webp");
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -148,7 +148,7 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("../images/reddish-orange-yellow-gradient-bg-for-small-screen-size.png");
+  background-image: url("../images/reddish-orange-yellow-gradient-bg-for-small-screen-size.webp");
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -461,10 +461,10 @@ footer{
 }
 @media (min-width: 580px){
   body{
-    background-image: url("../images/reddish-orange-yellow-gradient-bg-greater-than-small-screen.png");
+    background-image: url("../images/reddish-orange-yellow-gradient-bg-greater-than-small-screen.webp");
   }
   .header-popup{
-    background-image: url("../images/reddish-orange-yellow-gradient-bg-greater-than-small-screen.png");
+    background-image: url("../images/reddish-orange-yellow-gradient-bg-greater-than-small-screen.webp");
   }
 }
 @media (min-width: 700px){
