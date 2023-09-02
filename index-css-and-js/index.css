@@ -442,7 +442,7 @@ footer{
   color: black;
   text-align: center;
   font-size: 2.5rem;
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 .back-to-top-btn{
   text-align: center;
@@ -481,6 +481,7 @@ footer{
  @media (min-width: 1024px){
   body{
     background: linear-gradient(0deg, rgba(255,83,0,1) 0%, rgba(255,164,0,1) 50%, rgba(255,246,0,1) 100%);
+    background-repeat: no-repeat;
   }
   .header-popup{
     background: linear-gradient(0deg, rgba(255,83,0,1) 0%, rgba(255,164,0,1) 50%, rgba(255,246,0,1) 100%);
@@ -500,5 +501,8 @@ footer{
   }
   .welcome-btn:hover{
     background-color: rgba(0, 0, 0, .6);
+  }
+  footer{
+    margin-top: 17rem;
   }
 }
