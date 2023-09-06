@@ -6,13 +6,13 @@ html{
     font-size: 10px;
   }
 body{
-  color: rgb(0, 251, 255);
+  color: rgb(252, 220, 39);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: .2rem;
-  background-image: url("../images/reddish-orange-yellow-gradient-bg-for-small-screen-size.webp");
+  background-image: url("../images/small-mobile-screen-pxfuel-abstract-bg.webp");
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -148,7 +148,7 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("../images/reddish-orange-yellow-gradient-bg-for-small-screen-size.webp");
+  background-image: url("../images/small-mobile-screen-pxfuel-abstract-bg.webp");
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -188,7 +188,7 @@ body{
 
 /* NAVBAR CSS ENDS HERE */
 .welcome-section{
-  color: rgb(0, 251, 255);
+  color: rgb(252, 220, 39);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,6 +221,7 @@ h1{
 .intro-block{
   display: block;
 }
+
 .intro-part-1{
   margin-top: 0;
   font-size: 2.65rem;
@@ -273,7 +274,7 @@ h2{
   line-height: 5rem;
 }
 .welcome-btn{
-  color: rgb(0, 251, 255);
+  color: rgb(252, 220, 39);
   background: rgba(0,0,0,.5);
   border-radius: .5em;
   padding: .2em .2em;
@@ -288,14 +289,14 @@ h2{
   background: rgba(0,0,0,.6);
 }
 .projects-title{
-  color: rgb(0, 251, 255);
+  color: rgb(252, 220, 39);
   font-size: 4rem;
   letter-spacing: .6rem;
   text-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 2px rgba(0, 0, 0, 1);
 }
 
 .projects{
-  color: rgb(0, 251, 255);
+  color: white;
   display: grid;
   gap: 2rem 2rem;
   grid-template-columns: 290px;
@@ -363,7 +364,7 @@ h2{
 .contact-description{
   letter-spacing: .02em;
   font-size: 2.5rem;
-  color: rgb(0, 251, 255);
+  color: rgb(252, 220, 39);
   text-shadow: 0 0 3px black, 0 0 3px black;
   text-align: center;
   max-width: 340px;
@@ -371,20 +372,17 @@ h2{
   font-weight: 900;
 }
 .email{
-  color: rgb(0, 251, 255);
+  color: rgb(252, 220, 39);
   display: block;
   font-size: 3rem;
   font-weight: 600;
 }
 .connect-title{
-  color: rgb(0, 251, 255);
+  color: rgb(252, 220, 39);
   text-shadow: 0 0 3px rgba(0,0,0,1),0 0 3px rgba(0,0,0,1);
   font-size: 4rem;
   font-weight: 900;
   margin: 2.5rem 0 -5rem 0;
-}
-.contact-list{
-  font-size: 2rem;
 }
 .profile-link{
   width: 150px;
@@ -461,10 +459,10 @@ footer{
 }
 @media (min-width: 580px){
   body{
-    background-image: url("../images/reddish-orange-yellow-gradient-bg-greater-than-small-screen.webp");
+    background-image: url("../images/larger-mobile-screen-pxfuel-abstract-bg.webp");
   }
   .header-popup{
-    background-image: url("../images/reddish-orange-yellow-gradient-bg-greater-than-small-screen.webp");
+    background-image: url("../images/larger-mobile-screen-pxfuel-abstract-bg.webp");
   }
 }
 @media (min-width: 700px){
@@ -480,11 +478,12 @@ footer{
 
  @media (min-width: 1024px){
   body{
-    background: linear-gradient(0deg, rgba(255,83,0,1) 0%, rgba(255,164,0,1) 50%, rgba(255,246,0,1) 100%);
-    background-repeat: no-repeat;
+    background-image: url("../images/pxfuel.webp");
+    background-size: cover;
   }
   .header-popup{
-    background: linear-gradient(0deg, rgba(255,83,0,1) 0%, rgba(255,164,0,1) 50%, rgba(255,246,0,1) 100%);
+    background-image: url("../images/pxfuel.webp");
+    background-size: cover;
   }
   .nav-list{
     display: flex;
