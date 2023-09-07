@@ -12,7 +12,7 @@
     <script defer src="tech-doc-carousel/tech-doc.js"></script>
 </head>
 <body class="alpha-bg">
-  <div class="container">
+  <div class="header-navbar-and-main-container">
       <header class="nav-info-header">
         <div class="header">
         <h1>aLittleAboutJS</h1>
@@ -30,11 +30,6 @@
           <li class="nav-link domBtn">DOM Manipulation</li>
         </ul>
       </nav>
-      <div>
-        <h3 class="disclaimer">
-          This webpage is just meant to be a sample of my frontend development ability. I actually know a lot more than this about JS but I'm not trying to reinvent the wheel when <a href="https://developer.mozilla.org/en-US/" rel="noopener noreferrer" target="_blank">MDN</a> has JS documentation covered. Thank you for reading.❤️
-        </h3>
-      </div>
       </div>
       </header>
         
@@ -43,12 +38,33 @@
             <header>
               <h2 class="section-header-1">What is JavaScript?</h2>
             </header>
-            <code>let addition = num => num + num;</code>
-            <p>JavaScript is one of the main programming languages used for frontend web development.</p>
+            <div class="code-container">
+                <code class="what-is-js-code-example">let doubleNum = num => num + num;
+                <br>
+                doubleNum(1) // returns 2
+                <br>
+                doubleNum(2) // returns 4
+                <br>
+                doubleNum(3) // returns 6
+                <br>
+                doubleNum(number) // returns number + number
+              </code>
+            </div>
+
+            <p>JavaScript was made for the user-facing part of a website. 
+              It was meant to work with HTML and CSS as their lightweight beginner-friendly programming language.
+              JS was meant to be read by the browser engine exclusively.
+              It was meant to be like Java but easier and simpler.
+              JS can be written in a script element in an HTML file, or in a file of its own that is linked to in the HTML file.
+              <code class="script-element-code-snippet">&lt;script&gt;<br>
+                 /* <br>JS can be written in a script element which consists of an opening and closing script tag. <br>
+                 */&lt;/script&gt;</code>
+            </p>
+            <p>JavaScript is one of the main programming languages used for front end web development.</p>
             <p>JS(or JavaScript) is also one of the main programming languages used for backend web development.</p>
             <ul>
               <li>
-                JS can be used on the frontend to dynamically change a client-facing web page based on user input.
+                JS can be used on the front end to dynamically change a client-facing web page in response to user input.
               </li>
               <li>
                 Node.js is a JavaScript framework and runtime environment that allows JS to run outside the web browser. 
@@ -76,7 +92,7 @@
                 <a href="https://developer.mozilla.org/en-US/" rel="noopener noreferrer" target="_blank">
                   Mozilla Developer Network
                 </a> 
-                will be very helpful while learning.
+                has exhaustive ( or near-exhaustive ) technical documentation that is likely to be very helpful while learning.
               </li>
               <li>
                 One of my favorite ways to learn JS is from the 
@@ -94,7 +110,7 @@
               </a>offers completely free mentoring and challenges
             </li>
               <li>
-                Learning online is only helpful if you are constantly putting into practice what you learn.
+                Learning JavaScript online is likely to be successful if what is learned is put into practice.
               </li>
             </ul>
           </section>
@@ -115,7 +131,7 @@
                 Variables allow you to reuse one or more lines of code without having to repeat yourself.
               </li>
               <li>
-                Proper use of variables is one of the most key parts of making your JS codebase maintainable.
+                Descriptive variable naming and efficient use of variables is one of the most key parts of making a JS codebase maintainable.
               </li>
             </ul>
           </section>
