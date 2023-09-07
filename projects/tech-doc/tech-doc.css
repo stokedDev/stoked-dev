@@ -8,7 +8,6 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-size: 2rem;
     background-image: url(../../images/wood-bg.webp);
     background-attachment: fixed;
@@ -19,6 +18,10 @@ html{
   h1{
     font-size: 2.8rem;
     text-align: center;
+    text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8), 0px -5px 20px rgba(0, 0, 0, 0.8), 5px 0px 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   /*NAVBAR CSS STARTS HERE*/
   /* mobile menu css*/
@@ -49,7 +52,7 @@ html{
     margin-bottom: 5px;
   }
 
-  /* X to hambuger icon classes below */
+  /* X to hamburger icon classes below */
   .topBunBack{
     animation-name: topBunBack;
     animation-duration: .5s;
@@ -68,9 +71,9 @@ html{
     animation-fill-mode: forwards;
   }
   
-  /* X to hambuger icon classes above */
+  /* X to hamburger icon classes above */
 
-  /* hambuger icon to X classes below */
+  /* hamburger icon to X classes below */
   .topBunToX{
     animation-name: topBunToX;
     animation-duration: .5s;
@@ -87,9 +90,9 @@ html{
     animation-duration: .5s;
     animation-fill-mode: forwards;
   }
-/* hambuger icon to X classes above */
+/* hamburger icon to X classes above */
 
-  /* hambuger icon to X keyframes below */
+  /* hamburger icon to X keyframes below */
   
   @keyframes topBunToX{
     100%{
@@ -108,9 +111,9 @@ html{
       background-color: rgba(255,255,255,1);
     }
   }
-  /* hambuger icon to X keyframes above */
+  /* hamburger icon to X keyframes above */
 
-/* X to hambuger icon keyframes below */
+/* X to hamburger icon keyframes below */
   @keyframes bottomBunBack{
     0%{
       transform: rotate(-130deg) translate(0px, 270%);
@@ -140,7 +143,7 @@ html{
     }
   }
   
-  /* X to hambuger icon keyframes above */
+  /* X to hamburger icon keyframes above */
   .header-div-popup{
     width: 100vw;
     height: 100vh;
@@ -153,12 +156,12 @@ html{
     background-color: black;
   }
 /* mobile menu css ends here */
-  .nav-info-header{
-    text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.8), 0px -5px 20px rgba(0, 0, 0, 0.8), 5px 0px 20px rgba(0, 0, 0, 0.8);
+.header-navbar-and-main-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    align-items: center; 
+}
+  
   .nav-link {
     background-color: rgba(96, 255, 5, 0.541);
     color: white;
@@ -167,6 +170,7 @@ html{
     padding: .5em 1em;
     text-align: center;
     border-radius: 10px;
+    margin-right: 4.2rem;
     margin-bottom: 1rem;
     cursor: pointer;
     text-shadow: none;
@@ -191,15 +195,20 @@ html{
     display: inline;
   }
   .main-doc{
-    margin-top: 0;
+    max-width: 600px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(0,0,0,.5);
     border-radius: 2rem;
-    padding: 1em;
+    padding: 5px;
   }
   h2{
     text-align: center;
   }
-  .disclaimer{
+  /* .disclaimer{
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -208,7 +217,7 @@ html{
     background: rgba(0,0,0,.4);
     border-radius: .9em;
     padding: .3em;
-  }
+  } */
   .disclaimer a{
     color: rgb(0, 208, 255);
   }
@@ -218,7 +227,20 @@ html{
     color:lime;
     margin-bottom: 2rem;
   }
-  
+
+  .what-is-js-code-example{
+    font-size: 11px;
+  }
+  .script-element-code-snippet{
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .code-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main-section{
     line-height: 1.3em;
     max-width: 1000px;
@@ -227,7 +249,7 @@ html{
     font-size: 1.5rem;
   }
   footer{
-    margin-top: 8rem;
+    margin-top: 2rem;
   }
   
   .ftr-nav-link{
@@ -236,17 +258,15 @@ html{
     background-color: rgb(6, 97, 176);
     color: rgb(255, 255, 255);
     font-size: 2.2rem;
-    padding: .5em 1.5em;
+    padding: .75em 1.5em 2em 1.5em;
+    height: 2.3em;
     border-radius: .5em;
+    margin-right: 1.5rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 290px;
     align-items: center;
-  }
-
-  .nav-list{
-    margin-left: -2em;
+    width: 290px;
   }
 
   .copy-right{
@@ -255,11 +275,31 @@ html{
     text-align: center;
     text-shadow: -5px 5px 20px rgba(0, 0, 0,1), 0px -5px 20px rgba(0, 0, 0, 1), 5px 0px 20px rgba(0, 0, 0, 1);
   }
-  @media (min-width: 1024px){
-    .ftr-nav-visible{
-      display: none;
+
+  @media (min-width: 425px){
+    .what-is-js-code-example{
+      font-size: 1.8rem;
     }
   }
+  @media (min-width: 640px){
+    .what-is-js-code-example{
+      font-size: 2.1rem;
+    }
+    .code{
+      font-size: 2rem;
+    }
+    footer{
+      position: relative;
+      top: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .ftr-nav-link{
+      margin-right: 2rem;
+    }
+  }
+  
   @media (max-width: 1023px){
     .disclaimer{
       display: none;
@@ -273,41 +313,25 @@ html{
   }
   .nav-info-header{
     position: fixed;
-    right: 70%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-list{
-    align-items: flex-end;
+    margin-right: 75rem;
   }
   .main-doc{
-    margin-left: 30%;
+    margin-left: 25rem;
+    margin-right: 0;
   }
   /*NAVBAR CSS ENDS HERE*/
     code{
       margin-left: 1rem;
       display: inline-block;
     }
-    
-  }
-  @media (min-width: 640px){
-    .code{
-      font-size: 2rem;
-    }
-    .main-doc{
-      margin-bottom: 25rem;
+    .header-navbar-and-main-container{
+      max-width: 1024px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
     }
     footer{
-      display: flex;
-      border-top: green solid 5px;
-      flex-direction: column;
-      justify-content: center;
-      background: url(../../images/wood-bg.jpg);
-      width: 100%;
-      position: fixed;
-      bottom: 0;
-      height: 15rem;
+      margin-top: 300px;
     }
   }
-  
