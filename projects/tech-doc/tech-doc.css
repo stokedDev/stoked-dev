@@ -184,6 +184,11 @@ html{
     flex-direction: column;
     align-items: center;
   }
+  .nav-info-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   /*NAVBAR CSS ENDS HERE*/
   section li{
     margin-bottom: 2rem;
@@ -208,18 +213,25 @@ html{
   h2{
     text-align: center;
   }
-  /* .disclaimer{
-    max-width: 300px;
+  .code-description-header{
+    font-size: 1em;
+    text-align: center;
+    word-spacing: 1px;
+  }
+  .disclaimer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 265px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
     line-height: 1.13em;
     text-shadow: none;
     background: rgba(0,0,0,.4);
     border-radius: .9em;
-    padding: .3em;
-  } */
-  .disclaimer a{
-    color: rgb(0, 208, 255);
+    padding: 0 1.2em;
   }
  
   code {
@@ -227,16 +239,27 @@ html{
     color:lime;
     margin-bottom: 2rem;
   }
-
+  .code-snippet-indent{
+    padding-left: 2em;
+    margin-bottom: 0;
+  }
+  .code-line{
+    display: block;
+  }
+  .related-code-lines{
+    margin-top: .7em;
+  }
   .what-is-js-code-example{
     font-size: 11px;
   }
   .script-element-code-snippet{
-    margin-top: 2rem;
+    position: relative;
+    top: 1rem;
     margin-right: auto;
     margin-left: auto;
   }
   .code-container{
+    margin-bottom: -.70em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,23 +311,11 @@ html{
     .code{
       font-size: 2rem;
     }
-    footer{
-      position: relative;
-      top: 2rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
     .ftr-nav-link{
       margin-right: 2rem;
     }
   }
   
-  @media (max-width: 1023px){
-    .disclaimer{
-      display: none;
-    }
-  }
   @media (min-width: 1024px){
   /*NAVBAR CSS STARTS HERE*/
   .nav-link:focus,
@@ -331,7 +342,21 @@ html{
       justify-content: center;
       align-items: flex-start;
     }
+  }
+  @media (min-width: 1440px){
     footer{
-      margin-top: 300px;
+      margin-top: 4vh;
+    }
+  }
+
+  @media (min-width: 1586px){
+    footer{
+      margin-top: 12vh;
+    }
+  }
+
+  @media (min-width: 1714px){
+    footer{
+      margin-top: 16vh;
     }
   }
