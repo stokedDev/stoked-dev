@@ -43,18 +43,41 @@
         <main class="main-doc">
           <section class="main-section carousel-item carousel-item-visible">
             <header>
-              <h2 class="section-header-1">What is JavaScript?</h2>
+              <h2 class="section-header-1">What Is JavaScript?</h2>
             </header>
+            <!-- <h4 class="code-description-header">About The Code Snippet Below</h4> -->
+            <p>
+               Below, a JavaScript arrow function named "doubleNum" is declared with "let", 
+              receives an argument for the placeholder parameter named "num", 
+              and if the argument has a type of number it will return the num ( number )
+              added to itself.
+            </p>
             <div class="code-container">
                 <code class="what-is-js-code-example">let doubleNum = num => num + num;
-                <br>
+                  <div class="related-code-lines">
+                <span class="code-line">
                 doubleNum(1) // returns 2
-                <br>
+                </span>
+                <span class="code-line">
+                // doubleNum(1) is 1 + 1.
+              </span>
+            </div>
+              <div class="related-code-lines">
+                <span class="code-line">
                 doubleNum(2) // returns 4
-                <br>
+                </span>
+                <span class="code-line">
+                // doubleNum(2) is 2 + 2.
+                </span>
+              </div>
+                <div class="related-code-lines">
+                <span class="code-line">
                 doubleNum(3) // returns 6
-                <br>
-                doubleNum(number) // returns number + number
+                </span>
+                <span class="code-line">
+                // doubleNum(3) is 3 + 3.
+                </span>
+              </div>
               </code>
             </div>
 
@@ -63,10 +86,10 @@
               JS ( meaning JavaScript ) was meant to be read by the browser engine exclusively.
               It was meant to be like Java but easier and simpler.
               JS can be written in a script element in an HTML file, or in a file of its own that is linked to in the HTML file.
+            </p>
               <code class="script-element-code-snippet"><br>&lt;script&gt;<br>
                  /* <br>JS can be written in a script element which consists of an opening and closing script tag. <br>
                  */<br>&lt;/script&gt;</code>
-            </p>
             <p>JavaScript is one of the main programming languages used for front end web development.</p>
             <p>JS is also one of the main programming languages used for backend web development.</p>
             <ul>
@@ -117,7 +140,7 @@
               </a>offers completely free mentoring and challenges
             </li>
               <li>
-                Learning JavaScript online is likely to be successful if what is learned from trustworthy sources is put into practice.
+                Learning JavaScript online is likely to be successful if what is learned from <b>trustworthy</b> sources is put into practice.
               </li>
             </ul>
           </section>
@@ -153,47 +176,57 @@ considerably ( as there would be much more code to read by the browser engine ).
             <section class="main-section carousel-item">
             <header>
               <h2 class="section-header-4">Conditionals</h2>
-            </header>
+            </header>            
+              <p>
+                 The following explains the checkTirePressure function code below.<br>
+                 PSI means pounds per square inch. <br>
+                 The following function code has two parameters<br> 
+                 ( a tires current PSI and its recommended minimum PSI ). <br>
+                 The checkTirePressure function has room to improve
+                 but it demonstrates use of conditionals <br>(an "if else statement chain" and a "ternary operator").<br>
+                 The function body in the code below has an "if else statement chain" 
+                 with a ternary operator in a template literal. 
+                 A template literal is a dollar symbol followed by an expression nested in a pair of curly brackets.
+                 A template literal allows for an expression in a back tick string.
+                 </p>
             <code>
-              /* PSI means pounds per square inch. 
-                 The following function has two parameters 
-                 ( a tires current PSI and its recommended minimum PSI ).
-                 Conditionals ( if statements, and ternary statements ) are used in 
-                 the following function as well. 
-                 The following function has room to improve
-                 but it demonstrates use of conditionals.
-              */
               function checkTirePressure(tirePSI, tireRecommendedMinimumPSI){
-                <br>
+                <div class="code-snippet-indent">
               if (tirePSI < tireRecommendedMinimumPSI) {
-              <br>
+                <div class="code-snippet-indent">
               return `Tire pressure is less than recommended PSI.`;
-              <br>
+              </div> 
               } else {
-                <br>
-                return `Tire pressure is ${tirePSI === tireRecommendedMinimumPSI?<br> 
-                    'equal to': 'above'} the recommended minimum PSI.`;
-                    <br>
+                <div class="code-snippet-indent">
+              return `Tire pressure is ${tirePSI === tireRecommendedMinimumPSI?<br>  
+              'equal to': 'above'} the recommended minimum PSI.`;
+              </div>
               }
-              <br>
+              </div>
               }
-              <br>
-              /* The function call just below<br>
-                  has 61 as tirePSI<br>
-                  and 60 as tireRecommendedMinimumPSI,<br>
-                  so it will return the following string,<br>
-                  'Tire pressure is above the recommended minimum PSI.'<br>
-              */
+              </code>
+              <p> The function call just below
+                  has 61 as tirePSI 
+                  and 60 as tireRecommendedMinimumPSI,
+                  so it will return the following string,
+                  'Tire pressure is above the recommended minimum PSI.'
+              </p>
+              <code>
               checkTirePressure(61, 60);<br>
-              /* This second function call just below<br>
-              has 59 as tirePSI and 60 as tireRecommendedMinimumPSI,<br>
-              so it will return the following string,<br>
-              'Tire pressure is less than recommended PSI.'.<br>
-              <!-- write example for switch -->
-              /* There is also a conditional called <br>
-              a switch statement that will<br>
-               be demonstrated here soon. */<br>
             </code>
+              <p> This second function call just below
+              has 59 as tirePSI and 60 as tireRecommendedMinimumPSI,
+              so it will return the following string,
+              'Tire pressure is less than recommended PSI.'.
+                </p>
+                <br>
+                <code>
+                  checkTirePressure(59, 60);
+                </code>
+                <br>
+              <!-- write example for switch -->
+              <p> An example of a switch conditional statement is below. 
+              </p>
               <p>
                 A conditional is how JavaScript or any other programming language can use boolean logic to return a result.
               </p> 
@@ -206,32 +239,35 @@ considerably ( as there would be much more code to read by the browser engine ).
             <header>
               <h2 class="section-header-5">DOM Manipulation</h2>
             </header>
+            <p>
+              The HEADER variable just below,
+                declared with const ( const is for a constant variable ),
+                assigns a string "Hello World" to 
+                an h1 in the body of an HTML document.
+                 The property textContent of a querySelector DOM 
+                 ( document object model ) method 
+                 has an h1 ( The h1 is the first header element
+                  level of HTML ) as an argument.
+            </p>
               <code class="code">
-                /* The HEADER variable just below,<br>
-                declared with const ( const is for a constant variable ),<br>
-                assigns a string "Hello World" to,<br>
-                an h1 in the body of an HTML document, using<br>
-                 the property textContent of a querySelector DOM <br>
-                 ( document object model ) method <br>
-                 with an h1 ( The h1 is the first header element<br>
-                  level of HTML ) as an argument. */
                 const HEADER = document<br>.querySelector('h1')<br>
-                .textContent = "Hello World";</span></code>
+                .textContent = "Hello World";</code>
               <p>
                 The DOM (Document Object Model), allows a JS file to interact with any HTML file that links to the JS file path.
               </p>
-            <p>When creating or getting elements to use in your JS, always remember to type the keyword "document" first.</p>
-              <p>To adjust the style of an element, code like this:
+              <p>
+                  The following code is related to the code above.
+                  The following code assigns '1.2rem'
+                  ( rem is the html selector font size) 
+                  to the fontSize ( a dash is a reserved symbol in JS,
+                   in CSS its 'font-size', in JS its camel cased ) CSS property 
+                    to the style object of the 
+                    DOM ( Document Object Model ) const variable named HEADER.
+              </p>
+              <p>To adjust the style of an element, code like this:</p>
                 <code>
-                  <br>/* <br>
-                  The following code is related to the code above.<br>
-                  The following code assigns '1.2rem'<br>
-                  ( rem is the html selector font size) <br>
-                  to the fontSize ( a dash is a reserved symbol in JS,<br>
-                   in CSS its 'font-size', in JS its camel cased ) CSS property <br>
-                    to the style object of the <br>
-                    DOM ( Document Object Model ) const variable named HEADER */ <br>
-                  HEADER.style.fontSize = '1.2rem';</code></p>
+                  HEADER.style.fontSize = '1.2rem';
+                </code>
             <ul>
               <li>All style properties in JS are the same as CSS but they are camel cased instead of using dashes.</li>
               <li>All style property values in JS are declared inside quotes.</li>
