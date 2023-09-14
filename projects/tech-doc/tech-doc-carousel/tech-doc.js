@@ -34,6 +34,7 @@ function removeHeaderPopupClasses(){
     headerDiv.classList.remove('header-div-popup'); 
 }
 function hamburgerBack(){
+    document.querySelector('.disclaimer').style.display = 'flex'; 
     topBun.classList.remove('topBunToX');
     inBuns.classList.remove('inBunsToX');
     bottomBun.classList.remove('bottomBunToX');
@@ -45,7 +46,7 @@ function hamburgerBack(){
     topBun.classList.remove('topBunBack');
     inBuns.classList.remove('inBunsBack');
     bottomBun.classList.remove('bottomBunBack');
-    }, 501)
+    }, 501);
 }
     
 function goToSection(sectionHeader, slidePosition){
@@ -95,11 +96,11 @@ function activateBtn(btn, sectionHeader, slidePosition){
             bottomBun.classList.add('bottomBunToX');
             header.classList.add('header-popup');
             headerDiv.classList.add('header-div-popup');
-            
+            document.querySelector('.disclaimer').style.display = 'none';
         } else {
             header.classList.remove('header-popup');
             headerDiv.classList.remove('header-div-popup');
-            hamburgerBack()    
+            hamburgerBack()
         }
     
     },{
