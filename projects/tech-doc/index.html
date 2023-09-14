@@ -49,7 +49,7 @@
             <p>
                Below, a JavaScript arrow function named "doubleNum" is declared with "let", 
               receives an argument for the placeholder parameter named "num", 
-              and if the argument has a type of number it will return the num ( number )
+              and if the argument has a type of number it will return the num (number)
               added to itself.
             </p>
             <div class="code-container">
@@ -83,15 +83,15 @@
 
             <p>JavaScript was made for the user-facing part of a website. 
               It was meant to work with HTML and CSS as their lightweight beginner-friendly programming language.
-              JS ( meaning JavaScript ) was meant to be read by the browser engine exclusively.
               It was meant to be like Java but easier and simpler.
+              Unlike Java though, JS ( meaning JavaScript ) was meant to be read by the browser engine exclusively.
               JS can be written in a script element in an HTML file, or in a file of its own that is linked to in the HTML file.
             </p>
               <code class="script-element-code-snippet"><br>&lt;script&gt;<br>
                  /* <br>JS can be written in a script element which consists of an opening and closing script tag. <br>
                  */<br>&lt;/script&gt;</code>
             <p>JavaScript is one of the main programming languages used for front end web development.</p>
-            <p>JS is also one of the main programming languages used for backend web development.</p>
+            <p>JS is also one of the main programming languages used for back end web development.</p>
             <ul>
               <li>
                 JS can be used on the front end to dynamically change a client-facing web page in response to user input.
@@ -110,9 +110,8 @@
               <li>
                 Search on a good search engine (
                   <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">
-                    google, for example
-                  </a>
-                  ) to find the JavaScript information you need.
+                    google</a>, 
+                   for example) to find the JavaScript information you need.
               </li>
               <li>
                 <a href="https://www.freecodecamp.org/" rel="noopener noreferrer" target="_blank">freeCodeCamp.org</a>
@@ -120,27 +119,23 @@
               </li>
               <li>
                 <a href="https://developer.mozilla.org/en-US/" rel="noopener noreferrer" target="_blank">
-                  Mozilla Developer Network
-                </a> 
+                  Mozilla Developer Network</a> 
                 has exhaustive ( or near-exhaustive ) technical documentation that is likely to be very helpful while learning.
               </li>
               <li>
                 One of my favorite ways to learn JS is from the 
                 <a href="https://www.youtube.com/c/TheNetNinja/videos" rel="noopener noreferrer" target="_blank">
-                  Net Ninja on YouTube
-                </a>.
+                  Net Ninja on YouTube</a>.
               </li>
               <li>
                 <a href="https://scrimba.com/" rel="noopener noreferrer" target="_blank">
-                  Scrimba
-                </a>, a website with interactive coding tutorials, makes hands-on learning very convenient.
+                  Scrimba</a>, a website with interactive coding tutorials, makes hands-on learning very convenient.
               </li>
               <li><a href="https://exercism.org/" rel="noopener noreferrer" target="_blank">
-                Exercism
-              </a>offers completely free mentoring and challenges
+                Exercism</a> offers completely free mentoring and challenges.
             </li>
               <li>
-                Learning JavaScript online is likely to be successful if what is learned from <b>trustworthy</b> sources is put into practice.
+                Learning JavaScript online is likely to be successful if what is learned from trustworthy sources is put into practice.
               </li>
             </ul>
           </section>
@@ -158,15 +153,15 @@
 function scope, or block scope; declared with the "const" keyword cannot be modified unless they are arrays; 
 declared with the "let" keyword can be modified; 
 declared with the "var" keyword can be modified, can have global scope, can have function scope, but cannot have block scope. 
-( A variable with block scope cannot be accessed outside of a loop, an if statement, nor the block scope that it is declared in. )</p>
+(A variable with block scope cannot be accessed outside of a loop, an if statement, nor the block scope that it is declared in.)</p>
             <ul>
-              <li>Variables are initialized with a custom name and usually assigned data ( data examples: functions, arrays, objects, calculations, values, or others. )</li>
+              <li>Variables are initialized with a custom name and usually assigned data (data examples: functions, arrays, objects, calculations, values, or others.)</li>
               <li>
                 Variables allow coders to reuse one or more lines of code without having to repeat themselves.
               </li>
               <li>
                 If it weren't for variables, JS would take much longer to write and would slow down webpages 
-considerably ( as there would be much more code to read by the browser engine ).
+considerably (as there would be much more code to read by the browser engine).
               </li>
               <li>
                 Descriptive variable naming and efficient use of variables is one of the most key parts of making a JS codebase maintainable.
@@ -181,20 +176,24 @@ considerably ( as there would be much more code to read by the browser engine ).
                  The following explains the checkTirePressure function code below.<br>
                  PSI means pounds per square inch. <br>
                  The following function code has two parameters<br> 
-                 ( a tires current PSI and its recommended minimum PSI ). <br>
-                 The checkTirePressure function has room to improve
+                 (a tires current PSI and its recommended minimum PSI). <br>
+                 The checkTirePressure function has room to improve,
                  but it demonstrates use of conditionals <br>(an "if else statement chain" and a "ternary operator").<br>
                  The function body in the code below has an "if else statement chain" 
-                 with a ternary operator in a template literal. 
-                 A template literal is a dollar symbol followed by an expression nested in a pair of curly brackets.
-                 A template literal allows for an expression in a back tick string.
+                 with a ternary operator in a template literal in the "else" body. 
+                 A template literal is a dollar symbol followed by an expression nested in a pair of curly braces.
+                 A template literal is used to allow an expression in a back tick string.
+                 The back tick is usually located on the top left of a keyboard under the "esc" key.
+                 A back tick string is meant for template literal use.
+                 Conditionals and strings are two different topics of JS,
+                 but strings (and/or any other data type) are often used with conditionals.
                  </p>
             <code>
               function checkTirePressure(tirePSI, tireRecommendedMinimumPSI){
                 <div class="code-snippet-indent">
               if (tirePSI < tireRecommendedMinimumPSI) {
                 <div class="code-snippet-indent">
-              return `Tire pressure is less than recommended PSI.`;
+              return 'Tire pressure is less than recommended PSI.'';
               </div> 
               } else {
                 <div class="code-snippet-indent">
@@ -225,48 +224,82 @@ considerably ( as there would be much more code to read by the browser engine ).
                 </code>
                 <br>
               <!-- write example for switch -->
-              <p> An example of a switch conditional statement is below. 
+              <p> An example of a switch conditional statement is in a function named describeStr below.
+                The function describeStr is meant to receive a string(a string is text in double-quotes, single-quotes, or back-ticks)
+                as an argument and return a description of the string.
+                The describeStr function body has a switch statement that takes an expression str, a string (switch statements can of course take expressions other than strings).
+                The switch statement has a series of clauses that can execute their own statement if a case is matched.
+                The default clause executes when none of the case clauses match the expression.
+                The function describeStr returns a description of str when a case clause matches str, otherwise an apology for not having a description for str is returned.
               </p>
+              <code>
+                function describeStr(str){<br>
+                  switch(str){<br>
+                    case 'html':<br>
+                      return 'HTML is Hyper Text Markup Language.';<br>
+                      break;<br>
+                    case 'css':<br>
+                      return 'CSS is Cascading Style Sheets.';<br><br>
+                      break;<br>
+                    case 'integer':<br>
+                      return 'An integer is a whole number(such as -1, 0, or 1).';<br>
+                      break;<br>
+                    default:<br>
+                      return 'Sorry, we don\'t have a description for that string';<br>
+                  }<br>
+                }<br>
+                </code>
+                <p>Below, the function called returns a description of the string 'html'.</p>
+                <code>
+                describeStr('html');
+              </code>
+              <p>Below, the function called returns a description of the string "integer".</p>
+              <code>
+                describeStr('integer');
+              </code>
+              <p>Below, the function called returns an apology for not having a description for the string.</p>
+              <code>
+                describeStr('bug');
+              </code>
               <p>
                 A conditional is how JavaScript or any other programming language can use boolean logic to return a result.
               </p> 
                 <p>
                   Boolean logic refers to what determines a value to be true or false.
                 </p> 
-            <p>JS conditionals can be used to dynamically solve problems by using boolean logic to return a result.</p>
+            <ul>
+              <li>Conditionals execute code when an expression is true</li>
+              <li>All tech industry programming languages have conditionals</li>
+            </ul>
           </section>
             <section class="main-section carousel-item">
             <header>
               <h2 class="section-header-5">DOM Manipulation</h2>
             </header>
             <p>
-              The HEADER variable just below,
-                declared with const ( const is for a constant variable ),
-                assigns a string "Hello World" to 
-                an h1 in the body of an HTML document.
-                 The property textContent of a querySelector DOM 
-                 ( document object model ) method 
-                 has an h1 ( The h1 is the first header element
-                  level of HTML ) as an argument.
+              In the code just below, a named constant of HEADER is assigned an 'h1' (level 1 HTML header)
+              that is passed to a querySelector document method as an argument.
+               Then a string "Hello World" is assigned to 
+                the HEADER named constant via a property called textContent.
+                There must be an h1 HTML element in the HTML body for the code just below to work.
             </p>
               <code class="code">
-                const HEADER = document<br>.querySelector('h1')<br>
-                .textContent = "Hello World";</code>
+                const HEADER = document
+                .querySelector('h1');<br>
+                HEADER.textContent = "Hello World";</code>
               <p>
                 The DOM (Document Object Model), allows a JS file to interact with any HTML file that links to the JS file path.
               </p>
               <p>
                   The following code is related to the code above.
-                  The following code assigns '1.2rem'
-                  ( rem is the html selector font size) 
-                  to the fontSize ( a dash is a reserved symbol in JS,
-                   in CSS its 'font-size', in JS its camel cased ) CSS property 
-                    to the style object of the 
-                    DOM ( Document Object Model ) const variable named HEADER.
+                  The following code assigns 'red' 
+                  to the backgroundColor(a dash is a reserved symbol in JS,
+                   in CSS its 'background-color', in JS its camel cased) property 
+                    of HEADER's style object.
               </p>
               <p>To adjust the style of an element, code like this:</p>
                 <code>
-                  HEADER.style.fontSize = '1.2rem';
+                  HEADER.style.backgroundColor = 'red';
                 </code>
             <ul>
               <li>All style properties in JS are the same as CSS but they are camel cased instead of using dashes.</li>
