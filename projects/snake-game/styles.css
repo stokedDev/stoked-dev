@@ -83,9 +83,12 @@ button{
     margin: .25em auto .05em auto;
 }
 .instructions{
-    font-size: 1.05rem;
-    text-align: center;
+    font-size: .91rem;
     margin: 0 auto .25em auto;
+}
+.have-fun{
+    display: flex;
+    justify-content: center;
 }
 .square {
     width: 20px;
