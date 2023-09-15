@@ -9,7 +9,7 @@ html{
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
-    background-image: url(../../images/wood-bg.webp);
+    background-image: url(wood-bg.webp);
     background-attachment: fixed;
     background-size: cover;
     color: rgb(255, 196, 0);
