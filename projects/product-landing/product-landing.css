@@ -61,7 +61,7 @@ body{
     margin-bottom: 5px;
   }
 
-  /* X to hambuger icon classes below */
+  /* X to hamburger icon classes below */
   .topBunBack{
     animation-name: topBunBack;
     animation-duration: .5s;
@@ -80,9 +80,9 @@ body{
     animation-fill-mode: forwards;
   }
   
-  /* X to hambuger icon classes above */
+  /* X to hamburger icon classes above */
 
-  /* hambuger icon to X classes below */
+  /* hamburger icon to X classes below */
   .topBunToX{
     animation-name: topBunToX;
     animation-duration: .5s;
@@ -99,9 +99,9 @@ body{
     animation-duration: .5s;
     animation-fill-mode: forwards;
   }
-/* hambuger icon to X classes above */
+/* hamburger icon to X classes above */
 
-  /* hambuger icon to X keyframes below */
+  /* hamburger icon to X keyframes below */
   
   @keyframes topBunToX{
     100%{
@@ -120,9 +120,9 @@ body{
       background-color: rgba(255,255,255,1);
     }
   }
-  /* hambuger icon to X keyframes above */
+  /* hamburger icon to X keyframes above */
 
-/* X to hambuger icon keyframes below */
+/* X to hamburger icon keyframes below */
   @keyframes bottomBunBack{
     0%{
       transform: rotate(-130deg) translate(0px, 270%);
@@ -152,7 +152,7 @@ body{
     }
   }
   
-  /* X to hambuger icon keyframes above */
+  /* X to hamburger icon keyframes above */
   .header-div-popup{
     width: 100vw;
     height: 100vh;
@@ -204,7 +204,7 @@ body{
       height: 100%;
       left: 0;
       top: 0;
-      background-image: url(../../images/bsr-surfpool.webp);
+      background-image: url(bsr-surfpool.webp);
       opacity: 0.6;
       background-size: cover;
       background-repeat: no-repeat;
