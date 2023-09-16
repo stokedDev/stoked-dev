@@ -42,6 +42,7 @@ function hamburgerBack(){
     topBun.classList.add('topBunBack');
     inBuns.classList.add('inBunsBack');
     bottomBun.classList.add('bottomBunBack');
+    document.querySelector('.nav-list').style.marginTop = "";
     setTimeout(() => {
     topBun.classList.remove('topBunBack');
     inBuns.classList.remove('inBunsBack');
@@ -109,7 +110,7 @@ function activateBtn(btn, sectionIntro, slidePosition){
             bottomBun.classList.add('bottomBunToX');
             header.classList.add('header-popup');
             headerDiv.classList.add('header-div-popup');
-        
+            document.querySelector('.nav-list').style.marginTop = "46px";
         } else {
             header.classList.remove('header-popup');
             headerDiv.classList.remove('header-div-popup');
