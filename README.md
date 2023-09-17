@@ -18,7 +18,7 @@ https://github.com/stokedDev/freeCodeCampJSProjects
 The projects are Caesar's Cipher, Palindrome Checker, Cash Register, Roman Numeral Converter, and Telephone Number Validator.
 By remembering what I learned from the freeCodeCamp JavaScript Algorithms and Data Structures curriculum and using resources from across the web I completed these challenges which allowed me to earn my certification.
 
-### 3. Documentation Page
+### 3. Documentation Page (Currently Unavailable)
 https://stokeddev.com/projects/tech-doc
 
 This is based on one of the freeCodeCamp projects that I needed to complete in order to get my Responsive Web Design certification. 
