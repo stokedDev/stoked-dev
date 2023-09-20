@@ -1,0 +1,19 @@
+.carousel-item,
+.carousel-item-hidden{
+    display: none;
+}
+.carousel-item-visible{
+    display: flex;
+    animation: fadeInVisibility 1s;
+}
+
+
+
+@keyframes fadeInVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
