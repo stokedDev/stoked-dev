@@ -42,6 +42,7 @@ function hamburgerBack(){
     topBun.classList.add('topBunBack');
     inBuns.classList.add('inBunsBack');
     bottomBun.classList.add('bottomBunBack');
+    mobileMenu.style.background = 'rgba(0, 0, 0, 0.441)';
     setTimeout(() => {
     topBun.classList.remove('topBunBack');
     inBuns.classList.remove('inBunsBack');
@@ -97,6 +98,7 @@ function activateBtn(btn, sectionHeader, slidePosition){
             header.classList.add('header-popup');
             headerDiv.classList.add('header-div-popup');
             document.querySelector('.disclaimer').style.display = 'none';
+            mobileMenu.style.background = 'rgba(0,0,0,0)';
         } else {
             header.classList.remove('header-popup');
             headerDiv.classList.remove('header-div-popup');
