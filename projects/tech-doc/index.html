@@ -43,7 +43,7 @@
         <main class="main-doc">
           <section class="main-section carousel-item carousel-item-visible">
             <header class="section-header">
-              <h2 class="section-1-title">What Is JavaScript?</h2>
+              <h2 class="section-h2 section-1-title">What Is JavaScript?</h2>
             </header>
             <p>
                Below, a JavaScript arrow function named "doubleNum" is declared with "const", 
@@ -87,8 +87,8 @@
               <code class="script-element-code-snippet"><br>&lt;script&gt;<br>
                  /* <br>JS can be written in an HTML script element which consists of an opening and closing script tag. <br>
                  */<br>&lt;/script&gt;</code>
-            <p>JavaScript is one of the main programming languages used for front end web development.</p>
-            <p>JS is also one of the main programming languages used for back end web development.</p>
+            <p>JavaScript is one of the main programming languages used for front end web development.
+            JS is also one of the main programming languages used for back end web development.</p>
             <ul>
               <li>
                 JS can be used on the front end to dynamically change a client-facing web page in response to user input.
@@ -100,7 +100,7 @@
           </section>
             <section class="main-section carousel-item">
             <header class="section-header">
-              <h2 class="section-2-title">How To Learn JS</h2>
+              <h2 class="section-h2 section-2-title">How To Learn JS</h2>
             </header>
             <p>There are many ways to learn JS but here are some of my recommendations.</p>
             <ul>
@@ -135,15 +135,13 @@
           </section>
             <section class="main-section carousel-item" class="variables">
             <header class="section-header">
-              <h2 class="section-3-title">Variables</h2>
+              <h2 class="section-h2 section-3-title">Variables</h2>
             </header>
             <code>var variable = 'A variable declared with the old "var"';</code>
-              <br>
               <code>let variable2 = 'A variable declared with the mutable "let"';</code>
-              <br>
               <code>const VARIABLE_3 = 'A variable declared with const(short for constant)';</code>
-            <p>In 2015 two important new JavaScript keywords were introduced: let and const.</p>
-            <p>Variables: declared with the "const" and "let" keywords may have global scope,
+            <p>In 2015 two important new JavaScript keywords were introduced: let and const.
+            Variables: declared with the "const" and "let" keywords may have global scope,
 function scope, or block scope; declared with the "const" keyword cannot be modified unless they are arrays; 
 declared with the "let" keyword can be modified; 
 declared with the "var" keyword can be modified, can have global scope, can have function scope, but cannot have block scope. 
@@ -164,15 +162,15 @@ considerably (as there would be much more code to read by the browser engine).
           </section>
             <section class="main-section carousel-item">
             <header class="section-header">
-              <h2 class="section-4-title">Conditionals</h2>
+              <h2 class="section-h2 section-4-title">Conditionals</h2>
             </header>            
               <p>
-                 The following explains the checkTirePressure function code below.<br>
-                 PSI means pounds per square inch. <br>
-                 The following function code has two parameters<br> 
-                 (a tires current PSI and its recommended minimum PSI). <br>
+                 The following explains the checkTirePressure function code below. 
+                 PSI means pounds per square inch and is used to measure air pressure.
+                 The following function code has two parameters
+                 (a tires current PSI and its recommended minimum PSI).
                  The checkTirePressure function has room to improve,
-                 but it demonstrates use of conditionals <br>(an "if else statement chain" and a "ternary operator").<br>
+                 but it demonstrates use of conditionals (an "if else statement chain" and a "ternary operator").
                  The function body in the code below has an "if else statement chain" 
                  with a ternary operator in a template literal in the "else" body. 
                  A template literal is a dollar symbol followed by an expression nested in a pair of curly braces.
@@ -205,18 +203,16 @@ considerably (as there would be much more code to read by the browser engine).
                   'Tire pressure is above the recommended minimum PSI.'
               </p>
               <code>
-              checkTirePressure(61, 60);<br>
+              checkTirePressure(61, 60);
             </code>
               <p> This second function call just below
               has 59 as tirePSI and 60 as tireRecommendedMinimumPSI,
               so it will return the following string,
               'Tire pressure is less than recommended PSI.'.
                 </p>
-                <br>
                 <code>
                   checkTirePressure(59, 60);
                 </code>
-                <br>
              
               <p> An example of a switch conditional statement is in a function named describeStr below.
                 The function describeStr is meant to receive a string(a string is text in double-quotes, single-quotes, or back-ticks)
@@ -227,21 +223,36 @@ considerably (as there would be much more code to read by the browser engine).
                 The function describeStr returns a description of str when a case clause matches str, otherwise an apology for not having a description for str is returned.
               </p>
               <code>
-                function describeStr(str){<br>
-                  switch(str){<br>
-                    case 'html':<br>
-                      return 'HTML is Hyper Text Markup Language.';<br>
-                      break;<br>
-                    case 'css':<br>
-                      return 'CSS is Cascading Style Sheets.';<br>
-                      break;<br>
-                    case 'integer':<br>
-                      return 'An integer is a whole number(such as -1, 0, or 1).';<br>
-                      break;<br>
-                    default:<br>
-                      return 'Sorry, we don\'t have a description for that string';<br>
-                  }<br>
-                }<br>
+                function describeStr(str){
+                  <div class="code-snippet-indent">
+                  switch(str){
+                    <div class="code-snippet-indent">
+                    case 'html':
+                    <div class="code-snippet-indent">
+                      return 'HTML is Hyper Text Markup Language.';
+                      <br>
+                      break;
+                      </div>
+                    case 'css':
+                    <div class="code-snippet-indent">
+                      return 'CSS is Cascading Style Sheets.';
+                      <br>
+                      break;
+                      </div>
+                    case 'integer':
+                    <div class="code-snippet-indent">
+                      return 'An integer is a whole number(such as -1, 0, or 1).';
+                      <br>
+                      break;
+                      </div>
+                    default:
+                    <div class="code-snippet-indent">
+                      return 'Sorry, we don\'t have a description for that string';
+                      </div>
+                      </div>
+                  }
+                  </div>
+                }
                 </code>
                 <p>Below, the function called returns a description of the string 'html'.</p>
                 <code>
@@ -268,7 +279,7 @@ considerably (as there would be much more code to read by the browser engine).
           </section>
             <section class="main-section carousel-item">
             <header class="section-header">
-              <h2 class="section-5-title">DOM Manipulation</h2>
+              <h2 class="section-h2 section-5-title">DOM Manipulation</h2>
             </header>
             <p>
               In the code just below, a named constant of HEADER is assigned an 'h1' (level 1 HTML header)
@@ -288,7 +299,7 @@ considerably (as there would be much more code to read by the browser engine).
                   The following code assigns 'red' 
                   to the backgroundColor(a dash is a reserved symbol in JS,
                    in CSS its 'background-color', in JS its camel cased) property 
-                    of HEADER's style object.
+                    of HEADERs style object.
               </p>
               <p>To adjust the style of an element, code like this:</p>
                 <code>
