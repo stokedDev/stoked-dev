@@ -249,6 +249,12 @@ h1{
   font-size: 2.65rem;
   font-weight: 900;
 }
+.intro-part-1-dot{
+  font-size: .7em;
+  position: relative;
+  left: .025em;
+  padding: 0;
+}
 .intro-part-2{
   font-size: 2.43rem;
   font-weight: 900;
@@ -284,7 +290,12 @@ h2{
   font-size: 1.7em;
   font-weight: 900;
 }
-
+.intro-part-3-smaller-dot{
+  font-size: .7em;
+  position: relative;
+  left: .05em;
+  padding: 0;
+}
 .welcome-btn{
   color: rgb(252, 220, 39);
   background: rgba(0,0,0,.5);
