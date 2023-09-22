@@ -20,9 +20,8 @@ body{
   justify-content: center;
   margin: .2rem;
   background-image: url("../images/small-mobile-screen-pxfuel-abstract-bg.webp");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   background-attachment: fixed;
 }
 /* NAVBAR CSS STARTS HERE */
@@ -506,7 +505,6 @@ footer{
   }
   body{
     background-image: url("../images/pxfuel.webp");
-    background-size: cover;
   }
   .header-popup{
     background-image: url("../images/pxfuel.webp");
