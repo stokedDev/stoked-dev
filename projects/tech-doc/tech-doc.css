@@ -1,17 +1,19 @@
 html{
     font-size: 10px;
     margin: 0 auto;
-    width: 97vw;
+    width: 99vw;
     overflow-x: hidden;
   }
+
   *{
     box-sizing: border-box;
   }
+
   body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    width: 97vw;
+    width: 99vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +25,7 @@ html{
     color: rgb(255, 196, 0);
     font-family: monospace, sans-serif;
   }
+
   h1{
     font-size: 2.8rem;
     text-align: center;
@@ -32,7 +35,7 @@ html{
     align-items: center;
   }
   /*NAVBAR CSS STARTS HERE*/
-  /* mobile menu css*/
+  
   .mobile-menu{
     position: fixed;
     display: none;
@@ -45,6 +48,7 @@ html{
     background-color:rgba(0, 0, 0, 0.441);
     border-radius: 5px;
   }
+
   .mobile-menu div{
     margin: 2.5px auto 2.5px auto;
     padding: 0;
@@ -53,9 +57,11 @@ html{
     width: 30px;
     border-radius: 5px;
   }
+
   .mobile-menu div:nth-child(1){
     margin-top: 5px;
   }
+
   .mobile-menu div:nth-child(3){
     margin-bottom: 5px;
   }
@@ -82,17 +88,20 @@ html{
   /* X to hamburger icon classes above */
 
   /* hamburger icon to X classes below */
+
   .topBunToX{
     animation-name: topBunToX;
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-fill-mode: both;
   }
+
   .inBunsToX{
     animation-name: inBunsToX;
     animation-duration: .25s;
     animation-fill-mode: forwards;
   }
+
   .bottomBunToX{
     animation-name: bottomBunToX;
     animation-duration: .5s;
@@ -157,6 +166,7 @@ html{
     width: 100vw;
     height: 100vh;
   }
+
   .header-popup{
     z-index: 1;
     position: fixed;
@@ -170,6 +180,7 @@ html{
     height: 100%;
   }
 /* mobile menu css ends here */
+
 .header-navbar-and-main-container{
     width: 100vw;
     margin: 0;
@@ -178,9 +189,11 @@ html{
     flex-direction: column;
     align-items: center; 
 }
+
   header{
     width: 100vw;
   }
+
   .nav-link {
     background-color: rgba(96, 255, 5, 0.8);
     color: black;
@@ -195,10 +208,12 @@ html{
     cursor: pointer;
     text-shadow: none;
   }
+
   .nav-link:focus{
     color: white;
     background-color: rgba(0,0,255,.8);
   }
+
   .nav-list{
     width: 100vw;
     list-style: none;
@@ -206,42 +221,50 @@ html{
     flex-direction: column;
     align-items: center;
   }
+
   .nav-info-header{
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  /*NAVBAR CSS ENDS HERE*/
+
+  /* NAVBAR CSS ENDS HERE */
   section li{
     margin-bottom: 2rem;
   }
+
   section a{
     text-decoration: none;
     border-bottom: solid rgb(0, 238, 255) 3px;
     color: rgb(0, 238, 255);
     display: inline;
   }
+
   .main-doc{
     font-size: 1.6rem;
-    width: 97%;
+    width: 100%;
+    max-width: 700px;
     padding: 0;
     margin-left: 0;
     margin-right: 0;
     background-color: rgba(0,0,0,.7);
     border-radius: 2rem;
   }
+
   .section-header{
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     width: fit-content;
     margin: 0 auto;
   }
+
   .section-h2{
     margin-left: 1rem;
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .disclaimer{
     display: flex;
     flex-direction: column;
@@ -266,39 +289,38 @@ html{
     background-color: rgba(255, 255, 255, .15);
     color:lime;
     max-width: 548px;
-    
   }
+  
   .code-snippet-indent{
     padding-left: 2em;
     margin-bottom: 0;
   }
+
   .code-line{
     display: block;
   }
-  .related-code-lines{
-    margin-top: .7em;
+
+  .code-snippet-group code{
+    background-color: rgba(0,0,0,0);
   }
-  
-  .script-element-code-snippet{
-    margin-top: 1rem;
+
+  .code-snippet-group{
+    background-color: rgba(255, 255, 255, .15);
+    width: fit-content;
+    padding: 2px 2px;
   }
-  .section-1-paragraph-2{
-    margin-bottom: -1rem;
-  }
-  .main-section p{
-    margin-top: 1rem;
-    margin-bottom: 0;
-    text-indent: 3rem;
-  }
+
   .main-section{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 .7rem;
+    padding: 0 2%;
     line-height: 1.3em;
-    width: 97%;
+    width: 100%;
     margin: 0;
   }
+
+  .main-section p{
+    text-indent: 3rem;
+  }
+
   footer{
     margin-top: 2rem;
   }
@@ -331,45 +353,60 @@ html{
       font-size: 1.4rem;
     }
   }
+
   @media(min-width: 673px){
     code{
       max-width: 616px;
       font-size: 1.6rem;
     }
   }
-  @media (min-width: 640px){
-    .ftr-nav-link{
-      margin-right: 2rem;
-    }
-  }
   
   @media (min-width: 1024px){
+
+    html{
+      width: 100%;
+    }
+
+    body{
+      width: 100%;
+    }
+
   /* NAVBAR CSS STARTS HERE */
+
   .nav-link:hover {
     color: white;
     background-color: rgba(0,0,255,.8);
   }
+
   .nav-info-header{
+    width: 280px;
     position: fixed;
-    margin-right: 75rem;
+    top: .1rem;
   }
+
+  .nav-list{
+    width: 280px;
+  }
+
   .main-doc{
-    margin-left: 25rem;
+    margin-top: 1rem;
+    margin-left: 31.6rem;
     margin-right: 0;
     width: 700px;
   }
+
   .main-section{
     width: 700px;
   }
-  /*NAVBAR CSS ENDS HERE*/
+
     .header-navbar-and-main-container{
       max-width: 1024px;
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
     }
+  /* NAVBAR CSS ENDS HERE */
   }
+  
   @media (min-width: 1440px){
     footer{
       margin-top: 4vh;
