@@ -192,7 +192,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 2rem 0;
+  margin: -4rem 0 2rem 0;
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: .05em;
@@ -206,10 +206,14 @@ p{
   font-size: 2.4rem;
 }
 h1{
-  font-size: 4.6rem;
+  font-size: 1.6em;
+  letter-spacing: .075em;
   margin-bottom: -.6em;
 }
-
+.h1-exclamation{
+  display: relative;
+  left: .09em;
+}
 .intro{
   position: relative;
   bottom: 10px;
@@ -221,7 +225,12 @@ h1{
 .intro-block{
   display: block;
 }
-
+.intro-block-smaller-dot{
+  font-size: .5em;
+  position: relative;
+  right: .2em;
+  padding: 0;
+}
 .intro-part-1{
   margin-top: 0;
   font-size: 2.65rem;
@@ -257,22 +266,12 @@ h2{
   font-size: 3.2rem;
 }
 .intro-part-3{
-  font-size: 3.6rem;
+  margin-top: -1.69rem;
+  margin-bottom: -1rem;
+  font-size: 1.7em;
   font-weight: 900;
 }
-.intro-part-4{
-  margin-top: -.5rem;
-  font-size: 4rem;
-  font-weight: 900;
-}
-.intro-part-5{
-  font-size: 5.05rem;
-  font-weight: 900;
-}
-.intro-part-4,
-.intro-part-5{
-  line-height: 5rem;
-}
+
 .welcome-btn{
   color: rgb(252, 220, 39);
   background: rgba(0,0,0,.5);
@@ -455,6 +454,9 @@ footer{
   font-size: 2.2rem;
 }
 @media (min-width: 580px){
+  .welcome-section{
+    margin-top: -2.8rem;
+  }
   body{
     background-image: url("../images/larger-mobile-screen-pxfuel-abstract-bg.webp");
   }
@@ -474,6 +476,9 @@ footer{
 }
 
  @media (min-width: 1024px){
+  .welcome-section{
+    margin-top: 0;
+  }
   body{
     background-image: url("../images/pxfuel.webp");
     background-size: cover;
