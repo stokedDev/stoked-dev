@@ -51,42 +51,32 @@
               and if the argument has a type of number it will return the num (number)
               added to itself.
             </p>
-                <code>const doubleNum = num => num + num;
-                  <div class="related-code-lines">
-                <span class="code-line">
-                doubleNum(1) // returns 2
-                </span>
-                <span class="code-line">
-                // doubleNum(1) is 1 + 1.
-              </span>
-            </div>
-              <div class="related-code-lines">
-                <span class="code-line">
-                doubleNum(2) // returns 4
-                </span>
-                <span class="code-line">
-                // doubleNum(2) is 2 + 2.
-                </span>
-              </div>
-                <div class="related-code-lines">
-                <span class="code-line">
+            <div class="code-snippet-group">
+                <code>const doubleNum = num => num + num;<br>
+                doubleNum(1) // returns 2<br>
+                // doubleNum(1) is 1 + 1.<br>
+              <br>
+                doubleNum(2) // returns 4<br>
+                // doubleNum(2) is 2 + 2.<br>
+                <br>
+                <br>
                 doubleNum(3) // returns 6
-                </span>
-                <span class="code-line">
+                <br>
                 // doubleNum(3) is 3 + 3.
-                </span>
-              </div>
               </code>
-
-            <p class="section-1-paragraph-2">JavaScript was made for the user-facing part of a website. 
+            </div>
+            <p>JavaScript was made for the user-facing part of a website. 
               It was meant to work with HTML and CSS as their lightweight beginner-friendly programming language.
               It was meant to be like Java but easier and simpler.
               Unlike Java though, JS (meaning JavaScript) was meant to be read by the browser engine exclusively.
               JS can be written in a script element in an HTML file, or in a file of its own that is linked to in the HTML file.
             </p>
-              <code class="script-element-code-snippet"><br>&lt;script&gt;<br>
+
+            <div class="code-snippet-group">
+              <code class="script-element-code-snippet">&lt;script&gt;<br>
                  /* <br>JS can be written in an HTML script element which consists of an opening and closing script tag. <br>
                  */<br>&lt;/script&gt;</code>
+                 </div>
             <p>JavaScript is one of the main programming languages used for front end web development.
             JS is also one of the main programming languages used for back end web development.</p>
             <ul>
@@ -137,9 +127,11 @@
             <header class="section-header">
               <h2 class="section-h2 section-3-title">Variables</h2>
             </header>
+            <div class="code-snippet-group">
             <code>var variable = 'A variable declared with the old "var"';</code>
               <code>let variable2 = 'A variable declared with the mutable "let"';</code>
               <code>const VARIABLE_3 = 'A variable declared with const(short for constant)';</code>
+              </div>
             <p>In 2015 two important new JavaScript keywords were introduced: let and const.
             Variables: declared with the "const" and "let" keywords may have global scope,
 function scope, or block scope; declared with the "const" keyword cannot be modified unless they are arrays; 
@@ -180,6 +172,7 @@ considerably (as there would be much more code to read by the browser engine).
                  Conditionals and strings are two different topics of JS,
                  but strings (and/or any other data type) are often used with conditionals.
                  </p>
+                 <div class="code-snippet-group">
             <code>
               function checkTirePressure(tirePSI, tireRecommendedMinimumPSI){
                 <div class="code-snippet-indent">
@@ -196,6 +189,7 @@ considerably (as there would be much more code to read by the browser engine).
               </div>
             }
               </code>
+              </div>
               <p> The function call just below
                   has 61 as tirePSI 
                   and 60 as tireRecommendedMinimumPSI,
@@ -222,6 +216,7 @@ considerably (as there would be much more code to read by the browser engine).
                 The default clause executes when none of the case clauses match the expression.
                 The function describeStr returns a description of str when a case clause matches str, otherwise an apology for not having a description for str is returned.
               </p>
+              <div class="code-snippet-group">
               <code>
                 function describeStr(str){
                   <div class="code-snippet-indent">
@@ -254,6 +249,7 @@ considerably (as there would be much more code to read by the browser engine).
                   </div>
                 }
                 </code>
+                </div>
                 <p>Below, the function called returns a description of the string 'html'.</p>
                 <code>
                 describeStr('html');
@@ -288,9 +284,12 @@ considerably (as there would be much more code to read by the browser engine).
                 the HEADER named constant via a property called textContent.
                 There must be an h1 HTML element in the HTML body for the code just below to work.
             </p>
+            <div class="code-snippet-group">
               <code>
                 const HEADER = document.querySelector('h1');<br>
-                HEADER.textContent = 'Hello World';</code>
+                HEADER.textContent = 'Hello World';
+              </code>
+                </div>
               <p>
                 The DOM (Document Object Model), allows a JS file to interact with any HTML file that links to the JS file path.
               </p>
