@@ -3,9 +3,16 @@
   font-family: 'Nunito', sans-serif;
 }
 html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 10px;
+    width: 99vw;
+    overflow-x: hidden;
   }
 body{
+  overflow-x: hidden;
+  width: 99vw;
   color: rgb(252, 220, 39);
   display: flex;
   flex-direction: column;
@@ -15,6 +22,7 @@ body{
   background-image: url("../images/small-mobile-screen-pxfuel-abstract-bg.webp");
   background-size: auto;
   background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
 }
 /* NAVBAR CSS STARTS HERE */
@@ -140,6 +148,7 @@ body{
 
 /* X to hamburger icon keyframes above */
 .header-div-popup{
+  position: fixed;
   width: 100vw;
   height: 100vh;
 }
@@ -152,8 +161,13 @@ body{
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
+  height: 100%;
 }
 /* mobile menu css ends here */
+header{
+  width: 100vw;
+}
 .topnav{
   font-size: 3.4rem;
 }
@@ -163,8 +177,8 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 1.5rem;
-  margin-left: 0;
-  padding-left: 0;
+  margin-left: .4rem;
+  margin-right: auto;
 }
 .nav-link{
   font-size: 3.4rem;
@@ -192,7 +206,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: -4rem 0 2rem 0;
+  margin: -4rem 0 2rem .75rem;
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: .05em;
@@ -281,6 +295,7 @@ h2{
   text-shadow: none;
   font-weight: 300;
   margin: -2.5rem auto 1rem auto;
+  margin-left: -.09%;
   font-size: 1.61em;
   border: none;
 }
@@ -288,6 +303,7 @@ h2{
   background: rgba(0,0,0,.6);
 }
 .projects-title{
+  margin-left: .8rem;
   color: rgb(252, 220, 39);
   font-size: 4rem;
   letter-spacing: .6rem;
@@ -295,6 +311,7 @@ h2{
 }
 
 .projects{
+  margin-left: .23rem;
   color: white;
   display: grid;
   gap: 2rem 2rem;
@@ -359,6 +376,9 @@ h2{
 }
 .invisible{
   display: none;
+}
+.contact-section{
+  margin-left: .31rem;
 }
 .contact-description{
   letter-spacing: .02em;
@@ -439,6 +459,7 @@ footer{
   margin-top: 2rem;
 }
 .back-to-top-btn{
+  margin-left: 0;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.492);
   color: rgb(255, 255, 255);
@@ -476,7 +497,11 @@ footer{
 }
 
  @media (min-width: 1024px){
+  html{
+    width: 100%;
+  }
   .welcome-section{
+    margin-left: .195em;
     margin-top: 0;
   }
   body{
@@ -488,13 +513,22 @@ footer{
     background-size: cover;
   }
   .nav-list{
+    width: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #nav-bar{
+    margin: 0;
   }
   .nav-link{
     margin-right: 1rem;
+  }
+  .nav-link:nth-child(3){
+    margin-right: 0;
   }
   .nav-link:hover{
     color: rgb(8, 0, 255);
@@ -502,6 +536,9 @@ footer{
   }
   .welcome-btn:hover{
     background-color: rgba(0, 0, 0, .6);
+  }
+  .projects-title{
+    margin-left: .7rem;
   }
   footer{
     margin-top: 17rem;
