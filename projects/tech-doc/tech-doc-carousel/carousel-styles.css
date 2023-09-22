@@ -3,7 +3,7 @@
     display: none;
 }
 .carousel-item-visible{
-    display: flex;
+    display: block;
     animation: fadeInVisibility 1s;
 }
 
