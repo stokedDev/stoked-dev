@@ -400,10 +400,11 @@ h2{
   padding: 1em;
   font-weight: 900;
 }
+
 .email{
   color: rgb(252, 220, 39);
   display: block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 .connect-title{
@@ -412,6 +413,7 @@ h2{
   font-size: 4rem;
   font-weight: 900;
   margin: 2.5rem 0 -5rem 0;
+  letter-spacing: .25rem;
 }
 .profile-link{
   border-radius: .5rem;
