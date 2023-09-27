@@ -3,11 +3,9 @@
   font-family: 'Nunito', sans-serif;
 }
 html{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
     font-size: 10px;
-    width: 99vw;
+    margin: 0 auto;
     overflow-x: hidden;
   }
 body{
@@ -25,7 +23,8 @@ body{
   background-attachment: fixed;
 }
 /* NAVBAR CSS STARTS HERE */
-/* mobile menu css*/
+
+/* mobile menu css */
 .mobile-menu{
   position: fixed;
   display: none;
@@ -200,12 +199,14 @@ header{
 }
 
 /* NAVBAR CSS ENDS HERE */
+
+/* welcome-section below */
+
 .welcome-section{
   color: rgb(252, 220, 39);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: -4rem 0 2rem .75rem;
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: .05em;
@@ -280,10 +281,6 @@ h2{
   margin-top: -1rem;
   font-size: 5.7rem;
 }
-.pro-role-3{
-  margin-top: -1rem;
-  font-size: 3.2rem;
-}
 .intro-part-3{
   margin-top: -1.69rem;
   margin-bottom: -1rem;
@@ -312,8 +309,14 @@ h2{
 .welcome-btn:focus{
   background: rgba(0,0,0,.6);
 }
+
+/* welcome-section above */
+
+/* projects-section below */
+
 .projects-title{
-  margin-left: .8rem;
+  margin-left: .3rem;
+  text-align: center;
   color: rgb(252, 220, 39);
   font-size: 4rem;
   letter-spacing: .6rem;
@@ -376,20 +379,15 @@ h2{
   width: 200px;
 }
 
-.profile-links{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  gap: .5rem .5rem;
-  grid-template-columns: 150px 150px;
-}
+
+/* projects-section above */
+
 .invisible{
   display: none;
 }
-.contact-section{
-  margin-left: .31rem;
-}
+
+/* contact-section below */
+
 .contact-description{
   letter-spacing: .02em;
   font-size: 2.5rem;
@@ -424,7 +422,15 @@ h2{
   height: 150px;
   box-shadow: 0px 0px 8px 0px #000000;
 }
-
+.profile-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: .5rem .5rem;
+  grid-template-columns: 150px 150px;
+}
 .facebook-img{
   width: 150px;
 }
@@ -464,6 +470,10 @@ h2{
   text-align: center;
 } */
 
+/* contact-section above */
+
+/* footer below */
+
 footer{
   color: black;
   text-align: center;
@@ -486,6 +496,11 @@ footer{
   margin-top: 2rem;
   font-size: 2.2rem;
 }
+
+/* footer above */
+
+/* media query below */
+
 @media (min-width: 580px){
   .welcome-section{
     margin-top: -2.8rem;
@@ -555,3 +570,5 @@ footer{
     margin-top: 17rem;
   }
 }
+
+/* media query above */
