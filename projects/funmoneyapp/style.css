@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html{
     font-size: 10px;
 }
@@ -10,25 +13,13 @@ body{
     align-items: center;
 }
 h1{
-  font-size: 2.2rem;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
-h2{
-  font-size: 1.6rem;
-  line-height: 1.5em;
-  letter-spacing: .13em;
-  font-weight: 400;
-}
-.info{
-  width: 95%;
-  margin-bottom: -3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
+
 .container{
     background-color: rgba(250, 217, 117, 0.689);
-    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.849);
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, 0.849);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,11 +27,15 @@ h2{
     margin-top: 50px;
     border-radius: 20px;
     padding: 1rem;
+    width: 300px;
 }
 
 label{
   font-size: 1.5rem;
   line-height: 3rem;
+}
+input{
+  font-family: 'Nunito', sans-serif;
 }
 p,
 #work-hours,
@@ -51,20 +46,29 @@ p,
     font-size: 2rem;
     border-radius: 20px;
     border: 0;
-    margin-bottom: 10px;
     padding: 7px;
     outline: none;
     margin-left: auto;
     margin-right: auto;
+    width: 285px;
 }
 
 p{
     display: none;
     background-color: rgba(255,255,255,.4)
 }
-#mle-input{
-    width: 90%;
-    
+.app-description{
+  font-size: 1.8rem;
+  background: none;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: -.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 #submit{
@@ -77,6 +81,12 @@ p{
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
     width: 90%;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 295px;
 }
 /* footer below */
 footer{
@@ -102,85 +112,4 @@ footer{
   font-size: 2.5rem;
   margin-top: 2em;
 }
-/*footer above*/
-input{
-  font-family: 'Nunito', sans-serif;
-}
-@media (min-width: 375px){
-  h2{
-    font-size: 1.9rem;
-    line-height: 1.5em;
-    letter-spacing: .13em;
-    font-weight: 400;
-  }
-  p,
-  #work-hours,
-  #wage-input,
-  #wwd{
-      font-size: 2.5rem;
-  }
-  label{
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-  .container{
-    width: 90%;
-  }
-  #mle-input{
-    font-size: 2rem;   
-}
-}
-@media (min-width: 397px){
-  h2{
-    font-size: 2rem;
-    line-height: 1.5em;
-    letter-spacing: .13em;
-    font-weight: 400;
-  }
-  p,
-  #work-hours,
-  #wage-input,
-  #wwd{
-      font-size: 3rem;
-  }
-  label{
-    font-size: 1.8rem;
-  }
-  #mle-input{
-    font-size: 2.5rem;   
-}
-}
-@media(min-width: 425px){
-
-  p,
-  #work-hours,
-  #wage-input,
-  #wwd{
-      font-size: 3rem;
-  }
-  label{
-    font-size: 2rem;
-  }
-  #mle-input{
-    font-size: 2.5rem;   
-}
-.info{
-  width: 385px;
-}
-.container{
-  width: 388px;
-}
-}
-@media(min-width: 1024px){
-  #submit:focus,
-#submit:hover{
-    background-color: rgba(0,0,0,0.6);
-    color: white;
-}
-}
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  .container{
-    width: 89%;
-  }
-  }
-  
+/* footer above */
