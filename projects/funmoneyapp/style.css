@@ -118,6 +118,9 @@ footer{
 /* footer above */
 
 @media(min-width: 1024px){
+  .container{
+    margin-top: 4rem;
+  }
   #submit:hover{
     background-color: rgb(185, 251, 185);
   }
