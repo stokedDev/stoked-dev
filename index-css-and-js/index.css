@@ -402,8 +402,9 @@ h2{
 .email{
   color: rgb(252, 220, 39);
   display: block;
+  margin-left: -.38em;
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 900;
 }
 .connect-title{
   color: rgb(252, 220, 39);
