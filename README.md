@@ -1,6 +1,6 @@
 # stokeddev.com
 ## Introduction
-My website https://www.stokeddev.com , which this repository belongs to, is a result of my 2000+ hours studying and practicing front end engineering from the beginning of my developer journey in September of 2020. I thoughtfully wrote every line of frontend code that makes up this website with HTML, CSS, and JS.
+My website https://www.stokeddev.com , which this repository belongs to, is a result of my 4000+ hours studying and practicing front end engineering from the beginning of my developer journey in September of 2020. I thoughtfully wrote every line of frontend code that makes up this website with HTML, CSS, and JS.
 
 ## Projects
 Documentation Page, Product Landing Page, My Survey Form, My Tribute Page, "Fun Money" calculator, My Blackjack Game, and My Dice Game were all designed by me to be fully responsive to all devices. All hamburger icon mobile menu popup toggle HTML, CSS, and JS that appears in some of my projects is my own original code that I came up with.
