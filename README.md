@@ -28,7 +28,7 @@ This is my JavaScript Documentation Page that I created with HTML, CSS, and JS. 
 https://stokeddev.com/projects/product-landing
 
 This is based on one of the freeCodeCamp projects that I built in order to get my Responsive Web Design certification.
-I built it with HTML, CSS, and JS. It is for a company I made up that manuafactures wave pools for surfing.
+I built it with HTML, CSS, and JS. It is for a company I made up that manufactures wave pools for surfing.
 
 ### 5. My Survey Form
 https://stokeddev.com/projects/survey0
