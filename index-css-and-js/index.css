@@ -483,6 +483,18 @@ footer{
   font-size: 2.5rem;
   margin-top: 2rem;
 }
+.employment-request{
+  padding: 1rem;
+  background-color: rgba(0,0,0,.65);
+  color: white;
+  border-radius: .5rem;
+  max-width: 300px;
+  font-size: .68em;
+  text-align: left;
+}
+.footer-email{
+  color: rgb(166, 221, 244);
+}
 .back-to-top-btn{
   margin-left: 0;
   text-align: center;
@@ -504,7 +516,24 @@ footer{
 
 /* media query below */
 
+@media (min-width: 375px){
+  .employment-request{
+    max-width: 350px;
+    font-size:  .8em;
+  }
+}
+
+@media (min-width: 425px){
+  .employment-request{
+    max-width: 400px;
+    font-size:  .9em;
+  }
+}
 @media (min-width: 580px){
+  .employment-request{
+    max-width: 500px;
+    font-size:  1.1em;
+  }
   .welcome-section{
     margin-top: -2.8rem;
   }
