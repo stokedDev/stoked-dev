@@ -63,7 +63,7 @@ h2{
     margin: 0;
 }
 h1{
-    color: rgb(0, 0, 0);
+    color: rgb(34, 107, 204);
     margin: 0;
     font-size: 27px;
     letter-spacing: 1px;
@@ -149,10 +149,6 @@ h1{
     .mobile-controller{
         display: none;
     }
-
-}
-h1{
-    color: rgb(46, 134, 249);
 }
 /* footer below */
 footer{
