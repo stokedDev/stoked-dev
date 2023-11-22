@@ -121,17 +121,7 @@ function activateBtn(btn, sectionIntro, slidePosition){
         }
     
     });
-
-    function isInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    
-        );
-    }
+ 
     function isNotInViewport(el) {
         const rect = el.getBoundingClientRect();
         return (
@@ -142,7 +132,7 @@ function activateBtn(btn, sectionIntro, slidePosition){
 
     document.addEventListener('scroll', function () {
         if(isNotInViewport(contactBtn) && !lapTopScreen.matches) mobileMenu.style.display = "flex";
-        if(isInViewport(contactBtn) &&
+        if(!isNotInViewport(contactBtn) &&
          !header.classList.contains('header-popup')) mobileMenu.style.display = "none";
     }, {
         passive: true
