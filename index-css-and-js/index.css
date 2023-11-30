@@ -450,9 +450,19 @@ h2{
 .github-img{
   width: 125px;
 }
+.free-code-camp-img{
+  /* opacity: ; */
+  width: 125px;
+}
+.freeCodeCamp-profile-link{
+  background-color: rgb(47, 48, 113,.65);
+}
 .twitter-img{
   width: 150px;
   margin-top:1px;
+}
+.youtube-img{
+  width: 140px;
 }
 /* contact-section above */
 
