@@ -427,8 +427,6 @@ h2{
   box-shadow: 0px 0px 8px 0px #000000;
 }
 .profile-links{
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -447,11 +445,8 @@ h2{
 .github-link{
   padding: .25rem;
 }
-.github-img{
-  width: 125px;
-}
+.github-img,
 .free-code-camp-img{
-  /* opacity: ; */
   width: 125px;
 }
 .freeCodeCamp-profile-link{
@@ -495,6 +490,13 @@ footer{
 
 /* media query below */
 
+@media (min-width: 356px){
+  .profile-links{
+    gap: 1rem 1rem;
+    margin-top: -3rem;
+  }
+}
+
 @media (min-width: 580px){
   .welcome-section{
     margin-top: -2.8rem;
@@ -505,6 +507,7 @@ footer{
   .header-popup{
     background-image: url("../images/larger-mobile-screen-pxfuel-abstract-bg.webp");
   }
+  
 }
 @media (min-width: 700px){
   .proj-info{
