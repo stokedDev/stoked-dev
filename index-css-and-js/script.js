@@ -30,26 +30,34 @@ function createURL(page){
     function about(){
         if(comInCurrentURL && !aboutInCurrentURL && !projectsInCurrentURL && !connectInCurrentURL){
             history.pushState({page: page}, 'stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+            document.querySelector('title').textContent = 'stokedDev';
         } else if(comInCurrentURL){
             history.pushState({page: page}, 'About stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+            document.querySelector('title').textContent = 'About stokedDev';
         } else if(numInCurrentURL && !aboutInCurrentURL && !projectsInCurrentURL && !connectInCurrentURL){
             history.pushState({page: page}, 'stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+            document.querySelector('title').textContent = 'stokedDev';
         } else if(numInCurrentURL){
             history.pushState({page: page}, 'About stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+            document.querySelector('title').textContent = 'About stokedDev';
         }
     }
     function projects(){
         if(comInCurrentURL){
             history.pushState({page: page}, 'stokedDev Projects', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+            document.querySelector('title').textContent = 'stokedDev Projects';
         } else if(numInCurrentURL){
             history.pushState({page: page}, 'stokedDev Projects', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+            document.querySelector('title').textContent = 'stokedDev Projects';
         }
     }
     function connect(){
         if(comInCurrentURL){
             history.pushState({page: page}, 'Connect with stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+            document.querySelector('title').textContent = 'Connect with stokedDev';
         } else if(numInCurrentURL){
             history.pushState({page: page}, 'Connect with stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+            document.querySelector('title').textContent = 'Connect with stokedDev';
         }
     }
 return page === 'about'? about(): page === 'projects'? projects(): page === 'connect'? connect(): null;
