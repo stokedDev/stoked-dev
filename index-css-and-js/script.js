@@ -23,6 +23,62 @@ const contactBtn = document.querySelector(".contactBtn");
 const [ sI1, sI2, sI3 ] = [document.querySelector('h1'), document.querySelector('.projects-title'),
 document.querySelector('.connect-title')];
 
+function createURL(page){
+    const currentURL = '' + document.URL;
+    const [aboutInCurrentURL, projectsInCurrentURL, connectInCurrentURL, comInCurrentURL, numInCurrentURL] = 
+    [/about/.test(currentURL),/projects/.test(currentURL),/connect/.test(currentURL),/com/.test(currentURL),/[0-9]/.test(currentURL)];
+    function about(){
+        if(comInCurrentURL && !aboutInCurrentURL && !projectsInCurrentURL && !connectInCurrentURL){
+            history.pushState({page: page}, 'stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+        } else if(comInCurrentURL){
+            history.pushState({page: page}, 'About stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+        } else if(numInCurrentURL && !aboutInCurrentURL && !projectsInCurrentURL && !connectInCurrentURL){
+            history.pushState({page: page}, 'stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+        } else if(numInCurrentURL){
+            history.pushState({page: page}, 'About stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+        }
+    }
+    function projects(){
+        if(comInCurrentURL){
+            history.pushState({page: page}, 'stokedDev Projects', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+        } else if(numInCurrentURL){
+            history.pushState({page: page}, 'stokedDev Projects', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+        }
+    }
+    function connect(){
+        if(comInCurrentURL){
+            history.pushState({page: page}, 'Connect with stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+        } else if(numInCurrentURL){
+            history.pushState({page: page}, 'Connect with stokedDev', currentURL.replace(/#connect|#about|#projects\b|$/, `#${page}`));
+        }
+    }
+return page === 'about'? about(): page === 'projects'? projects(): page === 'connect'? connect(): null;
+}
+
+function handleURL(){
+    const currentURL = document.URL;
+    const [aboutInCurrentURL, projectsInCurrentURL, connectInCurrentURL] = 
+    [/about/.test(currentURL),/projects/.test(currentURL),/connect/.test(currentURL)];
+    if(aboutInCurrentURL){
+        console.log('aboutInCurrentURL');
+        goToSectionWithoutUsingMobileMenu(sI1, 0);
+        createURL('about');
+    }
+    if(projectsInCurrentURL){
+        console.log('projectsInCurrentURL');
+        goToSectionWithoutUsingMobileMenu(sI2, 1);
+        createURL('projects');
+    }
+    if(connectInCurrentURL){
+        console.log('contactInCurrentURL');
+        goToSectionWithoutUsingMobileMenu(sI3, 2);
+        createURL('connect');
+    }
+    return aboutInCurrentURL? goToSectionWithoutUsingMobileMenu(sI1, 0): 
+    projectsInCurrentURL? goToSectionWithoutUsingMobileMenu(sI2, 1):
+    connectInCurrentURL? goToSectionWithoutUsingMobileMenu(sI3, 2): null;
+}   
+
 const header = document.querySelector('header');
 const headerDiv = document.querySelector('.header');
 const [topBun,inBuns,bottomBun] = 
@@ -63,16 +119,19 @@ function goToSection(sectionIntro, slidePosition){
             hamburgerBack()
             hideAllSlides();
             section1.style.display = "flex";
+            createURL('about');
         break;
         case sI2:
             removeHeaderPopupClasses()
             hamburgerBack()
             hideAllSlides();
+            createURL('projects');
         break;
         case sI3:
             removeHeaderPopupClasses()
             hamburgerBack()
             hideAllSlides();
+            createURL('connect');
     }
     slides[slidePosition].classList.add('carousel-item-visible');
     sectionIntro.scrollIntoView();
@@ -82,12 +141,15 @@ function goToSectionWithoutUsingMobileMenu(sectionIntro, slidePosition){
         case sI1:
             hideAllSlides();
             section1.style.display = "flex";
+            createURL('about');
         break;
         case sI2:
             hideAllSlides();
+            createURL('projects');
         break;
         case sI3:
             hideAllSlides();
+            createURL('connect');
     }
     slides[slidePosition].classList.add('carousel-item-visible');
     sectionIntro.scrollIntoView();
@@ -140,8 +202,8 @@ function activateBtn(btn, sectionIntro, slidePosition){
 
 
     activateBtn(aboutBtn, sI1, 0);
-    activateBtn(projectsBtn[0],sI2, 1); // nav bar go-to-projects button
+    activateBtn(projectsBtn[0],sI2, 1); /* nav bar go-to-projects button */
     activateBtn(projectsBtn[1],sI2, 1); /* welcome section button with projects destination */
     activateBtn(contactBtn, sI3, 2);
-
+    handleURL();
     document.querySelector('.back-to-top-btn').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
