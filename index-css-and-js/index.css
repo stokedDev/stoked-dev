@@ -496,6 +496,7 @@ footer{
   border-radius: .5em;
 }
 .copy-right{
+  text-shadow: white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem;
   color: black;
   margin-top: 2rem;
   font-size: 2.2rem;
