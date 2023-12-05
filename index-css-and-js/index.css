@@ -418,28 +418,43 @@ h2{
   letter-spacing: .25rem;
 }
 .profile-link{
+  text-decoration: none;
   border-radius: .5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   box-shadow: 0px 0px 8px 0px #000000;
+}
+.profile-link-img{
+  width: 130px;
 }
 .profile-links{
   justify-content: center;
   align-items: center;
   display: grid;
-  gap: .5rem .5rem;
+  gap: 1.65rem .5rem;
   grid-template-columns: 150px 150px;
 }
-
-.edabit-img{
-  width: 150px;
-  height: 150px;
+.edabit-profile-link{
+  background: rgba(0,190,0,.5);
+}
+.edabit-img-text-replacement{
+  margin-top: 1rem;
+  color: white;
+  text-align: center;
+}
+.edabit-text{
+  font-size: 4.5rem;
+  display: block;
+  margin-bottom: -1.5rem;
+}
+.edabit-description{
+  font-size: 1.5rem;
 }
 .linkedin-img{
-  width: 150px;
+  width: 140px;
   padding: .25rem;
 }
 .linkedin-link{
@@ -456,11 +471,11 @@ h2{
   background-color: rgb(47, 48, 113,.65);
 }
 .twitter-img{
-  width: 150px;
+  width: 140px;
   margin-top:1px;
 }
 .youtube-img{
-  width: 140px;
+  width: 130px;
 }
 /* contact-section above */
 
@@ -508,7 +523,6 @@ footer{
 
 @media (min-width: 356px){
   .profile-links{
-    gap: 1rem 1rem;
     margin-top: -3rem;
   }
 }
