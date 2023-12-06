@@ -71,16 +71,10 @@ function createURL(page = 'a-little-about-js'){
         }
     }
     function what(){
-        /* if(comInCurrentURL && !findCurrentURL()){
-            history.pushState({page: page}, 'A Little About JS', currentURL.replace(webpageRegex, `#${page}`));
-            document.querySelector('title').textContent = 'A Little About JS';
-        } else */ if(comInCurrentURL){
+        if(comInCurrentURL){
             history.pushState({page: page}, 'What Is JavaScript - A Little About JS', currentURL.replace(webpageRegex, `#${page}`));
             document.querySelector('title').textContent = 'What Is JavaScript - A Little About JS';
-        }/* else if(numInCurrentURL && !findCurrentURL()){
-            history.pushState({page: page}, 'A Little About JS', currentURL.replace(webpageRegex, `#${page}`));
-            document.querySelector('title').textContent = 'A Little About JS';
-        }*/ else if(numInCurrentURL){
+        } else if(numInCurrentURL){
             history.pushState({page: page}, 'What Is JavaScript - A Little About JS', currentURL.replace(webpageRegex, `#${page}`));
             document.querySelector('title').textContent = 'What Is JavaScript - A Little About JS';
         }
@@ -121,7 +115,7 @@ function createURL(page = 'a-little-about-js'){
             document.querySelector('title').textContent = 'DOM Manipulation - A Little About JS';
         }
     }
-       /* return */ page === 'a-little-about-js'? home(): page === 'what-is-javascript'? what(): page === 'how-to-learn-js'? how(): page === 'variables'? vari(): page === 'conditionals'? cond(): page === 'dom-manipulation'? dom(): null;
+       page === 'a-little-about-js'? home(): page === 'what-is-javascript'? what(): page === 'how-to-learn-js'? how(): page === 'variables'? vari(): page === 'conditionals'? cond(): page === 'dom-manipulation'? dom(): null;
 }
 
 function handleURL(){
@@ -156,11 +150,6 @@ function handleURL(){
         goToSectionWithoutUsingMobileMenu(sH5, 4);
         createURL('dom-manipulation');
     }
-    // return whatInCurrentURL? goToSectionWithoutUsingMobileMenu(sH1, 0): 
-    // howInCurrentURL? goToSectionWithoutUsingMobileMenu(sH2, 1):
-    // varInCurrentURL? goToSectionWithoutUsingMobileMenu(sH3, 2):
-    // condInCurrentURL? goToSectionWithoutUsingMobileMenu(sH4, 3):
-    // domInCurrentURL? goToSectionWithoutUsingMobileMenu(sH5, 4): null;
 }   
 function removeHeaderPopupClasses(){
     header.classList.remove('header-popup');
@@ -219,18 +208,9 @@ function goToSection(sectionHeader, slidePosition){
     mainDoc.scrollIntoView();
 }
 function goToSectionWithoutUsingMobileMenu(sectionIntro, slidePosition){
-    switch (sectionIntro){
-        case sH1:
             hideAllSlides();
-            // section1.style.display = "flex";
-            // createURL('what-is-javascript');
-        break;
-        default:
-            hideAllSlides();
-        break;
-    }
-    slides[slidePosition].classList.add('carousel-item-visible');
-    sectionIntro.scrollIntoView();
+            slides[slidePosition].classList.add('carousel-item-visible');
+            sectionIntro.scrollIntoView();
 }
 function activateBtn(btn, sectionHeader, slidePosition){
     btn.addEventListener("click", () => goToSection(sectionHeader, slidePosition),{
