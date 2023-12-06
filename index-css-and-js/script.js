@@ -68,17 +68,14 @@ function handleURL(){
     const [aboutInCurrentURL, projectsInCurrentURL, connectInCurrentURL] = 
     [/about/.test(currentURL),/projects/.test(currentURL),/connect/.test(currentURL)];
     if(aboutInCurrentURL){
-        console.log('aboutInCurrentURL');
         goToSectionWithoutUsingMobileMenu(sI1, 0);
         createURL('about');
     }
     if(projectsInCurrentURL){
-        console.log('projectsInCurrentURL');
         goToSectionWithoutUsingMobileMenu(sI2, 1);
         createURL('projects');
     }
     if(connectInCurrentURL){
-        console.log('contactInCurrentURL');
         goToSectionWithoutUsingMobileMenu(sI3, 2);
         createURL('connect');
     }
