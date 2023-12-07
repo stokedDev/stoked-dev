@@ -4,16 +4,4 @@
 }
 .carousel-item-visible{
     display: block;
-    animation: fadeInVisibility 1s;
-}
-
-
-
-@keyframes fadeInVisibility{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }
