@@ -32,12 +32,12 @@ const mainDoc = document.querySelector('.main-doc');
 
 function createURL(page = 'a-little-about-js'){
     let currentURL = '' + document.URL;
-    const [whatInCurrentURL, 
+    const [whatInCurrentURL,
     howInCurrentURL, 
     varInCurrentURL, 
     condInCurrentURL, 
     domInCurrentURL, 
-    comInCurrentURL, 
+    comInCurrentURL,
     numInCurrentURL] = 
     [/what/.test(currentURL),
     /how/.test(currentURL),
@@ -47,7 +47,7 @@ function createURL(page = 'a-little-about-js'){
     /com/.test(currentURL),
     /[0-9]/.test(currentURL)]; 
     const webpageRegex = /#what-is-javascript|#how-to-learn-js|#variables|#conditionals|#dom-manipulation\b|$/;
-    function findCurrentURL(){
+    function isSpecificPageURL(){
         let isSpecificPage = false;
         const isSpecificPage_arr = [whatInCurrentURL, 
         howInCurrentURL, 
@@ -59,13 +59,13 @@ function createURL(page = 'a-little-about-js'){
                 isSpecificPage = true;
             }
         }
-        return isSpecificPage? isSpecificPage: false;
+        return isSpecificPage? true: false;
     }
     function home(){
-        if(comInCurrentURL && !findCurrentURL()){
+        if(comInCurrentURL && !isSpecificPageURL()){
             history.pushState({page: page}, 'A Little About JS', currentURL.replace(webpageRegex, `#${page}`));
             document.querySelector('title').textContent = 'A Little About JS';
-        } else if(numInCurrentURL && !findCurrentURL()){
+        } else if(numInCurrentURL && !isSpecificPageURL()){
             history.pushState({page: page}, 'A Little About JS', currentURL.replace(webpageRegex, `#${page}`));
             document.querySelector('title').textContent = 'A Little About JS';
         }
