@@ -29,6 +29,7 @@
 ]
 const mobileMenu = document.querySelector('.mobile-menu');
 const mainDoc = document.querySelector('.main-doc');
+let isMobileMenuOpen = false;
 
 function createURL(page = 'a-little-about-js'){
     let currentURL = '' + document.URL;
@@ -165,6 +166,7 @@ function hamburgerBack(){
     inBuns.classList.add('inBunsBack');
     bottomBun.classList.add('bottomBunBack');
     mobileMenu.style.background = 'rgba(0, 0, 0, 0.441)';
+    isMobileMenuOpen = false;
     setTimeout(() => {
     topBun.classList.remove('topBunBack');
     inBuns.classList.remove('inBunsBack');
@@ -173,35 +175,28 @@ function hamburgerBack(){
 }
     
 function goToSection(sectionHeader, slidePosition){
+    function closePopUpMobileMenu(){
+            removeHeaderPopupClasses();
+            hamburgerBack();
+    }
+    if(isMobileMenuOpen){
+        closePopUpMobileMenu();
+    }
+    hideAllSlides();
     switch (sectionHeader){
         case sH1:
-            removeHeaderPopupClasses()
-            hamburgerBack()
-            hideAllSlides();
             createURL('what-is-javascript');
         break;
         case sH2:
-            removeHeaderPopupClasses()
-            hamburgerBack()
-            hideAllSlides();
             createURL('how-to-learn-js');
         break;
         case sH3:
-            removeHeaderPopupClasses()
-            hamburgerBack()
-            hideAllSlides();
             createURL('variables');
         break;
         case sH4:
-            removeHeaderPopupClasses()
-            hamburgerBack()
-            hideAllSlides();
             createURL('conditionals');
         break;
         case sH5:
-            removeHeaderPopupClasses()
-            hamburgerBack()
-            hideAllSlides();
             createURL('dom-manipulation');
     }
     slides[slidePosition].classList.add('carousel-item-visible');
@@ -231,6 +226,7 @@ function activateBtn(btn, sectionHeader, slidePosition){
             headerDiv.classList.add('header-div-popup');
             document.querySelector('.disclaimer').style.display = 'none';
             mobileMenu.style.background = 'rgba(0,0,0,0)';
+            isMobileMenuOpen = true;
         } else {
             header.classList.remove('header-popup');
             headerDiv.classList.remove('header-div-popup');
