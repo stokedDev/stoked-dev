@@ -82,9 +82,11 @@ const [topBun,inBuns,bottomBun] =
             history.pushState({page: 'pricing'}, 'Pricing - Surf Pools USA', currentURL.replace(webpageRegex, '#pricing'));
             document.querySelector('title').textContent = 'Pricing - Surf Pools USA';
     }
-    handleInitialURL();
+    handleURL();
 function handleURL(){
-        home();
+        if(!aboutInCurrentURL && !locationsInCurrentURL && !pricingInCurrentURL){
+            home();
+        }  
     if(aboutInCurrentURL){
         goToSection(aboutH, aboutS, 'about');
     }
@@ -95,20 +97,7 @@ function handleURL(){
         goToSection(pricingH, pricingS, 'pricing');
     }
 }   
-function handleInitialURL(){
-    if(!aboutInCurrentURL && !locationsInCurrentURL && !pricingInCurrentURL){
-        home();
-    }    
-    if(aboutInCurrentURL){
-        goToSectionWithoutBtn(aboutH, aboutS,'about');
-    } 
-    if(locationsInCurrentURL){
-        goToSectionWithoutBtn(locationsH, locationsS, 'locations');
-    }
-    if(pricingInCurrentURL){
-        goToSectionWithoutBtn(pricingH, pricingS, 'pricing');
-    }
-}   
+
 function removeHeaderPopupClasses(){
     header.classList.remove('header-popup');
     headerDiv.classList.remove('header-div-popup'); 
@@ -128,9 +117,15 @@ function hamburgerBack(){
     }, 501)
 }
 
-function goToSection(sectionHeader, section, page){
-            removeHeaderPopupClasses()
-            hamburgerBack()
+function goToSection(sectionHeader, section, page, fromBtn = false){
+    function handlePopUpMobileMenuBtnClick(){
+        removeHeaderPopupClasses();
+        hamburgerBack();
+    }
+    if(fromBtn){
+        handlePopUpMobileMenuBtnClick();
+    };
+
             hideOtherSections(section);
             if(page === 'about'){
                 about();
@@ -142,20 +137,8 @@ function goToSection(sectionHeader, section, page){
             sectionHeader.scrollIntoView();
 }
 
-function goToSectionWithoutBtn(sectionHeader, section, page){
-    hideOtherSections(section);
-    if(page === 'about'){
-        about();
-    } else if(page === 'locations'){
-        locations();
-    } else if(page === 'pricing'){
-        pricing();
-    }
-    sectionHeader.scrollIntoView();
-}
-
-function activateBtn(btn, header, section, page){
-btn.addEventListener("click", () => goToSection(header, section, page),{
+function activateBtn(btn, header, section, page, fromBtn = true){
+btn.addEventListener("click", () => goToSection(header, section, page, fromBtn),{
     passive: true
 });
 }
@@ -175,7 +158,7 @@ mobileMenu.addEventListener("click", function(){
     } else {
         header.classList.remove('header-popup');
         headerDiv.classList.remove('header-div-popup');
-        hamburgerBack()    
+        hamburgerBack();    
     }
 
 },
@@ -209,7 +192,6 @@ document.addEventListener('scroll', function () {
 }, {
     passive: true
 });
-
 
 activateBtn(aboutBtn, aboutH, aboutS, 'about');
 activateBtn(locationsBtn, locationsH, locationsS, 'locations');
