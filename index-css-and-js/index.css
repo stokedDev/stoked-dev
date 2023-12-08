@@ -610,7 +610,8 @@ footer{
     margin-left: .7rem;
   }
   footer{
-    margin-top: 17rem;
+    /* margin-top: 17rem; */
+    margin-top: 12.5rem;
   }
 }
 
