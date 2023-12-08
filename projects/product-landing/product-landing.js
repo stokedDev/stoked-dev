@@ -32,6 +32,7 @@ const navList = document.querySelector('.nav-list');
 const header = document.querySelector('header');
 const emailForm = document.querySelector('.email-form');
 const headerDiv = document.querySelector('.header');
+let isMobileMenuOpen = false;
 const emailInput = document.querySelector('#email');
 const emailSubmit = document.querySelector('#submit');
 const emailFormMessage = document.querySelector('.email-form-message');
@@ -59,14 +60,17 @@ const [topBun,inBuns,bottomBun] =
     document.querySelector('.bottom-bun')
 ]
     let currentURL = '' + document.URL;
+
     const [aboutInCurrentURL, 
     locationsInCurrentURL, 
     pricingInCurrentURL] = 
     [/about/.test(currentURL),
     /locations/.test(currentURL),
     /pricing/.test(currentURL)]; 
+
     const webpageRegex = /#about|#locations|#pricing\b|$/;
-    
+
+
     function home(){
             document.querySelector('title').textContent = 'Surf Pools USA';
     }
@@ -110,6 +114,7 @@ function hamburgerBack(){
     topBun.classList.add('topBunBack');
     inBuns.classList.add('inBunsBack');
     bottomBun.classList.add('bottomBunBack');
+    isMobileMenuOpen = false;
     setTimeout(() => {
     topBun.classList.remove('topBunBack');
     inBuns.classList.remove('inBunsBack');
@@ -117,14 +122,14 @@ function hamburgerBack(){
     }, 501)
 }
 
-function goToSection(sectionHeader, section, page, fromBtn = false){
-    function handlePopUpMobileMenuBtnClick(){
+function goToSection(sectionHeader, section, page){
+    function closePopUpMobileMenu(){
         removeHeaderPopupClasses();
         hamburgerBack();
     }
-    if(fromBtn){
-        handlePopUpMobileMenuBtnClick();
-    };
+    if(isMobileMenuOpen){
+        closePopUpMobileMenu();
+    }
 
             hideOtherSections(section);
             if(page === 'about'){
@@ -137,8 +142,8 @@ function goToSection(sectionHeader, section, page, fromBtn = false){
             sectionHeader.scrollIntoView();
 }
 
-function activateBtn(btn, header, section, page, fromBtn = true){
-btn.addEventListener("click", () => goToSection(header, section, page, fromBtn),{
+function activateBtn(btn, header, section, page,){
+btn.addEventListener("click", () => goToSection(header, section, page),{
     passive: true
 });
 }
@@ -154,11 +159,11 @@ mobileMenu.addEventListener("click", function(){
         bottomBun.classList.add('bottomBunToX');
         header.classList.add('header-popup');
         headerDiv.classList.add('header-div-popup');
-        
+        isMobileMenuOpen = true;
     } else {
         header.classList.remove('header-popup');
         headerDiv.classList.remove('header-div-popup');
-        hamburgerBack();    
+        hamburgerBack();
     }
 
 },
