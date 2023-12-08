@@ -102,7 +102,7 @@ function handleURL(){
     }
 }   
 
-function removeHeaderPopupClasses(){
+function removeHeaderPopUpClasses(){
     header.classList.remove('header-popup');
     headerDiv.classList.remove('header-div-popup'); 
 }
@@ -124,7 +124,7 @@ function hamburgerBack(){
 
 function goToSection(sectionHeader, section, page){
     function closePopUpMobileMenu(){
-        removeHeaderPopupClasses();
+        removeHeaderPopUpClasses();
         hamburgerBack();
     }
     if(isMobileMenuOpen){
