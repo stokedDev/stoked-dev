@@ -12,15 +12,23 @@ const [aboutH, locationsH, pricingH] =
     document.querySelector('.pricing-title')
 ]
 
-const [aboutS, locationsS, pricingS] = 
+const [aboutS, locationsS, pricingS] =
 [
     document.querySelector('.about-us-section'),
     document.querySelector('.locations-section'),
     document.querySelector('.pricing-section')
 ]
-
+function hideOtherSections(section){
+    section.style.display = 'flex';
+    const sectionArr = [aboutS, locationsS, pricingS];
+    for(let i = 0; i < sectionArr.length; i++){
+        if(sectionArr[i] !== section){
+            sectionArr[i].style.display = 'none';
+        }
+    }
+}
 const mobileMenu = document.querySelector('.mobile-menu');
-const navList = document.querySelector('.nav-list'); /* default nav */
+const navList = document.querySelector('.nav-list');
 const header = document.querySelector('header');
 const emailForm = document.querySelector('.email-form');
 const headerDiv = document.querySelector('.header');
@@ -50,7 +58,57 @@ const [topBun,inBuns,bottomBun] =
     document.querySelector('.in-buns'),
     document.querySelector('.bottom-bun')
 ]
-
+    let currentURL = '' + document.URL;
+    const [aboutInCurrentURL, 
+    locationsInCurrentURL, 
+    pricingInCurrentURL] = 
+    [/about/.test(currentURL),
+    /locations/.test(currentURL),
+    /pricing/.test(currentURL)]; 
+    const webpageRegex = /#about|#locations|#pricing\b|$/;
+    
+    function home(){
+            document.querySelector('title').textContent = 'Surf Pools USA';
+    }
+    function about(){
+            history.pushState({page: 'about'}, 'About Us - Surf Pools USA', currentURL.replace(webpageRegex, '#about'));
+            document.querySelector('title').textContent = 'About Us - Surf Pools USA';
+    }
+    function locations(){
+            history.pushState({page: 'locations'}, 'Locations - Surf Pools USA', currentURL.replace(webpageRegex, '#locations'));
+            document.querySelector('title').textContent = 'Locations - Surf Pools USA';
+    }
+    function pricing(){
+            history.pushState({page: 'pricing'}, 'Pricing - Surf Pools USA', currentURL.replace(webpageRegex, '#pricing'));
+            document.querySelector('title').textContent = 'Pricing - Surf Pools USA';
+    }
+    handleInitialURL();
+function handleURL(){
+        home();
+    if(aboutInCurrentURL){
+        goToSection(aboutH, aboutS, 'about');
+    }
+    if(locationsInCurrentURL){
+        goToSection(locationsH, locationsS, 'locations');
+    }
+    if(pricingInCurrentURL){
+        goToSection(pricingH, pricingS, 'pricing');
+    }
+}   
+function handleInitialURL(){
+    if(!aboutInCurrentURL && !locationsInCurrentURL && !pricingInCurrentURL){
+        home();
+    }    
+    if(aboutInCurrentURL){
+        goToSectionWithoutBtn(aboutH, aboutS,'about');
+    } 
+    if(locationsInCurrentURL){
+        goToSectionWithoutBtn(locationsH, locationsS, 'locations');
+    }
+    if(pricingInCurrentURL){
+        goToSectionWithoutBtn(pricingH, pricingS, 'pricing');
+    }
+}   
 function removeHeaderPopupClasses(){
     header.classList.remove('header-popup');
     headerDiv.classList.remove('header-div-popup'); 
@@ -70,34 +128,34 @@ function hamburgerBack(){
     }, 501)
 }
 
-function goToSection(sectionHeader, section){
-    switch (sectionHeader){
-        case aboutH:
+function goToSection(sectionHeader, section, page){
             removeHeaderPopupClasses()
             hamburgerBack()
-            locationsS.style.display = "none";
-            pricingS.style.display = "none";
-        break;
-        case locationsH:
-            removeHeaderPopupClasses()
-            hamburgerBack()
-            aboutS.style.display = "none";
-            pricingS.style.display = "none";
-        break;
-        case pricingH:
-            removeHeaderPopupClasses()
-            hamburgerBack()
-            aboutS.style.display = "none";
-            locationsS.style.display = "none";
-    }
+            hideOtherSections(section);
+            if(page === 'about'){
+                about();
+            } else if(page === 'locations'){
+                locations();
+            } else if(page === 'pricing'){
+                pricing();
+            }
+            sectionHeader.scrollIntoView();
+}
 
-    if(section.style.display === "none"){
-        section.style.display = "flex";
+function goToSectionWithoutBtn(sectionHeader, section, page){
+    hideOtherSections(section);
+    if(page === 'about'){
+        about();
+    } else if(page === 'locations'){
+        locations();
+    } else if(page === 'pricing'){
+        pricing();
     }
     sectionHeader.scrollIntoView();
 }
-function activateBtn(btn, header, section){
-btn.addEventListener("click", () => goToSection(header, section),{
+
+function activateBtn(btn, header, section, page){
+btn.addEventListener("click", () => goToSection(header, section, page),{
     passive: true
 });
 }
@@ -153,8 +211,7 @@ document.addEventListener('scroll', function () {
 });
 
 
-activateBtn(aboutBtn, aboutH, aboutS);
-activateBtn(locationsBtn, locationsH, locationsS);
-activateBtn(pricingBtn, pricingH, pricingS);
-
+activateBtn(aboutBtn, aboutH, aboutS, 'about');
+activateBtn(locationsBtn, locationsH, locationsS, 'locations');
+activateBtn(pricingBtn, pricingH, pricingS, 'pricing');
 document.querySelector('.back-to-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
