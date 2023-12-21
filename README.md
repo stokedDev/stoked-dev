@@ -11,30 +11,30 @@ https://stokeddev.com/projects/snake-game
 I started this project while working my way through the Scrimba Frontend Developer Career Path as it was an assignment.
 I got good practice problem solving while dynamically controlling HTML with JS and CSS. I wrote all the HTML, CSS, and JS for this game thoughtfully line by line. I chose all the styles and colors myself. This game is now playable on mobile as I have created a mobile controller for it which is also toggleable on viewports wider than 1024px. I'm especially proud of how I coded a recursive function containing a setTimeout to animate the game with a dynamic interval while also using recursion to keep the apple off the snake. One of my biggest challenges that I overcame in developing this app was harmonizing the relationship between play/pause click/keydown event listeners.
 
+### 2. My Survey Form
+https://stokeddev.com/projects/survey
 
-### 2. fCC JS Cert Repo
+This is based on one of the freeCodeCamp projects that I built in order to get my Responsive Web Design certification.
+I built it with HTML, CSS, and JS. It taught me the advanced HTML5 skill of building forms for user input with validation.
+
+
+### 3. fCC JS Cert Repo
 https://github.com/stokedDev/freeCodeCampJSProjects
 
 The projects are Caesar's Cipher, Palindrome Checker, Cash Register, Roman Numeral Converter, and Telephone Number Validator.
 By remembering what I learned from the freeCodeCamp JavaScript Algorithms and Data Structures curriculum and using resources from across the web I completed these challenges which allowed me to earn my certification.
 
-### 3. Documentation Page
+### 4. Documentation Page
 https://stokeddev.com/projects/tech-doc
 
 This is based on one of the freeCodeCamp projects that I needed to complete in order to get my Responsive Web Design certification. 
 This is my JavaScript Documentation Page that I created with HTML, CSS, and JS. Instead of just copying and pasting someone elses documentation and giving them credit for it, like freeCodeCamp themselves did in their example for this finished project, I took a different route. I used my current knowledge and understanding of JS to create my own text to work with so that I could write HTML, CSS, and JS to make a beautiful webpage to present a sample of my frontend engineering skills.
 
-### 4. Product Landing Page
+### 5. Product Landing Page
 https://stokeddev.com/projects/product-landing
 
 This is based on one of the freeCodeCamp projects that I built in order to get my Responsive Web Design certification.
 I built it with HTML, CSS, and JS. It is for a company I made up that manufactures wave pools for surfing.
-
-### 5. My Survey Form
-https://stokeddev.com/projects/survey0
-
-This is based on one of the freeCodeCamp projects that I built in order to get my Responsive Web Design certification.
-I built it with HTML, CSS, and JS. It taught me the advanced HTML5 skill of building forms for user input with validation.
 
 ### 6. JS Count Speed Tester
 https://stokeddev.com/projects/my-worker-example
