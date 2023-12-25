@@ -120,21 +120,21 @@ function removeHeaderPopupClasses(){
 function goToSection(sectionIntro, slidePosition){
     switch (sectionIntro){
         case sI1:
-            removeHeaderPopupClasses()
-            hamburgerBack()
+            removeHeaderPopupClasses();
+            hamburgerBack();
             hideAllSlides();
             section1.style.display = "flex";
             createURL('about');
         break;
         case sI2:
-            removeHeaderPopupClasses()
-            hamburgerBack()
+            removeHeaderPopupClasses();
+            hamburgerBack();
             hideAllSlides();
             createURL('projects');
         break;
         case sI3:
-            removeHeaderPopupClasses()
-            hamburgerBack()
+            removeHeaderPopupClasses();
+            hamburgerBack();
             hideAllSlides();
             createURL('connect');
     }
@@ -162,9 +162,9 @@ function goToSectionWithoutUsingMobileMenu(sectionIntro, slidePosition){
 function activateBtn(btn, sectionIntro, slidePosition){
     btn.addEventListener("click", () => {
         if(!header.classList.contains('header-popup')){
-            goToSectionWithoutUsingMobileMenu(sectionIntro, slidePosition)
+            goToSectionWithoutUsingMobileMenu(sectionIntro, slidePosition);
         } else {
-            goToSection(sectionIntro, slidePosition)
+            goToSection(sectionIntro, slidePosition);
         }
     });
     }
@@ -184,7 +184,7 @@ function activateBtn(btn, sectionIntro, slidePosition){
         } else {
             header.classList.remove('header-popup');
             headerDiv.classList.remove('header-div-popup');
-            hamburgerBack()   
+            hamburgerBack();   
         }
     
     });
@@ -196,11 +196,13 @@ function activateBtn(btn, sectionIntro, slidePosition){
         );
     }
     let lapTopScreen = window.matchMedia("(min-width: 1024px)");
-
+    
     document.addEventListener('scroll', function () {
-        if(isNotInViewport(contactBtn) && !lapTopScreen.matches) mobileMenu.style.display = "flex";
-        if(!isNotInViewport(contactBtn) &&
-         !header.classList.contains('header-popup')) mobileMenu.style.display = "none";
+        if(isNotInViewport(contactBtn) && !lapTopScreen.matches){
+         mobileMenu.style.display = "flex";
+        } else if(!isNotInViewport(contactBtn) && !header.classList.contains('header-popup')){
+            mobileMenu.style.display = "none";
+         }
     }, {
         passive: true
     });
