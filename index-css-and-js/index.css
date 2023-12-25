@@ -7,31 +7,34 @@ html{
     font-size: 10px;
     margin: 0 auto;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
   }
 body{
   overflow-x: hidden;
-  width: 99vw;
   color: rgb(252, 220, 39);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: .2rem;
   background-image: url("../images/small-mobile-screen-pxfuel-abstract-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100vw;
 }
 /* NAVBAR CSS STARTS HERE */
 
 /* mobile menu css */
 .mobile-menu{
   position: fixed;
-  display: none;
-  flex-direction: column;
-  align-items: center;
   left: 2px;
   top: 2px;
+  display: none;
+  flex-direction: column;/* display flex given in JS */
+  align-items: center;
   height: 40px;
   width: 40px;
   background-color:rgba(0, 0, 0, 0.441);
@@ -145,6 +148,7 @@ body{
 }
 
 /* X to hamburger icon keyframes above */
+
 .header-div-popup{
   position: fixed;
   width: 100vw;
@@ -163,9 +167,7 @@ body{
   height: 100%;
 }
 /* mobile menu css ends here */
-header{
-  width: 100vw;
-}
+
 .topnav{
   font-size: 3.4rem;
 }
@@ -175,8 +177,6 @@ header{
   align-items: center;
   justify-content: center;
   margin-top: 1.5rem;
-  margin-left: .4rem;
-  margin-right: auto;
 }
 .nav-link{
   font-size: 3.4rem;
@@ -212,8 +212,9 @@ header{
   letter-spacing: .05em;
   background: none;
   text-shadow: 0 0 3px rgba(0,0,0,1),0 0 3px rgba(0,0,0,1);
-  padding: .01em .5em;
+  padding: .01em .5em .01em .5em;
   border-radius: 20px;
+  width: 100vw;
 }
 
 p{
@@ -222,7 +223,9 @@ p{
 h1{
   font-size: 1.6em;
   letter-spacing: .075em;
-  margin-bottom: -.6em;
+  margin-top: -1rem;
+  margin-bottom: -.1em;
+  padding-top: 3.8rem;
 }
 .h1-exclamation{
   display: relative;
@@ -230,7 +233,11 @@ h1{
 }
 .intro{
   position: relative;
-  bottom: 10px;
+  bottom: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .intro-part{
   font-weight: 600;
@@ -302,7 +309,6 @@ h2{
   text-shadow: none;
   font-weight: 300;
   margin: -2.5rem auto 1rem auto;
-  margin-left: -.09%;
   font-size: 1.61em;
   border: none;
 }
@@ -321,10 +327,11 @@ h2{
   font-size: 4rem;
   letter-spacing: .6rem;
   text-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 2px rgba(0, 0, 0, 1);
+  padding-top: 3.8rem;
+  margin-top: -1.5rem;
 }
 
 .projects{
-  margin-left: .23rem;
   color: white;
   display: grid;
   gap: 2rem 2rem;
@@ -414,8 +421,9 @@ h2{
   text-shadow: 0 0 3px rgba(0,0,0,1),0 0 3px rgba(0,0,0,1);
   font-size: 4rem;
   font-weight: 900;
-  margin: 2.5rem 0 -5rem 0;
+  margin: -1.5rem 0 -5rem 0;
   letter-spacing: .25rem;
+  padding-top: 3.8rem;
 }
 .profile-link{
   text-decoration: none;
@@ -488,15 +496,7 @@ footer{
   font-size: 2.5rem;
   margin-top: 2rem;
 }
-.employment-request{
-  padding: 1rem;
-  background-color: rgba(0,0,0,.65);
-  color: white;
-  border-radius: .5rem;
-  max-width: 300px;
-  font-size: .648em;
-  text-align: left;
-}
+
 .footer-email{
   color: rgb(166, 221, 244);
 }
@@ -527,26 +527,7 @@ footer{
     margin-top: -3rem;
   }
 }
-@media (min-width: 375px){
-  .employment-request{
-    max-width: 350px;
-    font-size:  .75em;
-  }
-}
-@media (min-width: 425px){
-  .employment-request{
-    max-width: 400px;
-    font-size:  .85em;
-  }
-}
 @media (min-width: 580px){
-  .employment-request{
-    max-width: 500px;
-    font-size:  1em;
-  }
-  .welcome-section{
-    margin-top: -2.8rem;
-  }
   body{
     background-image: url("../images/larger-mobile-screen-pxfuel-abstract-bg.webp");
   }
@@ -567,12 +548,8 @@ footer{
 }
 
  @media (min-width: 1024px){
-  html{
-    width: 100%;
-  }
   .welcome-section{
-    margin-left: .195em;
-    margin-top: 0;
+    margin: 0;
   }
   body{
     background-image: url("../images/pxfuel.webp");
@@ -589,9 +566,6 @@ footer{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-  }
-  #nav-bar{
-    margin: 0;
   }
   .nav-link{
     margin-right: 1rem;
@@ -610,7 +584,6 @@ footer{
     margin-left: .7rem;
   }
   footer{
-    /* margin-top: 17rem; */
     margin-top: 12.5rem;
   }
 }
