@@ -512,12 +512,18 @@ footer{
   border-radius: .5em;
 }
 .copy-right{
-  text-shadow: white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem;
+  text-shadow: white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem;
   color: black;
   margin-top: 2rem;
   font-size: 2.2rem;
 }
-
+.Holy-Link{
+  text-shadow: white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem, white 0 0 1rem;
+}
+.statement{
+  color: white;
+  text-shadow: black 0 0 2rem, black 0 0 2rem, black 0 0 2rem, black 0 0 2rem, black 0 0 2rem, black 0 0 2rem, black 0 0 2rem, black 0 0 2rem;
+}
 /* footer above */
 
 /* media query below */
